@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Level.h"
 #include <kit/gui/viewport.h>
 #include <kit/flat/camera.h>
 #include <kit/flat/object.h>
@@ -10,17 +11,24 @@ using namespace kit;
 class Player : public kit::Noncopyable
 {
 public:
-	Player (Ptr<Window> window, Ptr<Scene> scene);
+	Player (Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level);
 
 	~Player();
 
 	Ptr<gui::Viewport> getViewport ();
 
+	void handleEvent(Event const & event);
+
 private:
 	Ptr<Window> _window;
-	Ptr<Scene> _scene;
+	Ptr<scene::Scene> _scene;
+	Ptr<Level> _level;
 	Ptr<gui::Viewport> _viewport;
 	OwnPtr<flat::Camera> _camera;
-	OwnPtr<flat::Object> _character;
+	OwnPtr<Object> _character;
+
+	Vector2i _moving;
+	float _speed;
+	float _maxSpeed;
 };
 

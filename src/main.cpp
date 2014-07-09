@@ -4,7 +4,7 @@
 #include <kit/window.h>
 #include <kit/gui/button.h>
 #include <kit/resources.h>
-#include <kit/scene.h>
+#include <kit/scene/scene.h>
 #include <kit/log.h>
 #include <kit/audio.h>
 
@@ -12,11 +12,11 @@ using namespace kit;
 
 Ptr<Window> window;
 Ptr<gui::Button> startButton;
-Ptr<Scene> scene;
+Ptr<scene::Scene> _scene;
 std::vector<OwnPtr<Player>> players;
 OwnPtr<Level> level;
 
-void handleEvent (Event const & event)
+void handleWindowEvent (Event const & event)
 {
 	if(event.type == Event::Keyboard)
 	{
@@ -69,32 +69,42 @@ void updateMenu ()
 		window->setWidgetPlacementSize(players[3]->getViewport(), Vector2f(.5f, .5f), Vector2f(0, 0));
 	}
 
-	audio::play("data/go.ogg");
 }
+
+void handleSceneEvent(Event const & event)
+{
+	if(event.type == Event::Update)
+	{
+		level->update();
+	}
+	for(auto player : players)
+	{
+		player->handleEvent(event);
+	}
+}
+
 
 void startButtonPressed()
 {
-	audio::play("data/multikill.ogg");
 	audio::play("data/go.ogg");
 	window->removeWidget(startButton);
-	players.push_back(OwnPtr<Player>(new Player(window, scene)));
-	level.set(new Level(scene, Vector2i(10, 10)));
-	scene->setPaused(false);
+
+	_scene = app::addScene();
+	_scene->setEventHandler(handleSceneEvent);
+	level.set(new Level(_scene, Vector2i(10, 10)));
+	players.push_back(OwnPtr<Player>(new Player(window, _scene, level)));
 }
 
 void kit::start (std::vector<std::string> const &)
 {
 	window = app::addWindow("ArenaSplode 2");
-	window->setHandleContainerEventFunction(handleEvent);
+	window->setHandleContainerEventFunction(handleWindowEvent);
 	window->setUpdateWidgetBoundsFunction(updateMenu);
 
 	startButton = window->addButton();
 	startButton->setTexture(resources::getTextureFromFile("art/start_button.png"));
 	startButton->setTextureBounds(Recti::minSize(0, 0, 256, 128));
 	startButton->setPressFunction(startButtonPressed);
-
-	scene = app::addScene();
-	scene->setPaused(true);
 }
 
 void kit::finish ()

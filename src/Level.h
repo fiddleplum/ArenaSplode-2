@@ -1,6 +1,7 @@
 #pragma once
 
-#include <kit/scene.h>
+#include "Object.h"
+#include <kit/scene/scene.h>
 #include <kit/flat/object.h>
 
 using namespace kit;
@@ -16,11 +17,19 @@ public:
 class Level
 {
 public:
-	Level(Ptr<Scene> scene, Vector2i size);
+	Level(Ptr<scene::Scene> scene, Vector2i size);
+
+	void addObject(OwnPtr<Object> object);
+
+	void removeObject(Ptr<Object> object);
+
+	void update();
 
 private:
-	Ptr<Scene> _scene;
+	Ptr<scene::Scene> _scene;
+	Vector2i _tileSize;
 	Vector2i _size;
 	std::vector<Tile> _tiles;
+	PtrSet<Object> _objects;
 };
 
