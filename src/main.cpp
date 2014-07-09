@@ -6,6 +6,7 @@
 #include <kit/resources.h>
 #include <kit/scene.h>
 #include <kit/log.h>
+#include <kit/audio.h>
 
 using namespace kit;
 
@@ -67,10 +68,14 @@ void updateMenu ()
 		window->setWidgetPlacement(players[3]->getViewport(), Vector2f(.5f, .5f), Vector2f(0, 0), Vector2f(0, 0));
 		window->setWidgetPlacementSize(players[3]->getViewport(), Vector2f(.5f, .5f), Vector2f(0, 0));
 	}
+
+	audio::play("data/go.ogg");
 }
 
 void startButtonPressed()
 {
+	audio::play("data/multikill.ogg");
+	audio::play("data/go.ogg");
 	window->removeWidget(startButton);
 	players.push_back(OwnPtr<Player>(new Player(window, scene)));
 	level.set(new Level(scene, Vector2i(10, 10)));
