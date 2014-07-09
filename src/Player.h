@@ -11,7 +11,7 @@ using namespace kit;
 class Player : public kit::Noncopyable
 {
 public:
-	Player (Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level);
+	Player (int number, Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level);
 
 	~Player();
 
@@ -27,6 +27,7 @@ private:
 	OwnPtr<flat::Camera> _camera;
 	OwnPtr<Object> _character;
 
+	int _number;
 	Vector2i _moving;
 	float _speed;
 	float _maxSpeed;

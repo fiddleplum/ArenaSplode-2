@@ -92,7 +92,10 @@ void startButtonPressed()
 	_scene = app::addScene();
 	_scene->setEventHandler(handleSceneEvent);
 	level.set(new Level(_scene, Vector2i(10, 10)));
-	players.push_back(OwnPtr<Player>(new Player(window, _scene, level)));
+	players.push_back(OwnPtr<Player>(new Player(0, window, _scene, level)));
+	players.push_back(OwnPtr<Player>(new Player(1, window, _scene, level)));
+
+	updateMenu();
 }
 
 void kit::start (std::vector<std::string> const &)

@@ -1,8 +1,10 @@
 #include "Player.h"
 #include <kit/gui/viewport.h>
+#include <kit/math_util.h>
 
-Player::Player (Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level)
+Player::Player (int number, Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level)
 {
+	_number = number;
 	_window = window;
 	_scene = scene;
 	_level = level;
@@ -12,7 +14,8 @@ Player::Player (Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level)
 	_viewport->setScene(_scene);
 	_viewport->setCamera(_camera->getSceneCamera());
 	_character.set(new Object(_scene, "data/bullet.png", Recti::minMax(0, 0, 16, 16)));
-	_character->setPosition(Vector2f(0, -60.f));
+	_character->setPosition(Vector2f(math::random(0.0f, 1.0f), math::random(0.0f, 1.0f)));
+	_character->setSolid(true);
 	_level->addObject(_character);
 	_speed = 1.0f;
 	_maxSpeed = 10.0f;
@@ -37,27 +40,30 @@ Ptr<gui::Viewport> Player::getViewport ()
 
 void Player::handleEvent(Event const & event)
 {
-	if(event.type == Event::Keyboard)
+	if(_number == 0)
 	{
-		KeyboardEvent const & ke = event.as<KeyboardEvent>();
-		if(ke.key == KeyboardEvent::A)
+		if(event.type == Event::Keyboard)
 		{
-			_moving[0] -= ke.pressed ? 1 : -1;
-		}
-		if(ke.key == KeyboardEvent::S)
-		{
-			_moving[1] -= ke.pressed ? 1 : -1;
-		}
-		if(ke.key == KeyboardEvent::D)
-		{
-			_moving[0] += ke.pressed ? 1 : -1;
-		}
-		if(ke.key == KeyboardEvent::W)
-		{
-			_moving[1] += ke.pressed ? 1 : -1;
+			KeyboardEvent const & ke = event.as<KeyboardEvent>();
+			if(ke.key == KeyboardEvent::A)
+			{
+				_moving[0] -= ke.pressed ? 1 : -1;
+			}
+			if(ke.key == KeyboardEvent::S)
+			{
+				_moving[1] -= ke.pressed ? 1 : -1;
+			}
+			if(ke.key == KeyboardEvent::D)
+			{
+				_moving[0] += ke.pressed ? 1 : -1;
+			}
+			if(ke.key == KeyboardEvent::W)
+			{
+				_moving[1] += ke.pressed ? 1 : -1;
+			}
 		}
 	}
-	else if(event.type == Event::Update)
+	if(event.type == Event::Update)
 	{
 		Vector2f velocity = _character->getVelocity();
 		velocity += Vector2f(_moving) * _speed;

@@ -11,6 +11,7 @@ Object::Object(Ptr<scene::Scene> scene, std::string const & textureFilename, Rec
 	_object->setPosition(_objectOffset);
 	_friction = .1f;
 	_radius = 32.0f;
+	_solid = false;
 }
 
 void Object::setVelocity(Vector2f velocity)

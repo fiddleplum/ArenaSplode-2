@@ -38,31 +38,51 @@ void Level::update()
 	{
 		object->doPhysics(1.f / 30.f);
 	}
-	for(int y = 0; y < _size[1]; y++)
+	for(auto object0 : _objects)
 	{
-		for(int x = 0; x < _size[0]; x++)
+		for(auto object1 : _objects)
 		{
-			Tile const & tile = _tiles[y * _size[0] + x];
-			if(tile.type == Tile::Floor)
+			if(object0 == object1 || !object0->isSolid() || !object1->isSolid())
 			{
 				continue;
 			}
-			Rectf bounds = Rectf::minSize((float)(x * _tileSize[0]), (float)(y * _tileSize[1]), (float)_tileSize[0], (float)_tileSize[1]);
-			for(auto object : _objects)
+			Vector2f r = object0->getPosition() - object1->getPosition();
+			float radiusSum = object0->getRadius() + object1->getRadius();
+			float d = (radiusSum * radiusSum) - r.normSq();
+			if(d > 0 && !r.isZero())
 			{
-				// Get closest point to circle within tile
-				Vector2f closest = bounds.closest(object->getPosition());
-
-				if((closest - object->getPosition()).normSq() < object->getRadius() * object->getRadius())
-				{
-					Vector2f r = object->getPosition() - closest;
-					if(!r.isZero())
-					{
-						object->setPosition(object->getPosition() + r.unit() * (object->getRadius() - r.norm()));
-					}
-				}
+				d = radiusSum - r.norm();
+				r.normalize();
+				object0->setPosition(object0->getPosition() + r * d * 0.0f);
+				object1->setPosition(object1->getPosition() - r * d * 0.0f);
 			}
 		}
 	}
+	//for(int y = 0; y < _size[1]; y++)
+	//{
+	//	for(int x = 0; x < _size[0]; x++)
+	//	{
+	//		Tile const & tile = _tiles[y * _size[0] + x];
+	//		if(tile.type == Tile::Floor)
+	//		{
+	//			continue;
+	//		}
+	//		Rectf bounds = Rectf::minSize((float)(x * _tileSize[0]), (float)(y * _tileSize[1]), (float)_tileSize[0], (float)_tileSize[1]);
+	//		for(auto object : _objects)
+	//		{
+	//			// Get closest point to circle within tile
+	//			Vector2f closest = bounds.closest(object->getPosition());
+
+	//			if((closest - object->getPosition()).normSq() < object->getRadius() * object->getRadius())
+	//			{
+	//				Vector2f r = object->getPosition() - closest;
+	//				if(!r.isZero())
+	//				{
+	//					object->setPosition(object->getPosition() + r.unit() * (object->getRadius() - r.norm()));
+	//				}
+	//			}
+	//		}
+	//	}
+	//}
 }
 
