@@ -13,7 +13,7 @@ Level::Level(Ptr<scene::Scene> scene, Vector2i size)
 		{
 			Tile tile;
 			tile.type = rand() % Tile::NumTypes;
-			tile.sprite.set(new flat::Object(_scene));
+			tile.sprite.setNew(_scene);
 			tile.sprite->setTexture("data/tiles.png");
 			tile.sprite->setTextureCoords(Recti::minSize(_tileSize[0] * tile.type, 0, _tileSize[0], _tileSize[1]));
 			tile.sprite->setPosition(Vector2i(x * _tileSize[0], y * _tileSize[1]));

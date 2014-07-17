@@ -4,7 +4,7 @@ Object::Object(Ptr<scene::Scene> scene, std::string const & textureFilename, Rec
 {
 	_scene = scene;
 	_objectOffset = -textureCoords.getSize() / 2;
-	_object.set(new flat::Object(_scene));
+	_object.setNew(_scene);
 	_object->setTexture(textureFilename);
 	_object->setTextureCoords(textureCoords);
 	_object->setZ(1);

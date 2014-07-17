@@ -4,3 +4,4 @@ tmp/
 *.opensdf
 *.suo
 *.vcxproj.user
+log.txt

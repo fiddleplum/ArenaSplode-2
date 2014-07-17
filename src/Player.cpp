@@ -9,11 +9,11 @@ Player::Player (int number, Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Lev
 	_scene = scene;
 	_level = level;
 	_viewport = window->addViewport();
-	_camera.set(new flat::Camera(_scene));
+	_camera.setNew(_scene);
 	_camera->setMaxViewSize(320.0f);
 	_viewport->setScene(_scene);
 	_viewport->setCamera(_camera->getSceneCamera());
-	_character.set(new Object(_scene, "data/bullet.png", Recti::minMax(0, 0, 16, 16)));
+	_character.setNew(_scene, "data/bullet.png", Recti::minMax(0, 0, 16, 16));
 	_character->setPosition(Vector2f(math::random(0.0f, 1.0f), math::random(0.0f, 1.0f)));
 	_character->setSolid(true);
 	_level->addObject(_character);
@@ -40,7 +40,7 @@ Ptr<gui::Viewport> Player::getViewport ()
 
 void Player::handleEvent(Event const & event)
 {
-	if(_number == 0)
+	if(_number == 1)
 	{
 		if(event.type == Event::Keyboard)
 		{
