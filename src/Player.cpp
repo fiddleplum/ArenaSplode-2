@@ -13,24 +13,34 @@ Player::Player (int number, Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Lev
 	_camera->setMaxViewSize(320.0f);
 	_viewport->setScene(_scene);
 	_viewport->setCamera(_camera->getSceneCamera());
-	_character.setNew(_scene, "data/bullet.png", Recti::minMax(0, 0, 16, 16));
-	_character->setPosition(Vector2f(math::random(0.0f, 1.0f), math::random(0.0f, 1.0f)));
-	_character->setSolid(true);
-	_level->addObject(_character);
 	_speed = 1.0f;
 	_maxSpeed = 10.0f;
 }
 
 Player::~Player()
 {
-	if(_level.isValid())
-	{
-		_level->removeObject(_character);
-	}
+	_level->removeObject(_character);
 	if(_window.isValid())
 	{
 		_window->removeWidget(_viewport);
 	}
+}
+
+bool Player::hasCharacter() const
+{
+	return _character.isValid();
+}
+
+void Player::setCharacter(std::string const & character)
+{
+	if(_character.isValid())
+	{
+		_level->removeObject(_character);
+	}
+	_character.setNew(_scene, "data/bullet.png", Recti::minMax(0, 0, 16, 16));
+	_character->setPosition(Vector2f(math::random(0.0f, 1.0f), math::random(0.0f, 1.0f)));
+	_character->setSolid(true);
+	_level->addObject(_character);
 }
 
 Ptr<gui::Viewport> Player::getViewport ()
@@ -40,6 +50,10 @@ Ptr<gui::Viewport> Player::getViewport ()
 
 void Player::handleEvent(Event const & event)
 {
+	if(!_character.isValid())
+	{
+		return;
+	}
 	if(_number == 1)
 	{
 		if(event.type == Event::Keyboard)

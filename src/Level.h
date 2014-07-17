@@ -23,10 +23,13 @@ public:
 
 	void removeObject(Ptr<Object> object);
 
+	void setPaused(bool paused);
+
 	void update();
 
 private:
 	Ptr<scene::Scene> _scene;
+	bool _paused;
 	Vector2i _tileSize;
 	Vector2i _size;
 	std::vector<Tile> _tiles;

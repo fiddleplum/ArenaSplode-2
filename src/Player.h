@@ -15,6 +15,12 @@ public:
 
 	~Player();
 
+	int getNumber() { return _number; }
+
+	bool hasCharacter() const;
+
+	void setCharacter(std::string const & character);
+
 	Ptr<gui::Viewport> getViewport ();
 
 	void handleEvent(Event const & event);

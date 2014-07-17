@@ -20,6 +20,8 @@ Level::Level(Ptr<scene::Scene> scene, Vector2i size)
 			_tiles.push_back(tile);
 		}
 	}
+
+	_paused = true;
 }
 
 void Level::addObject(OwnPtr<Object> object)
@@ -32,8 +34,17 @@ void Level::removeObject(Ptr<Object> object)
 	_objects.erase(object);
 }
 
+void Level::setPaused(bool paused)
+{
+	_paused = paused;
+}
+
 void Level::update()
 {
+	if(_paused)
+	{
+		return;
+	}
 	for(auto object : _objects)
 	{
 		object->doPhysics(1.f / 30.f);
