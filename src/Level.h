@@ -25,6 +25,8 @@ public:
 
 	void update();
 
+	std::pair<Ptr<Object>, float> getNearestObject(Ptr<Object> reference);
+
 private:
 	void updatePatch(Vector2i tile);
 

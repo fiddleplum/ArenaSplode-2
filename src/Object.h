@@ -11,6 +11,8 @@ public:
 
 	Object(Type type, Ptr<kit::scene::Scene> scene, std::string const & textureFilename, Recti textureCoords);
 
+	Type getType() const { return type; }
+
 	Vector2f getPosition() const { return object->getPosition(); }
 
 	float getOrientation() const { return object->getOrientation(); }
@@ -24,6 +26,9 @@ public:
 	float getBounciness() const { return bounciness; }
 
 	void setBounciness(float bounciness);
+
+	float getFriction() const { return friction; }
+	void setFriction(float _friction) { friction = _friction; }
 
 	float getRadius() const { return radius; }
 
@@ -42,6 +47,8 @@ public:
 	void setHeld(Ptr<Player> player) { holdingPlayer = player; }
 
 	bool isHeld() const { return holdingPlayer.isValid(); }
+
+	virtual void update(float dt) = 0;
 
 private:
 	Ptr<kit::scene::Scene> scene;

@@ -25,6 +25,14 @@ This way, RAII, the button appears the moment it is created. No more add/remove 
 Namespaces:
 Make kit have no namespace. Make all app things be in the app namespace. ??? Maybe
 The reason is that it is annoying to have to say kit::Ptr, and having "using namespace kit" in headers is a bad idea.
+
+Fix Bug:
+Sometimes, an item or the character gets rendered first and then the tiles are rendered on top. The transparent pixels
+of the items still modify the depth buffer, so that when the tile is rendered, it doesn't render on the tranparent pixels,
+so there is a black area. Figure out how to not render pixels if they are transparent.
+
+Fix Bug:
+Fix game loop framerate to be fixed rate, but handle super fast framerates.
 */
 
 OwnPtr<Game> game;

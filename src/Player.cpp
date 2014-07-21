@@ -97,6 +97,27 @@ void Player::handleSceneEvent(kit::Event const & event)
 			}
 			looking = !moving.isZero();
 			lookDirection = moving;
+
+			if(ke.key == kit::KeyboardEvent::E && ke.pressed)
+			{
+				if(character->getObjectHeld().isValid())
+				{
+					character->setObjectHeld(Ptr<Object>());
+				}
+				else
+				{
+					std::pair<Ptr<Object>, float> pair = level->getNearestObject(character);
+					if(pair.second < pair.first->getRadius() + character->getRadius())
+					{
+						character->setObjectHeld(pair.first);
+					}
+				}
+			}
+
+			if(ke.key == kit::KeyboardEvent::Space && ke.pressed)
+			{
+				character->useHeld();
+			}
 		}
 	}
 	if(event.type == kit::Event::Update)

@@ -72,6 +72,10 @@ void Level::update()
 	}
 	for(auto object : objects)
 	{
+		object->update(1.f / 30.f);
+	}
+	for(auto object : objects)
+	{
 		object->doPhysics(1.f / 30.f);
 	}
 	for(auto object0 : objects)
@@ -135,6 +139,26 @@ void Level::update()
 			}
 		}
 	}
+}
+
+std::pair<Ptr<Object>, float> Level::getNearestObject(Ptr<Object> reference)
+{
+	Ptr<Object> nearestObject;
+	float nearestDistanceSq;
+	for(auto object : objects)
+	{
+		if(object == reference)
+		{
+			continue;
+		}
+		float distanceSq = (object->getPosition() - reference->getPosition()).normSq();
+		if(nearestObject.isNull() || distanceSq < nearestDistanceSq)
+		{
+			nearestObject = object;
+			nearestDistanceSq = distanceSq;
+		}
+	}
+	return std::pair<Ptr<Object>, float>(nearestObject, std::sqrtf(nearestDistanceSq));
 }
 
 void Level::updatePatch(Vector2i tile)
