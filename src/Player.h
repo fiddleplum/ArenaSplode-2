@@ -1,41 +1,52 @@
 #pragma once
 
-#include "Level.h"
+#include "character.h"
 #include <kit/gui/viewport.h>
 #include <kit/flat/camera.h>
-#include <kit/flat/object.h>
 #include <kit/window.h>
 
-using namespace kit;
+class Level;
+class Object;
+class CharacterMenu;
 
-class Player : public kit::Noncopyable
+class Player : public Noncopyable
 {
 public:
-	Player (int number, Ptr<Window> window, Ptr<scene::Scene> scene, Ptr<Level> level);
+	Player(int number, Ptr<kit::Window> window, Ptr<kit::scene::Scene> scene, Ptr<Level> level);
 
 	~Player();
 
-	int getNumber() { return _number; }
+	int getNumber() { return number; }
 
 	bool hasCharacter() const;
 
 	void setCharacter(std::string const & character);
 
-	Ptr<gui::Viewport> getViewport ();
+	void handleEvent(kit::Event const & event);
 
-	void handleEvent(Event const & event);
+	void handleSceneEvent(kit::Event const & event);
+
+	void updateWidgets();
+
+	void setCharacterChosenFunction(std::function<void(int number)> function);
 
 private:
-	Ptr<Window> _window;
-	Ptr<scene::Scene> _scene;
-	Ptr<Level> _level;
-	Ptr<gui::Viewport> _viewport;
-	OwnPtr<flat::Camera> _camera;
-	OwnPtr<Object> _character;
+	void characterChosen(std::string const & characterFilename);
 
-	int _number;
-	Vector2i _moving;
-	float _speed;
-	float _maxSpeed;
+	Ptr<kit::Window> window;
+	Ptr<kit::scene::Scene> scene;
+	Recti bounds;
+	Ptr<Level> level;
+	Ptr<kit::gui::Viewport> viewport;
+	OwnPtr<kit::flat::Camera> camera;
+	OwnPtr<Character> character;
+	OwnPtr<CharacterMenu> characterMenu;
+	std::function<void(int number)> characterChosenFunction;
+
+	int number;
+	Vector2i moving;
+	bool looking;
+	Vector2f lookDirection;
+	float speed;
 };
 

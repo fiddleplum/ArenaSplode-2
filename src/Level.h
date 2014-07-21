@@ -4,20 +4,18 @@
 #include <kit/scene/scene.h>
 #include <kit/flat/object.h>
 
-using namespace kit;
-
 class Tile
 {
 public:
 	enum {Floor, Wall, NumTypes};
-	OwnPtr<flat::Object> sprite;
+	OwnPtr<kit::flat::Object> sprite;
 	int type;
 };
 
 class Level
 {
 public:
-	Level(Ptr<scene::Scene> scene, Vector2i size);
+	Level(Ptr<kit::scene::Scene> scene, Vector2i size);
 
 	void addObject(OwnPtr<Object> object);
 
@@ -28,11 +26,14 @@ public:
 	void update();
 
 private:
-	Ptr<scene::Scene> _scene;
-	bool _paused;
-	Vector2i _tileSize;
-	Vector2i _size;
-	std::vector<Tile> _tiles;
-	PtrSet<Object> _objects;
+	void updatePatch(Vector2i tile);
+
+	Ptr<kit::scene::Scene> scene;
+	bool paused;
+	Vector2i tileSize;
+	Vector2i size;
+	std::vector<Tile> tiles;
+	std::vector<OwnPtr<kit::flat::Object>> patchSprites;
+	PtrSet<Object> objects;
 };
 

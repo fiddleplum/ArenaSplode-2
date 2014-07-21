@@ -87,17 +87,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\CharacterMenu.cpp" />
+    <ClCompile Include="src\NumPlayersMenu.cpp" />
     <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Level.cpp" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Sword.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\CharacterMenu.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\NumPlayersMenu.h" />
     <ClInclude Include="src\Object.h" />
     <ClInclude Include="src\Level.h" />
     <ClInclude Include="src\Player.h" />
-    <ClInclude Include="src\PlayerSelection.h" />
-    <ClInclude Include="src\StartMenu.h" />
+    <ClInclude Include="src\Sword.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

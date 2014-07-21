@@ -1,35 +1,58 @@
 #include "Object.h"
 
-Object::Object(Ptr<scene::Scene> scene, std::string const & textureFilename, Recti textureCoords)
+Object::Object(Type _type, Ptr<kit::scene::Scene> _scene, std::string const & textureFilename, Recti textureCoords)
 {
-	_scene = scene;
-	_objectOffset = -textureCoords.getSize() / 2;
-	_object.setNew(_scene);
-	_object->setTexture(textureFilename);
-	_object->setTextureCoords(textureCoords);
-	_object->setZ(1);
-	_object->setPosition(_objectOffset);
-	_friction = .1f;
-	_radius = 32.0f;
-	_solid = false;
+	type = _type;
+	scene = _scene;
+	object.setNew(scene);
+	object->setTexture(textureFilename);
+	object->setAsSprite(-textureCoords.getSize() / 2, textureCoords);
+	object->setZ(1);
+	friction = 1.f;
+	radius = 32.0f;
+	solid = false;
+	bounciness = 10;
 }
 
-void Object::setVelocity(Vector2f velocity)
+void Object::setBounciness(float _bounciness)
 {
-	_velocity = velocity;
+	bounciness = _bounciness;
+}
+
+void Object::setVelocity(Vector2f _velocity)
+{
+	velocity = _velocity;
 }
 
 void Object::doPhysics(float dt)
 {
-	if(!_velocity.isZero())
+	if(isHeld())
 	{
-		_velocity += -_velocity.unit() * _friction;
-		_object->setPosition(_object->getPosition() + _velocity * dt);
+		return;
 	}
+	if(velocity.normSq() > 1.f)
+	{
+		velocity *= (1.0f - friction * dt);
+	}
+	else
+	{
+		velocity.set(0, 0);
+	}
+	object->setPosition(object->getPosition() + velocity * dt);
 }
 
 void Object::setPosition(Vector2f position)
 {
-	_object->setPosition(position + _objectOffset);
+	object->setPosition(position);
+}
+
+void Object::setOrientation(float orientation)
+{
+	object->setOrientation(orientation);
+}
+
+void Object::setZ(int z)
+{
+	object->setZ(z);
 }
 

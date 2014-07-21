@@ -2,24 +2,32 @@
 
 #include <kit/flat/object.h>
 
-using namespace kit;
+class Player;
 
 class Object
 {
 public:
-	Object(Ptr<scene::Scene> scene, std::string const & textureFilename, Recti textureCoords);
+	enum Type { CHARACTER, SWORD, ROCKET };
 
-	Vector2f getPosition() const { return _object->getPosition() - _objectOffset; }
+	Object(Type type, Ptr<kit::scene::Scene> scene, std::string const & textureFilename, Recti textureCoords);
 
-	float getOrientation() const { return _object->getOrientation(); }
+	Vector2f getPosition() const { return object->getPosition(); }
 
-	bool isSolid() const { return _solid; }
+	float getOrientation() const { return object->getOrientation(); }
 
-	void setSolid(bool solid) { _solid = solid; }
+	int getZ() const { return object->getZ(); }
 
-	float getRadius() const { return _radius; }
+	bool isSolid() const { return solid; }
 
-	Vector2f getVelocity() const { return _velocity; }
+	void setSolid(bool _solid) { solid = _solid; }
+
+	float getBounciness() const { return bounciness; }
+
+	void setBounciness(float bounciness);
+
+	float getRadius() const { return radius; }
+
+	Vector2f getVelocity() const { return velocity; }
 
 	void setVelocity(Vector2f velocity);
 
@@ -27,13 +35,23 @@ public:
 
 	void setPosition(Vector2f position);
 
+	void setOrientation(float orientation);
+
+	void setZ(int z);
+
+	void setHeld(Ptr<Player> player) { holdingPlayer = player; }
+
+	bool isHeld() const { return holdingPlayer.isValid(); }
+
 private:
-	Ptr<scene::Scene> _scene;
-	OwnPtr<flat::Object> _object;
-	Vector2f _objectOffset;
-	bool _solid;
-	float _radius;
-	Vector2f _velocity;
-	float _friction;
+	Ptr<kit::scene::Scene> scene;
+	OwnPtr<kit::flat::Object> object;
+	Type type;
+	bool solid;
+	float bounciness;
+	float radius;
+	Vector2f velocity;
+	float friction;
+	Ptr<Player> holdingPlayer;
 };
 
