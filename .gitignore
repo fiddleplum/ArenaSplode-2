@@ -5,3 +5,4 @@ tmp/
 *.suo
 *.vcxproj.user
 log.txt
+bin/log.txt

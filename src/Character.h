@@ -16,8 +16,9 @@ public:
 
 private:
 	Ptr<Object> objectHeld;
-	float heldSwingOffset;
-	bool heldSwingDown;
+
+	bool swinging;
+	float heldOrientationOffset;
 	float heldRadiusOffset;
 };
 

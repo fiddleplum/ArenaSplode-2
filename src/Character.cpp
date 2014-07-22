@@ -1,11 +1,16 @@
 #include "Character.h"
+#include <kit/math_util.h>
 
 Character::Character(Ptr<kit::scene::Scene> scene, std::string const & characterFilename)
 : Object(CHARACTER, scene, "art/characters/" + characterFilename, Recti::minSize(0, 0, 64, 64))
 {
 	setSolid(true);
 	setZ(2);
-	heldSwingOffset = 0;
+
+	heldOrientationOffset = 0;
+	heldRadiusOffset = 0;
+
+	swinging = false;
 }
 
 void Character::setObjectHeld(Ptr<Object> object)
@@ -25,8 +30,8 @@ void Character::useHeld()
 	}
 	if(objectHeld->getType() == SWORD)
 	{
-		heldSwingDown = true;
-		heldSwingOffset = 3.14159f / 4.f;
+		swinging = true;
+		heldOrientationOffset = (float)kit::math::PI_OVER_4;
 		heldRadiusOffset = getRadius() * .5f;
 	}
 }
@@ -35,16 +40,16 @@ void Character::update(float dt)
 {
 	if(objectHeld.isValid())
 	{
-		objectHeld->setPosition(getPosition() + (getRadius() + heldRadiusOffset) * Vector2f(std::cosf(getOrientation() + heldSwingOffset), std::sinf(getOrientation() + heldSwingOffset)));
-		objectHeld->setOrientation(getOrientation() + heldSwingOffset);
+		objectHeld->setPosition(getPosition() + (getRadius() + heldRadiusOffset) * Vector2f(std::cosf(getOrientation() + heldOrientationOffset), std::sinf(getOrientation() + heldOrientationOffset)));
+		objectHeld->setOrientation(getOrientation() + heldOrientationOffset);
 	}
-	if(heldSwingDown)
+	if(swinging)
 	{
-		heldSwingOffset -= 1.f * dt;
-		if(heldSwingOffset < -3.14159f / 4.f)
+		heldOrientationOffset -= (float)kit::math::PI_OVER_12 * dt;
+		if(heldOrientationOffset < -kit::math::PI_OVER_4)
 		{
-			heldSwingDown = false;
-			heldSwingOffset = 0;
+			swinging = false;
+			heldOrientationOffset = 0;
 			heldRadiusOffset = 0;
 		}
 	}
