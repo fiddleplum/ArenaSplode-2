@@ -17,7 +17,7 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	viewport = window->addViewport();
 	viewport->setScene(scene);
 	viewport->setCamera(camera->getSceneCamera());
-	speed = 50.0f;
+	speed = 5000.0f;
 	looking = false;
 
 	characterMenu.setNew(window);
@@ -102,6 +102,7 @@ void Player::handleSceneEvent(kit::Event const & event)
 			{
 				if(character->getObjectHeld().isValid())
 				{
+					character->getObjectHeld()->setHeld(Ptr<Character>());
 					character->setObjectHeld(Ptr<Object>());
 				}
 				else
@@ -110,6 +111,7 @@ void Player::handleSceneEvent(kit::Event const & event)
 					if(pair.second < pair.first->getRadius() + character->getRadius())
 					{
 						character->setObjectHeld(pair.first);
+						pair.first->setHeld(character);
 					}
 				}
 			}

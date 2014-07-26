@@ -64,7 +64,7 @@ void Level::setPaused(bool _paused)
 	paused = _paused;
 }
 
-void Level::update()
+void Level::update(float dt)
 {
 	if(paused)
 	{
@@ -72,17 +72,17 @@ void Level::update()
 	}
 	for(auto object : objects)
 	{
-		object->update(1.f / 30.f);
+		object->update(dt);
 	}
 	for(auto object : objects)
 	{
-		object->doPhysics(1.f / 30.f);
+		object->doPhysics(dt);
 	}
 	for(auto object0 : objects)
 	{
 		for(auto object1 : objects)
 		{
-			if(object0 == object1 || !object0->isSolid() || !object1->isSolid())
+			if(object0 == object1 || (!object0->isSolid() && object0->getHeldCharacter().isNull()) || (!object1->isSolid() && object1->getHeldCharacter().isNull()))
 			{
 				continue;
 			}
@@ -95,6 +95,8 @@ void Level::update()
 				r.normalize();
 				object0->setPosition(object0->getPosition() + r * d * 0.0f);
 				object1->setPosition(object1->getPosition() - r * d * 0.0f);
+				object0->onTouch(object1);
+				object1->onTouch(object0);
 			}
 		}
 	}

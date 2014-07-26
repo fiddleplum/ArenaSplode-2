@@ -2,7 +2,7 @@
 
 #include <kit/flat/object.h>
 
-class Player;
+class Character;
 
 class Object
 {
@@ -36,6 +36,8 @@ public:
 
 	void setVelocity(Vector2f velocity);
 
+	void applyImpulse(Vector2f impulse);
+
 	void doPhysics(float dt);
 
 	void setPosition(Vector2f position);
@@ -44,11 +46,13 @@ public:
 
 	void setZ(int z);
 
-	void setHeld(Ptr<Player> player) { holdingPlayer = player; }
+	Ptr<Character> getHeldCharacter() const { return holdingCharacter; }
 
-	bool isHeld() const { return holdingPlayer.isValid(); }
+	void setHeld(Ptr<Character> character) { holdingCharacter = character; }
 
-	virtual void update(float dt) = 0;
+	virtual void update(float dt);
+
+	virtual void onTouch(Ptr<Object> object);
 
 private:
 	Ptr<kit::scene::Scene> scene;
@@ -59,6 +63,6 @@ private:
 	float radius;
 	Vector2f velocity;
 	float friction;
-	Ptr<Player> holdingPlayer;
+	Ptr<Character> holdingCharacter;
 };
 

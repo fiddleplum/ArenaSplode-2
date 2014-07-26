@@ -45,7 +45,7 @@ void Character::update(float dt)
 	}
 	if(swinging)
 	{
-		heldOrientationOffset -= (float)kit::math::PI_OVER_12 * dt;
+		heldOrientationOffset -= (float)kit::math::TWO_PI * dt;
 		if(heldOrientationOffset < -kit::math::PI_OVER_4)
 		{
 			swinging = false;

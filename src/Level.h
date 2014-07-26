@@ -23,7 +23,7 @@ public:
 
 	void setPaused(bool paused);
 
-	void update();
+	void update(float dt);
 
 	std::pair<Ptr<Object>, float> getNearestObject(Ptr<Object> reference);
 
