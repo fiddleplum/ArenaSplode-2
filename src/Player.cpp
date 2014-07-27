@@ -48,7 +48,7 @@ void Player::characterChosen(std::string const & characterFilename)
 	{
 		level->removeObject(character);
 	}
-	character.setNew(scene, characterFilename);
+	character.setNew(level, characterFilename);
 	character->setPosition(Vector2f(kit::math::random(0.0f, 1.0f), kit::math::random(0.0f, 1.0f)));
 	level->addObject(character);
 	kit::audio::play("sound/smw_coin.wav");

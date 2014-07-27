@@ -1,10 +1,11 @@
 #include "Object.h"
+#include "Level.h"
 
-Object::Object(Type _type, Ptr<kit::scene::Scene> _scene, std::string const & textureFilename, Recti textureCoords)
+Object::Object(Type _type, Ptr<Level> _level, std::string const & textureFilename, Recti textureCoords)
 {
 	type = _type;
-	scene = _scene;
-	object.setNew(scene);
+	level = _level;
+	object.setNew(level->getScene());
 	object->setTexture(textureFilename);
 	object->setAsSprite(-textureCoords.getSize() / 2, textureCoords);
 	object->setZ(1);
@@ -62,6 +63,10 @@ void Object::setZ(int z)
 }
 
 void Object::update(float dt)
+{
+}
+
+void Object::preRenderUpdate()
 {
 }
 

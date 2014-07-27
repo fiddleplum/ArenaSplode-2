@@ -5,7 +5,7 @@
 class Sword : public Object
 {
 public:
-	Sword(Ptr<kit::scene::Scene> scene);
+	Sword(Ptr<Level> level);
 
 	void onTouch(Ptr<Object> object) override;
 

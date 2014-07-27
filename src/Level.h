@@ -3,6 +3,7 @@
 #include "Object.h"
 #include <kit/scene/scene.h>
 #include <kit/flat/object.h>
+#include <kit/set.h>
 
 class Tile
 {
@@ -17,6 +18,8 @@ class Level
 public:
 	Level(Ptr<kit::scene::Scene> scene, Vector2i size);
 
+	Ptr<kit::scene::Scene> getScene() const;
+
 	void addObject(OwnPtr<Object> object);
 
 	void removeObject(Ptr<Object> object);
@@ -24,6 +27,8 @@ public:
 	void setPaused(bool paused);
 
 	void update(float dt);
+
+	void preRenderUpdate();
 
 	std::pair<Ptr<Object>, float> getNearestObject(Ptr<Object> reference);
 
@@ -36,6 +41,6 @@ private:
 	Vector2i size;
 	std::vector<Tile> tiles;
 	std::vector<OwnPtr<kit::flat::Object>> patchSprites;
-	PtrSet<Object> objects;
+	kit::Set<OwnPtr<Object>> objects;
 };
 

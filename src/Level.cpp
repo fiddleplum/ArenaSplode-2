@@ -1,6 +1,8 @@
 #include "Level.h"
 #include "Sword.h"
+#include "RocketLauncher.h"
 #include <kit/math_util.h>
+#include "Game.h"
 
 int patchSize = 16;
 
@@ -22,13 +24,6 @@ Level::Level(Ptr<kit::scene::Scene> _scene, Vector2i _size)
 			else
 			{
 				tile.type = 0;
-				if(kit::math::random(0.f, 1.0f) < .05f)
-				{
-					OwnPtr<Object> item;
-					item.setRaw(new Sword(scene));
-					item->setPosition(Vector2f(x + .5f, y + .5f).scale(tileSize));
-					objects.insert(item);
-				}
 			}
 			tiles.push_back(tile);
 		}
@@ -47,6 +42,11 @@ Level::Level(Ptr<kit::scene::Scene> _scene, Vector2i _size)
 	}
 
 	paused = true;
+}
+
+Ptr<kit::scene::Scene> Level::getScene() const
+{
+	return scene;
 }
 
 void Level::addObject(OwnPtr<Object> object)
@@ -70,14 +70,36 @@ void Level::update(float dt)
 	{
 		return;
 	}
+	if((signed)objects.size() < size[0] * size[1] / 20)
+	{
+		unsigned int itemType = kit::math::random(0, Object::NUM_TYPES);
+		OwnPtr<Object> item;
+		switch(itemType)
+		{
+		case Object::SWORD:
+			item.setRaw(new Sword(game->level));
+			break;
+		case Object::ROCKET_LAUNCHER:
+			item.setRaw(new RocketLauncher(game->level));
+			break;
+		}
+		if(item.isValid())
+		{
+			Vector2i position = { kit::math::random(0, size[0]), kit::math::random(1, size[1]) };
+			item->setPosition(Vector2f(position[0] + .5f, position[1] + .5f).scale(tileSize));
+			objects.insert(item);
+		}
+	}
 	for(auto object : objects)
 	{
 		object->update(dt);
 	}
+	objects.processErases();
 	for(auto object : objects)
 	{
 		object->doPhysics(dt);
 	}
+	objects.processErases();
 	for(auto object0 : objects)
 	{
 		for(auto object1 : objects)
@@ -99,6 +121,7 @@ void Level::update(float dt)
 				object1->onTouch(object0);
 			}
 		}
+		objects.processErases();
 	}
 	for(auto object : objects)
 	{
@@ -140,6 +163,15 @@ void Level::update(float dt)
 				}
 			}
 		}
+	}
+	objects.processErases();
+}
+
+void Level::preRenderUpdate()
+{
+	for(auto object : objects)
+	{
+		object->preRenderUpdate();
 	}
 }
 

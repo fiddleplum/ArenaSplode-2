@@ -94,6 +94,8 @@
     <ClCompile Include="src\Level.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Rocket.cpp" />
+    <ClCompile Include="src\RocketLauncher.cpp" />
     <ClCompile Include="src\Sword.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +106,8 @@
     <ClInclude Include="src\Object.h" />
     <ClInclude Include="src\Level.h" />
     <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\Rocket.h" />
+    <ClInclude Include="src\RocketLauncher.h" />
     <ClInclude Include="src\Sword.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

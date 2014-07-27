@@ -5,7 +5,7 @@
 class Character : public Object
 {
 public:
-	Character(Ptr<kit::scene::Scene> scene, std::string const & characterFilename);
+	Character(Ptr<Level> level, std::string const & characterFilename);
 
 	Ptr<Object> getObjectHeld() const { return objectHeld; }
 	void setObjectHeld(Ptr<Object> object);
@@ -13,6 +13,7 @@ public:
 	void useHeld();
 
 	void update(float dt) override;
+	void preRenderUpdate() override;
 
 private:
 	Ptr<Object> objectHeld;

@@ -2,14 +2,15 @@
 
 #include <kit/flat/object.h>
 
+class Level;
 class Character;
 
 class Object
 {
 public:
-	enum Type { CHARACTER, SWORD, ROCKET };
+	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, NUM_TYPES };
 
-	Object(Type type, Ptr<kit::scene::Scene> scene, std::string const & textureFilename, Recti textureCoords);
+	Object(Type type, Ptr<Level> level, std::string const & textureFilename, Recti textureCoords);
 
 	Type getType() const { return type; }
 
@@ -52,10 +53,14 @@ public:
 
 	virtual void update(float dt);
 
+	virtual void preRenderUpdate();
+
 	virtual void onTouch(Ptr<Object> object);
 
+protected:
+	Ptr<Level> level;
+
 private:
-	Ptr<kit::scene::Scene> scene;
 	OwnPtr<kit::flat::Object> object;
 	Type type;
 	bool solid;

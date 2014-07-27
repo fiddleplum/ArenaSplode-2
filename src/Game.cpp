@@ -34,8 +34,6 @@ OwnPtr<Game> game;
 
 Game::Game()
 {
-	kit::List<Ptr<Object>> objects;
-
 	window = kit::app::addWindow("ArenaSplode 2");
 	window->setHandleContainerEventFunction(std::bind(&Game::handleEvent, this, std::placeholders::_1));
 	window->setUpdateWidgetBoundsFunction(std::bind(&Game::updateWidgets, this));
@@ -79,6 +77,10 @@ void Game::handleSceneEvent(kit::Event const & event)
 		{
 			level->update(event.as<kit::UpdateEvent>().dt);
 		}
+	}
+	else if(event.type == kit::Event::PreRenderUpdate)
+	{
+		level->preRenderUpdate();
 	}
 }
 
