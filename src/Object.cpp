@@ -13,11 +13,18 @@ Object::Object(Type _type, Ptr<Level> _level, std::string const & textureFilenam
 	radius = 32.0f;
 	solid = false;
 	bounciness = 10;
+	scale = 1.0f;
 }
 
 void Object::setBounciness(float _bounciness)
 {
 	bounciness = _bounciness;
+}
+
+void Object::setScale(float _scale)
+{
+	scale = _scale;
+	object->setScale(scale);
 }
 
 void Object::setVelocity(Vector2f _velocity)
@@ -71,6 +78,10 @@ void Object::preRenderUpdate()
 }
 
 void Object::onTouch(Ptr<Object> object)
+{
+}
+
+void Object::onOverTile(Vector2i tilePosition)
 {
 }
 

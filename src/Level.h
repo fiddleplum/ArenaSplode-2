@@ -22,7 +22,14 @@ public:
 
 	void addObject(OwnPtr<Object> object);
 
-	void removeObject(Ptr<Object> object);
+	void removeObject(Object const * object);
+
+	Tile & getTile(Vector2i position);
+	Tile const & getTile(Vector2i position) const;
+
+	Vector2i getTileSize() const { return tileSize; }
+
+	Vector2i getSize() const { return size; }
 
 	void setPaused(bool paused);
 
@@ -30,7 +37,9 @@ public:
 
 	void preRenderUpdate();
 
-	std::pair<Ptr<Object>, float> getNearestObject(Ptr<Object> reference);
+	std::vector<std::pair<Ptr<Object>, float>> getObjectsWithinCircle(Vector2f position, float radius, Object const * exclude) const;
+
+	std::pair<Ptr<Object>, float> getNearestObject(Vector2f position, Object const * exclude) const;
 
 private:
 	void updatePatch(Vector2i tile);

@@ -1,5 +1,6 @@
 #include "Level.h"
 #include "Sword.h"
+#include "Shrinker.h"
 #include "RocketLauncher.h"
 #include <kit/math_util.h>
 #include "Game.h"
@@ -17,13 +18,20 @@ Level::Level(Ptr<kit::scene::Scene> _scene, Vector2i _size)
 		for(int x = 0; x < size[0]; x++)
 		{
 			Tile tile;
-			if(rand() % 5 == 0)
+			if(x == 0 || y == 0 || x == size[0] - 1 || y == size[1] - 1)
 			{
 				tile.type = 1;
 			}
 			else
 			{
-				tile.type = 0;
+				if(rand() % 5 == 0)
+				{
+					tile.type = 1;
+				}
+				else
+				{
+					tile.type = 0;
+				}
 			}
 			tiles.push_back(tile);
 		}
@@ -54,9 +62,23 @@ void Level::addObject(OwnPtr<Object> object)
 	objects.insert(object);
 }
 
-void Level::removeObject(Ptr<Object> object)
+void Level::removeObject(Object const * object)
 {
-	objects.erase(object);
+	auto it = objects.find(object);
+	if(it != objects.end())
+	{
+		objects.erase(*it);
+	}
+}
+
+Tile & Level::getTile(Vector2i position)
+{
+	return tiles[position[1] * size[0] + position[0]];
+}
+
+Tile const & Level::getTile(Vector2i position) const
+{
+	return tiles[position[1] * size[0] + position[0]];
 }
 
 void Level::setPaused(bool _paused)
@@ -80,7 +102,13 @@ void Level::update(float dt)
 			item.setRaw(new Sword(game->level));
 			break;
 		case Object::ROCKET_LAUNCHER:
-			item.setRaw(new RocketLauncher(game->level));
+			{
+				int type = kit::math::random(0, RocketLauncher::NUM_ROCKET_LAUNCHER_TYPES);
+				item.setRaw(new RocketLauncher(game->level, type));
+				break;
+			}
+		case Object::SHRINKER:
+			item.setRaw(new Shrinker(game->level));
 			break;
 		}
 		if(item.isValid())
@@ -121,31 +149,32 @@ void Level::update(float dt)
 				object1->onTouch(object0);
 			}
 		}
-		objects.processErases();
 	}
+	objects.processErases();
 	for(auto object : objects)
 	{
 		Vector2i position = Vector2i(object->getPosition()).scaleInv(tileSize);
 		Vector2i start = Vector2i(object->getPosition()).scaleInv(tileSize);
-		for(int y = position[1] - 1; y <= position[1] + 1; y++)
+		Vector2i tilePosition;
+		for(tilePosition[1] = position[1] - 1; tilePosition[1] <= position[1] + 1; tilePosition[1]++)
 		{
-			for(int x = position[0] - 1; x <= position[0] + 1; x++)
+			for(tilePosition[0] = position[0] - 1; tilePosition[0] <= position[0] + 1; tilePosition[0]++)
 			{
-				if(x < 0 || y < 0 || x >= size[0] || y >= size[1])
+				if(tilePosition[0] < 0 || tilePosition[1] < 0 || tilePosition[0] >= size[0] || tilePosition[1] >= size[1])
 				{
-					continue;
+					continue; // out of bounds
 				}
-				Tile const & tile = tiles[y * size[0] + x];
-				if(tile.type == Tile::Floor)
-				{
-					continue;
-				}
-				Rectf bounds = Rectf::minSize((float)(x * tileSize[0]), (float)(y * tileSize[1]), (float)tileSize[0], (float)tileSize[1]);
+				Tile const & tile = getTile(tilePosition);
+				Rectf bounds = Rectf::minSize((float)(tilePosition[0] * tileSize[0]), (float)(tilePosition[1] * tileSize[1]), (float)tileSize[0], (float)tileSize[1]);
 				// Get closest point to circle within tile
 				Vector2f closest = bounds.closest(object->getPosition());
-
 				if((closest - object->getPosition()).normSq() < object->getRadius() * object->getRadius())
 				{
+					object->onOverTile(tilePosition);
+					if(tile.type == Tile::Floor)
+					{
+						continue;
+					}
 					Vector2f r = object->getPosition() - closest;
 					if(!r.isZero())
 					{
@@ -175,17 +204,36 @@ void Level::preRenderUpdate()
 	}
 }
 
-std::pair<Ptr<Object>, float> Level::getNearestObject(Ptr<Object> reference)
+std::vector<std::pair<Ptr<Object>, float>> Level::getObjectsWithinCircle(Vector2f position, float radius, Object const * exclude) const
+{
+	float radiusSq = radius * radius;
+	std::vector<std::pair<Ptr<Object>, float>> objectsWithin;
+	for(auto object : objects)
+	{
+		if(exclude == object.raw())
+		{
+			continue;
+		}
+		float distanceSq = (object->getPosition() - position).normSq();
+		if(distanceSq < radiusSq)
+		{
+			objectsWithin.push_back(std::pair<Ptr<Object>, float>(object, std::sqrtf(distanceSq)));
+		}
+	}
+	return objectsWithin;
+}
+
+std::pair<Ptr<Object>, float> Level::getNearestObject(Vector2f position, Object const * exclude) const
 {
 	Ptr<Object> nearestObject;
 	float nearestDistanceSq;
 	for(auto object : objects)
 	{
-		if(object == reference)
+		if(exclude == object.raw())
 		{
 			continue;
 		}
-		float distanceSq = (object->getPosition() - reference->getPosition()).normSq();
+		float distanceSq = (object->getPosition() - position).normSq();
 		if(nearestObject.isNull() || distanceSq < nearestDistanceSq)
 		{
 			nearestObject = object;

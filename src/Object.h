@@ -8,7 +8,7 @@ class Character;
 class Object
 {
 public:
-	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, NUM_TYPES };
+	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, EXPLOSION, SHRINKER, NUM_TYPES };
 
 	Object(Type type, Ptr<Level> level, std::string const & textureFilename, Recti textureCoords);
 
@@ -30,6 +30,9 @@ public:
 
 	float getFriction() const { return friction; }
 	void setFriction(float _friction) { friction = _friction; }
+
+	void setScale(float _scale);
+	float getScale() const { return scale; }
 
 	float getRadius() const { return radius; }
 
@@ -57,14 +60,18 @@ public:
 
 	virtual void onTouch(Ptr<Object> object);
 
+	virtual void onOverTile(Vector2i tilePosition);
+
 protected:
 	Ptr<Level> level;
+	void setRadius(float _radius) { radius = _radius; }
 
 private:
 	OwnPtr<kit::flat::Object> object;
 	Type type;
 	bool solid;
 	float bounciness;
+	float scale;
 	float radius;
 	Vector2f velocity;
 	float friction;

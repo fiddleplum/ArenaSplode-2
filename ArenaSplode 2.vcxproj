@@ -89,6 +89,7 @@
   <ItemGroup>
     <ClCompile Include="src\Character.cpp" />
     <ClCompile Include="src\CharacterMenu.cpp" />
+    <ClCompile Include="src\Explosion.cpp" />
     <ClCompile Include="src\NumPlayersMenu.cpp" />
     <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Level.cpp" />
@@ -96,11 +97,13 @@
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Rocket.cpp" />
     <ClCompile Include="src\RocketLauncher.cpp" />
+    <ClCompile Include="src\Shrinker.cpp" />
     <ClCompile Include="src\Sword.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Character.h" />
     <ClInclude Include="src\CharacterMenu.h" />
+    <ClInclude Include="src\Explosion.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\NumPlayersMenu.h" />
     <ClInclude Include="src\Object.h" />
@@ -108,6 +111,7 @@
     <ClInclude Include="src\Player.h" />
     <ClInclude Include="src\Rocket.h" />
     <ClInclude Include="src\RocketLauncher.h" />
+    <ClInclude Include="src\Shrinker.h" />
     <ClInclude Include="src\Sword.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

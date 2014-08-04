@@ -30,7 +30,7 @@ Player::~Player()
 	{
 		characterMenu.setNull();
 	}
-	level->removeObject(character);
+	level->removeObject(character.raw());
 	if(window.isValid())
 	{
 		window->removeWidget(viewport);
@@ -46,12 +46,12 @@ void Player::characterChosen(std::string const & characterFilename)
 {
 	if(character.isValid())
 	{
-		level->removeObject(character);
+		level->removeObject(character.raw());
 	}
 	character.setNew(level, characterFilename);
-	character->setPosition(Vector2f(kit::math::random(0.0f, 1.0f), kit::math::random(0.0f, 1.0f)));
+	character->setPosition(Vector2f(kit::math::random((float)(level->getTileSize()[0] * 2), (float)(level->getTileSize()[0] * (level->getSize()[0] - 2))), kit::math::random((float)(level->getTileSize()[1] * 2), (float)(level->getTileSize()[1] * (level->getSize()[1] - 2)))));
 	level->addObject(character);
-	kit::audio::play("sound/smw_coin.wav");
+	kit::audio::play("sounds/smw_coin.wav");
 	characterMenu.setNull();
 	if(characterChosenFunction)
 	{
@@ -74,52 +74,49 @@ void Player::handleSceneEvent(kit::Event const & event)
 	{
 		return;
 	}
-	if(number == 0)
+	if(event.type == kit::Event::Keyboard)
 	{
-		if(event.type == kit::Event::Keyboard)
+		kit::KeyboardEvent const & ke = event.as<kit::KeyboardEvent>();
+		if((ke.key == kit::KeyboardEvent::A && number == 0) || (ke.key == kit::KeyboardEvent::J && number == 1))
 		{
-			kit::KeyboardEvent const & ke = event.as<kit::KeyboardEvent>();
-			if(ke.key == kit::KeyboardEvent::A)
-			{
-				moving[0] -= ke.pressed ? 1 : -1;
-			}
-			if(ke.key == kit::KeyboardEvent::S)
-			{
-				moving[1] -= ke.pressed ? 1 : -1;
-			}
-			if(ke.key == kit::KeyboardEvent::D)
-			{
-				moving[0] += ke.pressed ? 1 : -1;
-			}
-			if(ke.key == kit::KeyboardEvent::W)
-			{
-				moving[1] += ke.pressed ? 1 : -1;
-			}
-			looking = !moving.isZero();
-			lookDirection = moving;
+			moving[0] -= ke.pressed ? 1 : -1;
+		}
+		if((ke.key == kit::KeyboardEvent::S && number == 0) || (ke.key == kit::KeyboardEvent::K && number == 1))
+		{
+			moving[1] -= ke.pressed ? 1 : -1;
+		}
+		if((ke.key == kit::KeyboardEvent::D && number == 0) || (ke.key == kit::KeyboardEvent::L && number == 1))
+		{
+			moving[0] += ke.pressed ? 1 : -1;
+		}
+		if((ke.key == kit::KeyboardEvent::W && number == 0) || (ke.key == kit::KeyboardEvent::I && number == 1))
+		{
+			moving[1] += ke.pressed ? 1 : -1;
+		}
+		looking = !moving.isZero();
+		lookDirection = moving;
 
-			if(ke.key == kit::KeyboardEvent::E && ke.pressed)
+		if(ke.pressed && ((ke.key == kit::KeyboardEvent::E && number == 0) || (ke.key == kit::KeyboardEvent::U && number == 1)))
+		{
+			if(character->getObjectHeld().isValid())
 			{
-				if(character->getObjectHeld().isValid())
+				character->getObjectHeld()->setHeld(Ptr<Character>());
+				character->setObjectHeld(Ptr<Object>());
+			}
+			else
+			{
+				std::pair<Ptr<Object>, float> pair = level->getNearestObject(character->getPosition(), character.raw());
+				if(pair.second < pair.first->getRadius() + character->getRadius())
 				{
-					character->getObjectHeld()->setHeld(Ptr<Character>());
-					character->setObjectHeld(Ptr<Object>());
-				}
-				else
-				{
-					std::pair<Ptr<Object>, float> pair = level->getNearestObject(character);
-					if(pair.second < pair.first->getRadius() + character->getRadius())
-					{
-						character->setObjectHeld(pair.first);
-						pair.first->setHeld(character);
-					}
+					character->setObjectHeld(pair.first);
+					pair.first->setHeld(character);
 				}
 			}
+		}
 
-			if(ke.key == kit::KeyboardEvent::Space && ke.pressed)
-			{
-				character->useHeld();
-			}
+		if(ke.pressed && ((ke.key == kit::KeyboardEvent::C && number == 0) || (ke.key == kit::KeyboardEvent::N && number == 1)))
+		{
+			character->useHeld();
 		}
 	}
 	if(event.type == kit::Event::Update)

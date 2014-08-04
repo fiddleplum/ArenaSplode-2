@@ -108,7 +108,7 @@ void Game::characterChosen(int)
 	}
 	if(allDoneChoosing)
 	{
-		kit::audio::play("sound/smw_power-up.wav");
+		kit::audio::play("sounds/smw_power-up.wav");
 		level->setPaused(false);
 	}
 }
@@ -118,7 +118,7 @@ void Game::numPlayersChosen(int numPlayers)
 	numPlayersMenu.setNull();
 	scene = kit::app::addScene();
 	scene->setEventHandler(std::bind(&Game::handleSceneEvent, this, std::placeholders::_1));
-	level.setNew(scene, Vector2i(20, 20));
+	level.setNew(scene, Vector2i(25, 25));
 	for(int i = 0; i < numPlayers; i++)
 	{
 		players.push_back(OwnPtr<Player>::createNew(i, window, scene, level));

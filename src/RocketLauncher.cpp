@@ -3,9 +3,10 @@
 #include "Rocket.h"
 #include "Character.h"
 
-RocketLauncher::RocketLauncher(Ptr<Level> level)
-: Object(ROCKET_LAUNCHER, level, "art/items.png", Recti::minSize(64, 0, 64, 64))
+RocketLauncher::RocketLauncher(Ptr<Level> level, int _type)
+: Object(ROCKET_LAUNCHER, level, "art/items.png", Recti::minSize(64, 64 * _type, 64, 64))
 {
+	type = _type;
 	setSolid(false);
 	setFriction(.99f);
 }
@@ -13,7 +14,17 @@ RocketLauncher::RocketLauncher(Ptr<Level> level)
 void RocketLauncher::fire()
 {
 	OwnPtr<Rocket> rocket;
-	rocket.setNew(level);
+	int rocketType;
+	switch(type)
+	{
+	case STRAIGHT:
+		rocketType = Rocket::STRAIGHT; break;
+	case SHRINKER:
+		rocketType = Rocket::SHRINKER; break;
+	case DRUNK:
+		rocketType = Rocket::DRUNK; break;
+	}
+	rocket.setNew(level, rocketType);
 	Vector2f r = (getPosition() - getHeldCharacter()->getPosition()).unit();
 	rocket->setPosition(getPosition() + r * (getHeldCharacter()->getRadius() + rocket->getRadius() * 1.2f));
 	rocket->setVelocity(r * 400.f);

@@ -1,6 +1,8 @@
 #include "Character.h"
 #include "RocketLauncher.h"
+#include "Level.h"
 #include <kit/math_util.h>
+#include <kit/audio.h>
 
 Character::Character(Ptr<Level> level, std::string const & characterFilename)
 : Object(CHARACTER, level, "art/characters/" + characterFilename, Recti::minSize(0, 0, 64, 64))
@@ -10,6 +12,10 @@ Character::Character(Ptr<Level> level, std::string const & characterFilename)
 
 	heldOrientationOffset = 0;
 	heldRadiusOffset = 0;
+
+	health = 100.f;
+
+	maxSpeed = 5000.f;
 
 	swinging = false;
 }
@@ -47,8 +53,41 @@ void Character::useHeld()
 	}
 }
 
+void Character::harm(float amount)
+{
+	int r = kit::math::random(0, 3);
+	kit::audio::play("sounds/hurt" + std::to_string(r) + ".ogg");
+	health -= amount;
+	if(health < 0)
+	{
+		die();
+	}
+}
+
+void Character::die()
+{
+	int r = kit::math::random(0, 3);
+	kit::audio::play("sounds/death" + std::to_string(r) + ".ogg");
+	setObjectHeld(Ptr<Object>());
+	level->removeObject(this);
+}
+
 void Character::update(float dt)
 {
+	if(getVelocity().norm() > maxSpeed)
+	{
+		setVelocity(getVelocity().unit() * maxSpeed);
+	}
+	if(getScale() < 1.f)
+	{
+		setScale(.001f + .999f * getScale());
+		setFriction(.999f * getScale() + .7f * (1.f - getScale()));
+		if(getScale() > 1.f)
+		{
+			setScale(1.f);
+
+		}
+	}
 	if(swinging)
 	{
 		heldOrientationOffset -= (float)kit::math::TWO_PI * dt;
