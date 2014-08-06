@@ -43,8 +43,8 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>bin\</OutDir>
     <IntDir>tmp\</IntDir>
-    <IncludePath>C:\hurley\kit\src;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\hurley\kit\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\kit\src;$(IncludePath)</IncludePath>
+    <LibraryPath>..\kit\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -67,6 +67,12 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy ..\external\SDL2\lib\x86\*.dll bin
+copy ..\external\SDL2_image\lib\x86\*.dll bin
+copy ..\external\SDL2_mixer\lib\x86\*.dll bin
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
