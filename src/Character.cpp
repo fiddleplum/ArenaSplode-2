@@ -1,12 +1,16 @@
 #include "Character.h"
 #include "RocketLauncher.h"
 #include "Level.h"
+#include "Player.h"
+#include "Game.h"
 #include <kit/math_util.h>
 #include <kit/audio.h>
 
-Character::Character(Ptr<Level> level, std::string const & characterFilename)
+Character::Character(Player * _player, Ptr<Level> level, std::string const & characterFilename)
 : Object(CHARACTER, level, "art/characters/" + characterFilename, Recti::minSize(0, 0, 64, 64))
 {
+	player = _player;
+
 	setSolid(true);
 	setZ(3);
 
@@ -17,6 +21,7 @@ Character::Character(Ptr<Level> level, std::string const & characterFilename)
 
 	maxSpeed = 5000.f;
 
+	numKills = 0;
 	swinging = false;
 }
 
@@ -53,13 +58,21 @@ void Character::useHeld()
 	}
 }
 
-void Character::harm(float amount)
+void Character::harm(int owned, float amount)
 {
+	if(owned != -1 && player->getNumber() != owned)
+	{
+		game->players[owned]->addScore(1);
+	}
 	int r = kit::math::random(0, 3);
 	kit::audio::play("sounds/hurt" + std::to_string(r) + ".ogg");
 	health -= amount;
 	if(health < 0)
 	{
+		if(owned != -1 && player->getNumber() != owned)
+		{
+			game->players[owned]->addScore(10);
+		}
 		die();
 	}
 }
@@ -70,6 +83,16 @@ void Character::die()
 	kit::audio::play("sounds/death" + std::to_string(r) + ".ogg");
 	setObjectHeld(Ptr<Object>());
 	level->removeObject(this);
+	player->spawnNewCharacter();
+}
+
+void Character::incNumKills()
+{
+	numKills++;
+	if(numKills > 5)
+	{
+		kit::audio::play("sounds/multikill.ogg");
+	}
 }
 
 void Character::update(float dt)

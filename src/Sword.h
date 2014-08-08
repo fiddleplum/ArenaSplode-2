@@ -9,6 +9,8 @@ public:
 
 	void onTouch(Ptr<Object> object) override;
 
+	void onOverTile(Vector2i tilePosition) override;
+
 private:
 };
 

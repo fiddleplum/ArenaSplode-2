@@ -4,9 +4,10 @@
 #include "Rocket.h"
 #include <kit/audio.h>
 
-Explosion::Explosion(Ptr<Level> level)
-: Object(EXPLOSION, level, "art/explosion.png", Recti::minSize(0, 0, 128, 128))
+Explosion::Explosion(int _owned, Ptr<Level> level)
+	: Object(EXPLOSION, level, "art/explosion.png", Recti::minSize(0, 0, 128, 128))
 {
+	owned = _owned;
 	setSolid(false);
 }
 
@@ -19,14 +20,21 @@ void Explosion::update(float dt)
 		for(auto pair : objectsWithin)
 		{
 			Ptr<Object> object = pair.first;
+			Vector2f impulse = this->getPosition() - object->getPosition();
+			if(!impulse.isZero())
+			{
+				object->applyImpulse(impulse.unit() * -1200.f);
+			}
 			switch(object->getType())
 			{
-			case ROCKET:
-				object.as<Rocket>()->setExplode(0.1f);
-				break;
-			case CHARACTER:
-				object.as<Character>()->harm(10.f);
-				break;
+				case ROCKET:
+					object.as<Rocket>()->setExplode(0.1f);
+					break;
+				case CHARACTER:
+				{
+					object.as<Character>()->harm(owned, 10.f);
+					break;
+				}
 			}
 		}
 	}

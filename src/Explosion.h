@@ -5,11 +5,12 @@
 class Explosion : public Object
 {
 public:
-	Explosion(Ptr<Level> level);
+	Explosion(int owned, Ptr<Level> level);
 
 	void update(float dt) override;
 
 private:
+	int owned;
 	float time = 0.f;
 	float doneExplodingTime = .5f;
 };

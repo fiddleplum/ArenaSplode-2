@@ -5,6 +5,7 @@
 #include <kit/scene/scene.h>
 #include <vector>
 
+class WinScreen;
 class NumPlayersMenu;
 class Player;
 class Level;
@@ -25,12 +26,18 @@ public:
 
 	void numPlayersChosen(int numPlayers);
 
+	void playerWins(int player);
+
+	void restart();
+
 	Ptr<kit::Window> window;
 	Ptr<kit::scene::Scene> scene;
 
 	enum State { NumPlayersSelection, CharacterSelection, Playing, Win };
 	State state;
 
+	bool willRestart;
+	OwnPtr<WinScreen> winScreen;
 	OwnPtr<NumPlayersMenu> numPlayersMenu;
 	std::vector<OwnPtr<Player>> players;
 	OwnPtr<Level> level;

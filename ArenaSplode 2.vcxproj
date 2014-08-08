@@ -105,6 +105,7 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClCompile Include="src\RocketLauncher.cpp" />
     <ClCompile Include="src\Shrinker.cpp" />
     <ClCompile Include="src\Sword.cpp" />
+    <ClCompile Include="src\WinScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Character.h" />
@@ -119,6 +120,7 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClInclude Include="src\RocketLauncher.h" />
     <ClInclude Include="src\Shrinker.h" />
     <ClInclude Include="src\Sword.h" />
+    <ClInclude Include="src\WinScreen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,1 +1,8532 @@
+  Num Hats: 0
 Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 10
+Button: 10
+Button: 5
+Button: 5
+Button: 1
+Button: 1
+Button: 0
+Button: 0
+Button: 1
+Button: 1
+Button: 2
+Button: 2
+Button: 3
+Button: 3
+Button: 5
+Button: 5
+Button: 4
+Button: 4
+Button: 5
+Button: 5
+Button: 11
+Button: 11
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 13
+Button: 13
+Button: 14
+Button: 14
+Button: 12
+Button: 12
+Button: 13
+Button: 13
+Button: 11
+Button: 11
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 11
+Button: 11
+Button: 12
+Button: 12
+Button: 13
+Button: 13
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 5
+Button: 5
+Button: 4
+Button: 4
+Button: 5
+Button: 5
+Button: 1
+Button: 1
+Button: 0
+Button: 2
+Button: 2
+Button: 0
+Button: 1
+Button: 2
+Button: 2
+Button: 3
+Button: 1
+Button: 0
+Button: 3
+Button: 2
+Button: 0
+Button: 1
+Button: 2
+Button: 1
+Button: 7
+Button: 7
+Button: 7
+Button: 7
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 6
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 7
+Button: 7
+Button: 7
+Button: 7
+Button: 7
+Button: 7
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 3
+Axis: 5
+Axis: 1
+Axis: 3
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 3
+Axis: 5
+Axis: 1
+Axis: 3
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 0
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 3
+Axis: 1
+Axis: 1
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 1
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 3
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 1
+Axis: 2
+Axis: 3
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 0
+Axis: 2
+Axis: 3
+Axis: 2
+Axis: 3
+Axis: 3
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 3
+Axis: 4
+Axis: 3
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 4
+Axis: 2
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 2
+Axis: 1
+Axis: 2
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 2
+Axis: 2
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 4
+Axis: 0
+Axis: 2
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 3
+Axis: 4
+Axis: 0
+Axis: 3
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 2
+Axis: 4
+Axis: 2
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 3
+Axis: 4
+Axis: 1
+Axis: 3
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 1
+Axis: 4
+Axis: 1
+Axis: 4
+Axis: 4
+Axis: 0
+Axis: 4
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 3
+Axis: 5
+Axis: 0
+Axis: 3
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 0
+Axis: 3
+Axis: 5
+Axis: 3
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 5
+Axis: 3
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 3
+Axis: 5
+Axis: 3
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 3
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 2
+Axis: 5
+Axis: 2
+Axis: 3
+Axis: 5
+Axis: 0
+Axis: 3
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 0
+Axis: 1
+Axis: 5
+Axis: 1
+Axis: 5
+Axis: 0
+Axis: 5
+Axis: 5
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.976471
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.952942
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.937256
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.929413
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.921570
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.913727
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.905884
+Axis: 5
+  Value: -0.890198
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.874512
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.866669
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.858826
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.850983
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.843140
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.827454
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.819611
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.811768
+Axis: 5
+  Value: -0.803925
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.788239
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.780396
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.756866
+Axis: 5
+  Value: -0.741180
+Axis: 5
+  Value: -0.717651
+Axis: 5
+  Value: -0.694122
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.686279
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.670593
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.639221
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.623535
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.615692
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.607849
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.560791
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.552948
+Axis: 5
+  Value: -0.537262
+Axis: 5
+  Value: -0.529419
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.498047
+Axis: 5
+  Value: -0.474518
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.458832
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.411774
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.380402
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.356873
+Axis: 5
+  Value: -0.333344
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.309814
+Axis: 5
+  Value: -0.294128
+Axis: 5
+  Value: -0.278442
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.262756
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.254913
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.262756
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.278442
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.286285
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.309814
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.372559
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.568634
+Axis: 5
+  Value: -0.694122
+Axis: 5
+  Value: -0.850983
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.960785
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -1.000000
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.992157
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.976471
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.968628
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.952942
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.960785
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.968628
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -1.000000
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.968628
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.945099
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.937256
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.929413
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.921570
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.913727
+Axis: 5
+  Value: -0.905884
+Axis: 0
+  Value: -0.119324
+Axis: 2
+  Value: 0.037416
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: -0.913727
+Axis: 5
+  Value: -0.921570
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.937256
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.952942
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.976471
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -1.000000
+Axis: 5
+  Value: -0.984314
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.968628
+Axis: 5
+  Value: -0.960785
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.952942
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.945099
+Axis: 5
+  Value: -0.937256
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.921570
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.029907
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.913727
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.905884
+Axis: 5
+  Value: -0.890198
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.882355
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.874512
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.866669
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.858826
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.850983
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.843140
+Axis: 5
+  Value: -0.835297
+Axis: 0
+  Value: -0.122681
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.827454
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.811768
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.796082
+Axis: 5
+  Value: -0.788239
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.780396
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.772552
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.764709
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.756866
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.749023
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.741180
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.749023
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.741180
+Axis: 5
+  Value: -0.733337
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.725494
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.717651
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.709808
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.701965
+Axis: 1
+  Value: -0.082123
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.694122
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.686279
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.670593
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.647064
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.631378
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.615692
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.607849
+Axis: 5
+  Value: -0.600006
+Axis: 5
+  Value: -0.568634
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.552948
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.537262
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 2
+  Value: 0.037416
+Axis: 5
+  Value: -0.513733
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: -0.498047
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.490204
+Axis: 5
+  Value: -0.474518
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.466675
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.458832
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.435303
+Axis: 5
+  Value: -0.427460
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.411774
+Axis: 5
+  Value: -0.380402
+Axis: 5
+  Value: -0.356873
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.341187
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.309814
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.294128
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.278442
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.254913
+Axis: 0
+  Value: -0.119324
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.231384
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.215698
+Axis: 5
+  Value: -0.192169
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.168640
+Axis: 5
+  Value: -0.137268
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.003906
+Axis: 5
+  Value: 0.090182
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.129398
+Axis: 5
+  Value: 0.223518
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.270577
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.301950
+Axis: 5
+  Value: 0.356853
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.427442
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.490188
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.552934
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.584307
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.623524
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.647053
+Axis: 5
+  Value: 0.670583
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.756859
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.796075
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.827448
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.921567
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 1.000000
+Axis: 5
+  Value: 0.984313
+Axis: 5
+  Value: 0.921567
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.890194
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.850978
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.835292
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.819605
+Axis: 5
+  Value: 0.803919
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.780389
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.756859
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.725486
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.701956
+Axis: 0
+  Value: -0.119324
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.662740
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.647053
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.623524
+Axis: 5
+  Value: 0.576464
+Axis: 5
+  Value: 0.552934
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.505875
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.474502
+Axis: 5
+  Value: 0.435286
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.403912
+Axis: 5
+  Value: 0.380383
+Axis: 5
+  Value: 0.341166
+Axis: 5
+  Value: 0.325480
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.309793
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.301950
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.294107
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.286264
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.278420
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.270577
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.262734
+Axis: 5
+  Value: 0.247047
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.239204
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.231361
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.223518
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.215674
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.207831
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.199988
+Axis: 0
+  Value: -0.122681
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.207831
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.199988
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.207831
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.199988
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.192145
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.184301
+Axis: 5
+  Value: 0.176458
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.168615
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.152928
+Axis: 5
+  Value: 0.137242
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.129398
+Axis: 5
+  Value: 0.121555
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.105869
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.098025
+Axis: 5
+  Value: 0.082339
+Axis: 5
+  Value: 0.019593
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.019623
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.066681
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.184326
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.215698
+Axis: 5
+  Value: -0.262756
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.341187
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.364716
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.380402
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.411774
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.443146
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.466675
+Axis: 5
+  Value: -0.498047
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.537262
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.568634
+Axis: 5
+  Value: -0.615692
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.662750
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.709808
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.827454
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.874512
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.913727
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -1.000000
+Axis: 5
+  Value: -0.968628
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.937256
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.913727
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.905884
+Axis: 5
+  Value: -0.874512
+Axis: 5
+  Value: -0.866669
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.858826
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.850983
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.843140
+Axis: 5
+  Value: -0.835297
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.827454
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.811768
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.796082
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.788239
+Axis: 2
+  Value: 0.044221
+Axis: 5
+  Value: -0.780396
+Axis: 0
+  Value: -0.119324
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: -0.764709
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.756866
+Axis: 5
+  Value: -0.749023
+Axis: 5
+  Value: -0.741180
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.733337
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.725494
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.717651
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.709808
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.717651
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.733337
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.741180
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.749023
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.764709
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.780396
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.819611
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.843140
+Axis: 5
+  Value: -0.858826
+Axis: 5
+  Value: -0.890198
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.929413
+Axis: 5
+  Value: -0.952942
+Axis: 5
+  Value: -1.000000
+Axis: 5
+  Value: -0.992157
+Axis: 5
+  Value: -0.976471
+Axis: 5
+  Value: -0.968628
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.960785
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.952942
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.945099
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.937256
+Axis: 1
+  Value: -0.078888
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.929413
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.921570
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.913727
+Axis: 5
+  Value: -0.905884
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.890198
+Axis: 5
+  Value: -0.882355
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 2
+  Value: 0.037416
+Axis: 5
+  Value: -0.874512
+Axis: 1
+  Value: -0.082123
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: -0.866669
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.858826
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.850983
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.843140
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.835297
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.827454
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.803925
+Axis: 5
+  Value: -0.796082
+Axis: 5
+  Value: -0.788239
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.764709
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.749023
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.741180
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.725494
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.717651
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.709808
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.701965
+Axis: 5
+  Value: -0.694122
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.686279
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.678436
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.662750
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.647064
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.639221
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.631378
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.623535
+Axis: 5
+  Value: -0.615692
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.600006
+Axis: 5
+  Value: -0.584320
+Axis: 5
+  Value: -0.568634
+Axis: 5
+  Value: -0.552948
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.545105
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.537262
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.529419
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.505890
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.498047
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.482361
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.466675
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.458832
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.443146
+Axis: 5
+  Value: -0.427460
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.403931
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.380402
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.372559
+Axis: 5
+  Value: -0.364716
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.349030
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.341187
+Axis: 5
+  Value: -0.301971
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.294128
+Axis: 5
+  Value: -0.262756
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.239227
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.231384
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.215698
+Axis: 5
+  Value: -0.207855
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.192169
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.184326
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.168640
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.137268
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.105896
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: -0.043152
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.003937
+Axis: 5
+  Value: 0.090182
+Axis: 5
+  Value: 0.113712
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.145085
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.184301
+Axis: 5
+  Value: 0.223518
+Axis: 0
+  Value: -0.122681
+Axis: 2
+  Value: 0.037416
+Axis: 5
+  Value: 0.262734
+Axis: 0
+  Value: -0.119324
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: 0.294107
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.341166
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.419599
+Axis: 5
+  Value: 0.560778
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.607837
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.647053
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.678426
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.725486
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.796075
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.843135
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.913724
+Axis: 0
+  Value: -0.119324
+Axis: 2
+  Value: 0.037416
+Axis: 5
+  Value: 1.000000
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: 0.992157
+Axis: 5
+  Value: 0.921567
+Axis: 5
+  Value: 0.905881
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.890194
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.882351
+Axis: 5
+  Value: 0.866665
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.850978
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.843135
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.835292
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.827448
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.819605
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.811762
+Axis: 5
+  Value: 0.803919
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.796075
+Axis: 0
+  Value: -0.122681
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.788232
+Axis: 5
+  Value: 0.780389
+Axis: 5
+  Value: 0.772546
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.764702
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.756859
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.749016
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.741172
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.725486
+Axis: 0
+  Value: -0.119324
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.717643
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.709799
+Axis: 5
+  Value: 0.717643
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.709799
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.701956
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.694113
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.686270
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.678426
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.670583
+Axis: 5
+  Value: 0.662740
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.654897
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.647053
+Axis: 1
+  Value: -0.082123
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.639210
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.647053
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.639210
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.631367
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.623524
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.615680
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.033234
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.623524
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.615680
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.607837
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.599994
+Axis: 1
+  Value: -0.082123
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.592151
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.568621
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.560778
+Axis: 5
+  Value: 0.552934
+Axis: 5
+  Value: 0.505875
+Axis: 5
+  Value: 0.498032
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.482345
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.474502
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.466659
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.458815
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.450972
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.443129
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.435286
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.427442
+Axis: 5
+  Value: 0.419599
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.411756
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.396069
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.388226
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.380383
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.372539
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.364696
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.349010
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.317637
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.309793
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.301950
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.294107
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.286264
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.278420
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.270577
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.262734
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.254891
+Axis: 3
+  Value: -0.033234
+Axis: 0
+  Value: -0.122681
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.247047
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.239204
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.247047
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.239204
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.231361
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.223518
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.215674
+Axis: 5
+  Value: 0.207831
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.199988
+Axis: 5
+  Value: 0.192145
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.184301
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.029907
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.168615
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.152928
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.137242
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.129398
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.113712
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.105869
+Axis: 0
+  Value: -0.119324
+Axis: 3
+  Value: -0.033234
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.098025
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.090182
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.082339
+Axis: 5
+  Value: 0.066652
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: 0.058809
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: 0.050966
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: 0.058809
+Axis: 3
+  Value: -0.033234
+Axis: 5
+  Value: 0.050966
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: 0.043123
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: 0.035279
+Axis: 1
+  Value: -0.082123
+Axis: 2
+  Value: 0.037416
+Axis: 5
+  Value: 0.027436
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 2
+  Value: 0.040803
+Axis: 5
+  Value: 0.019593
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.003937
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.011780
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.035309
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.058838
+Axis: 5
+  Value: -0.121582
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.137268
+Axis: 5
+  Value: -0.145111
+Axis: 5
+  Value: -0.168640
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.176483
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.184326
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.192169
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.200012
+Axis: 5
+  Value: -0.215698
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.231384
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.247070
+Axis: 5
+  Value: -0.278442
+Axis: 0
+  Value: -0.122681
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.286285
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.294128
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.301971
+Axis: 0
+  Value: -0.119324
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.309814
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.317657
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.333344
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.341187
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.349030
+Axis: 5
+  Value: -0.364716
+Axis: 0
+  Value: -0.122681
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.372559
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.396088
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.427460
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.443146
+Axis: 5
+  Value: -0.482361
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.505890
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.529419
+Axis: 5
+  Value: -0.545105
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.552948
+Axis: 5
+  Value: -0.568634
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.600006
+Axis: 1
+  Value: -0.078888
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.607849
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.623535
+Axis: 5
+  Value: -0.647064
+Axis: 5
+  Value: -0.678436
+Axis: 5
+  Value: -0.694122
+Axis: 5
+  Value: -0.701965
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.725494
+Axis: 0
+  Value: -0.122681
+Axis: 5
+  Value: -0.780396
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.819611
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.843140
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.866669
+Axis: 5
+  Value: -0.890198
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.905884
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -0.921570
+Axis: 5
+  Value: -0.937256
+Axis: 1
+  Value: -0.082123
+Axis: 3
+  Value: -0.033234
+Axis: 1
+  Value: -0.078888
+Axis: 3
+  Value: -0.029907
+Axis: 5
+  Value: -0.945099
+Axis: 1
+  Value: -0.082123
+Axis: 5
+  Value: -0.952942
+Axis: 5
+  Value: -0.984314
+Axis: 0
+  Value: -0.119324
+Axis: 5
+  Value: -0.992157
+Axis: 0
+  Value: -0.122681
+Axis: 1
+  Value: -0.078888
+Axis: 5
+  Value: -1.000000
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Axis: 0
+  Value: -0.119324
+Axis: 2
+  Value: -0.006805
+Axis: 3
+  Value: -0.073090
+Axis: 3
+  Value: -0.083069
+Axis: 2
+  Value: -0.016998
+Axis: 3
+  Value: -0.086395
+Axis: 2
+  Value: -0.013611
+Axis: 3
+  Value: -0.096344
+Axis: 0
+  Value: -0.112579
+Axis: 1
+  Value: -0.088562
+Axis: 2
+  Value: -0.016998
+Axis: 3
+  Value: -0.099670
+Axis: 0
+  Value: -0.095795
+Axis: 1
+  Value: -0.095001
+Axis: 0
+  Value: -0.085693
+Axis: 0
+  Value: -0.075623
+Axis: 1
+  Value: -0.091797
+Axis: 0
+  Value: -0.048737
+Axis: 0
+  Value: -0.035278
+Axis: 0
+  Value: -0.025208
+Axis: 1
+  Value: -0.088562
+Axis: 1
+  Value: -0.066010
+Axis: 3
+  Value: -0.096344
+Axis: 0
+  Value: -0.028564
+Axis: 3
+  Value: -0.086395
+Axis: 1
+  Value: -0.078888
+Axis: 1
+  Value: -0.088562
+Axis: 3
+  Value: -0.089722
+Axis: 0
+  Value: 0.058840
+Axis: 1
+  Value: -0.098236
+Axis: 3
+  Value: -0.086395
+Axis: 0
+  Value: 0.115970
+Axis: 1
+  Value: -0.104675
+Axis: 2
+  Value: -0.010223
+Axis: 0
+  Value: 0.149602
+Axis: 1
+  Value: -0.111115
+Axis: 2
+  Value: 0.010193
+Axis: 0
+  Value: 0.220191
+Axis: 1
+  Value: -0.127197
+Axis: 2
+  Value: 0.033998
+Axis: 3
+  Value: -0.083069
+Axis: 0
+  Value: 0.431928
+Axis: 1
+  Value: -0.146545
+Axis: 2
+  Value: 0.074831
+Axis: 0
+  Value: 0.566393
+Axis: 1
+  Value: -0.159424
+Axis: 2
+  Value: 0.095218
+Axis: 3
+  Value: -0.086395
+Axis: 0
+  Value: 0.714286
+Axis: 1
+  Value: -0.156189
+Axis: 2
+  Value: 0.108829
+Axis: 0
+  Value: 1.000000
+Axis: 2
+  Value: 0.115635
+Axis: 2
+  Value: 0.119053
+Axis: 2
+  Value: 0.129246
+Axis: 3
+  Value: -0.083069
+Axis: 2
+  Value: 0.146245
+Axis: 3
+  Value: -0.086395
+Axis: 2
+  Value: 0.156468
+Axis: 3
+  Value: -0.096344
+Axis: 2
+  Value: 0.159856
+Axis: 3
+  Value: -0.139557
+Axis: 2
+  Value: 0.163274
+Axis: 3
+  Value: -0.149506
+Axis: 2
+  Value: 0.204077
+Axis: 3
+  Value: -0.202667
+Axis: 2
+  Value: 0.336741
+Axis: 3
+  Value: -0.312286
+Axis: 1
+  Value: -0.152985
+Axis: 2
+  Value: 0.384350
+Axis: 3
+  Value: -0.362122
+Axis: 1
+  Value: -0.140076
+Axis: 2
+  Value: 0.442183
+Axis: 3
+  Value: -0.421936
+Axis: 1
+  Value: -0.114319
+Axis: 2
+  Value: 0.503403
+Axis: 3
+  Value: -0.478394
+Axis: 1
+  Value: -0.098236
+Axis: 2
+  Value: 0.520402
+Axis: 3
+  Value: -0.481720
+Axis: 1
+  Value: -0.075684
+Axis: 2
+  Value: 0.530595
+Axis: 3
+  Value: -0.491699
+Axis: 1
+  Value: -0.072449
+Axis: 2
+  Value: 0.540819
+Axis: 1
+  Value: -0.075684
+Axis: 2
+  Value: 0.551012
+Axis: 3
+  Value: -0.488373
+Axis: 1
+  Value: -0.101440
+Axis: 3
+  Value: -0.491699
+Axis: 0
+  Value: 0.939512
+Axis: 1
+  Value: -0.188385
+Axis: 2
+  Value: 0.557817
+Axis: 0
+  Value: 0.889096
+Axis: 1
+  Value: -0.220612
+Axis: 2
+  Value: 0.564623
+Axis: 3
+  Value: -0.488373
+Axis: 0
+  Value: 0.838649
+Axis: 1
+  Value: -0.265686
+Axis: 2
+  Value: 0.568011
+Axis: 3
+  Value: -0.485046
+Axis: 0
+  Value: 0.768090
+Axis: 1
+  Value: -0.301117
+Axis: 2
+  Value: 0.564623
+Axis: 0
+  Value: 0.754631
+Axis: 1
+  Value: -0.307556
+Axis: 3
+  Value: -0.481720
+Axis: 0
+  Value: 0.741172
+Axis: 1
+  Value: -0.310791
+Axis: 2
+  Value: 0.568011
+Axis: 0
+  Value: 0.707572
+Axis: 1
+  Value: -0.320435
+Axis: 2
+  Value: 0.564623
+Axis: 0
+  Value: 0.697501
+Axis: 1
+  Value: -0.336548
+Axis: 0
+  Value: 0.667226
+Axis: 1
+  Value: -0.339752
+Axis: 3
+  Value: -0.478394
+Axis: 0
+  Value: 0.643696
+Axis: 1
+  Value: -0.371979
+Axis: 0
+  Value: 0.626911
+Axis: 1
+  Value: -0.388062
+Axis: 3
+  Value: -0.475067
+Axis: 0
+  Value: 0.610096
+Axis: 1
+  Value: -0.433167
+Axis: 3
+  Value: -0.468445
+Axis: 0
+  Value: 0.593280
+Axis: 1
+  Value: -0.455719
+Axis: 3
+  Value: -0.435211
+Axis: 0
+  Value: 0.583209
+Axis: 1
+  Value: -0.516907
+Axis: 3
+  Value: -0.425232
+Axis: 0
+  Value: 0.573107
+Axis: 1
+  Value: -0.532990
+Axis: 3
+  Value: -0.415283
+Axis: 0
+  Value: 0.542863
+Axis: 1
+  Value: -0.603851
+Axis: 3
+  Value: -0.382050
+Axis: 0
+  Value: 0.536149
+Axis: 1
+  Value: -0.619965
+Axis: 2
+  Value: 0.530595
+Axis: 3
+  Value: -0.362122
+Axis: 0
+  Value: 0.522691
+Axis: 1
+  Value: -0.648926
+Axis: 2
+  Value: 0.469375
+Axis: 3
+  Value: -0.335541
+Axis: 0
+  Value: 0.475631
+Axis: 1
+  Value: -0.719788
+Axis: 2
+  Value: 0.357128
+Axis: 3
+  Value: -0.259155
+Axis: 0
+  Value: 0.442030
+Axis: 1
+  Value: -0.751984
+Axis: 2
+  Value: 0.299326
+Axis: 3
+  Value: -0.219269
+Axis: 0
+  Value: 0.411786
+Axis: 1
+  Value: -0.784210
+Axis: 2
+  Value: 0.241493
+Axis: 3
+  Value: -0.169434
+Axis: 0
+  Value: 0.294137
+Axis: 1
+  Value: -0.842163
+Axis: 2
+  Value: 0.173467
+Axis: 3
+  Value: -0.139557
+Axis: 0
+  Value: 0.250435
+Axis: 1
+  Value: -0.871155
+Axis: 2
+  Value: 0.170049
+Axis: 3
+  Value: -0.129578
+Axis: 0
+  Value: 0.122715
+Axis: 1
+  Value: -0.925903
+Axis: 2
+  Value: 0.098636
+Axis: 3
+  Value: -0.066467
+Axis: 0
+  Value: -0.015106
+Axis: 1
+  Value: -0.974213
+Axis: 2
+  Value: 0.006806
+Axis: 3
+  Value: -0.029907
+Axis: 0
+  Value: -0.102509
+Axis: 1
+  Value: -0.983887
+Axis: 2
+  Value: -0.010223
+Axis: 0
+  Value: -0.210052
+Axis: 1
+  Value: -0.990326
+Axis: 2
+  Value: -0.068024
+Axis: 3
+  Value: -0.026581
+Axis: 0
+  Value: -0.243683
+Axis: 2
+  Value: -0.163269
+Axis: 3
+  Value: 0.000000
+Axis: 0
+  Value: -0.257111
+Axis: 2
+  Value: -0.210876
+Axis: 3
+  Value: 0.009949
+Axis: 0
+  Value: -0.270569
+Axis: 2
+  Value: -0.438782
+Axis: 3
+  Value: 0.096316
+Axis: 2
+  Value: -0.551025
+Axis: 3
+  Value: 0.149480
+Axis: 1
+  Value: -0.987091
+Axis: 2
+  Value: -0.663269
+Axis: 3
+  Value: 0.186041
+Axis: 1
+  Value: -0.906586
+Axis: 2
+  Value: -0.826508
+Axis: 3
+  Value: 0.249153
+Axis: 1
+  Value: -0.851837
+Axis: 2
+  Value: -0.894531
+Axis: 3
+  Value: 0.265755
+Axis: 0
+  Value: -0.240326
+Axis: 1
+  Value: -0.790649
+Axis: 2
+  Value: -0.959167
+Axis: 3
+  Value: 0.282388
+Axis: 0
+  Value: -0.089050
+Axis: 1
+  Value: -0.581299
+Axis: 2
+  Value: -1.000000
+Axis: 3
+  Value: 0.322245
+Axis: 0
+  Value: 0.011780
+Axis: 1
+  Value: -0.452484
+Axis: 0
+  Value: 0.082369
+Axis: 1
+  Value: -0.313995
+Axis: 0
+  Value: 0.095798
+Axis: 1
+  Value: -0.117554
+Axis: 0
+  Value: 0.102542
+Axis: 1
+  Value: -0.062805
+Axis: 3
+  Value: 0.265755
+Axis: 0
+  Value: 0.105899
+Axis: 1
+  Value: -0.017700
+Axis: 3
+  Value: 0.209296
+Axis: 0
+  Value: 0.102542
+Axis: 1
+  Value: -0.004822
+Axis: 3
+  Value: 0.192663
+Axis: 1
+  Value: 0.001617
+Axis: 3
+  Value: 0.169408
+Axis: 1
+  Value: 0.014496
+Axis: 3
+  Value: 0.112949
+Axis: 1
+  Value: 0.017731
+Axis: 3
+  Value: 0.102969
+Axis: 0
+  Value: 0.099185
+Axis: 1
+  Value: 0.027375
+Axis: 3
+  Value: 0.086367
+Axis: 1
+  Value: 0.033815
+Axis: 3
+  Value: 0.076388
+Axis: 0
+  Value: 0.075655
+Axis: 1
+  Value: 0.040254
+Axis: 3
+  Value: 0.053133
+Axis: 0
+  Value: 0.072268
+Axis: 1
+  Value: 0.037049
+Axis: 3
+  Value: 0.043184
+Axis: 0
+  Value: 0.068911
+Axis: 1
+  Value: 0.040254
+Axis: 3
+  Value: 0.019929
+Axis: 1
+  Value: 0.037049
+Axis: 3
+  Value: -0.009979
+Axis: 0
+  Value: 0.065554
+Axis: 3
+  Value: -0.023285
+Axis: 0
+  Value: 0.062197
+Axis: 3
+  Value: -0.043213
+Axis: 0
+  Value: 0.058840
+Axis: 3
+  Value: -0.069794
+Axis: 0
+  Value: 0.048738
+Axis: 3
+  Value: -0.076416
+Axis: 0
+  Value: 0.025208
+Axis: 1
+  Value: 0.040254
+Axis: 3
+  Value: -0.086395
+Axis: 0
+  Value: 0.001679
+Axis: 1
+  Value: 0.037049
+Axis: 2
+  Value: -0.802704
+Axis: 3
+  Value: -0.162811
+Axis: 0
+  Value: -0.005035
+Axis: 1
+  Value: 0.040254
+Axis: 2
+  Value: -0.636047
+Axis: 3
+  Value: -0.209320
+Axis: 0
+  Value: -0.025208
+Axis: 2
+  Value: -0.336731
+Axis: 3
+  Value: -0.222595
+Axis: 0
+  Value: -0.038635
+Axis: 1
+  Value: 0.037049
+Axis: 2
+  Value: -0.187073
+Axis: 3
+  Value: -0.172760
+Axis: 0
+  Value: -0.052094
+Axis: 2
+  Value: -0.156464
+Axis: 3
+  Value: -0.152832
+Axis: 0
+  Value: -0.089050
+Axis: 2
+  Value: -0.132660
+Axis: 0
+  Value: -0.095795
+Axis: 2
+  Value: -0.108856
+Axis: 3
+  Value: -0.149506
+Axis: 0
+  Value: -0.115936
+Axis: 2
+  Value: -0.071442
+Axis: 0
+  Value: -0.132751
+Axis: 1
+  Value: 0.040254
+Axis: 2
+  Value: -0.051025
+Axis: 0
+  Value: -0.193268
+Axis: 2
+  Value: -0.040833
+Axis: 3
+  Value: -0.146179
+Axis: 0
+  Value: -0.240326
+Axis: 1
+  Value: 0.037049
+Axis: 2
+  Value: -0.016998
+Axis: 3
+  Value: -0.142853
+Axis: 0
+  Value: -0.243683
+Axis: 1
+  Value: 0.040254
+Axis: 2
+  Value: -0.006805
+Axis: 3
+  Value: -0.136230
+Axis: 0
+  Value: -0.247040
+Axis: 2
+  Value: -0.003418
+Axis: 3
+  Value: -0.126251
+Axis: 0
+  Value: -0.257111
+Axis: 1
+  Value: 0.037049
+Axis: 2
+  Value: 0.006806
+Axis: 3
+  Value: -0.112976
+Axis: 0
+  Value: -0.270569
+Axis: 2
+  Value: 0.010193
+Axis: 3
+  Value: -0.109650
+Axis: 0
+  Value: -0.287384
+Axis: 0
+  Value: -0.297455
+Axis: 3
+  Value: -0.106323
+Axis: 1
+  Value: 0.046693
+Axis: 3
+  Value: -0.099670
+Axis: 1
+  Value: 0.059572
+Axis: 0
+  Value: -0.300812
+Axis: 1
+  Value: 0.075686
+Axis: 0
+  Value: -0.297455
+Axis: 1
+  Value: 0.091800
+Axis: 1
+  Value: 0.101444
+Axis: 2
+  Value: 0.013611
+Axis: 1
+  Value: 0.123997
+Axis: 2
+  Value: 0.016999
+Axis: 1
+  Value: 0.143315
+Axis: 2
+  Value: 0.020417
+Axis: 1
+  Value: 0.165868
+Axis: 2
+  Value: 0.027192
+Axis: 1
+  Value: 0.175542
+Axis: 0
+  Value: -0.320984
+Axis: 1
+  Value: 0.181982
+Axis: 2
+  Value: 0.030610
+Axis: 0
+  Value: -0.341156
+Axis: 2
+  Value: 0.037416
+Axis: 0
+  Value: -0.465515
+Axis: 1
+  Value: 0.178747
+Axis: 2
+  Value: 0.047609
+Axis: 0
+  Value: -0.556274
+Axis: 1
+  Value: 0.181982
+Axis: 2
+  Value: 0.051027
+Axis: 0
+  Value: -0.757935
+Axis: 1
+  Value: 0.143315
+Axis: 2
+  Value: 0.061220
+Axis: 0
+  Value: -0.872223
+Axis: 1
+  Value: 0.117557
+Axis: 2
+  Value: 0.074831
+Axis: 0
+  Value: -1.000000
+Axis: 1
+  Value: 0.101444
+Axis: 2
+  Value: 0.102023
+Axis: 1
+  Value: 0.017731
+Axis: 2
+  Value: 0.170049
+Axis: 1
+  Value: -0.001617
+Axis: 2
+  Value: 0.282296
+Axis: 2
+  Value: 0.323130
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: 0.397961
+Axis: 3
+  Value: -0.119598
+Axis: 1
+  Value: -0.040253
+Axis: 2
+  Value: 0.520402
+Axis: 3
+  Value: -0.149506
+Axis: 1
+  Value: -0.043488
+Axis: 2
+  Value: 0.578234
+Axis: 3
+  Value: -0.196014
+Axis: 1
+  Value: -0.053131
+Axis: 2
+  Value: 0.721091
+Axis: 3
+  Value: -0.269104
+Axis: 1
+  Value: -0.059570
+Axis: 2
+  Value: 0.795923
+Axis: 3
+  Value: -0.292358
+Axis: 1
+  Value: -0.082123
+Axis: 2
+  Value: 0.928556
+Axis: 3
+  Value: -0.382050
+Axis: 1
+  Value: -0.095001
+Axis: 2
+  Value: 1.000000
+Axis: 3
+  Value: -0.471771
+Axis: 1
+  Value: -0.104675
+Axis: 1
+  Value: -0.123993
+Axis: 1
+  Value: -0.140076
+Axis: 1
+  Value: -0.181946
+Axis: 1
+  Value: -0.214172
+Axis: 1
+  Value: -0.265686
+Axis: 1
+  Value: -0.294678
+Axis: 1
+  Value: -0.317230
+Axis: 1
+  Value: -0.333313
+Axis: 1
+  Value: -0.384857
+Axis: 1
+  Value: -0.400970
+Axis: 1
+  Value: -0.449249
+Axis: 1
+  Value: -0.462158
+Axis: 0
+  Value: -0.973053
+Axis: 1
+  Value: -0.536224
+Axis: 0
+  Value: -0.936096
+Axis: 1
+  Value: -0.626404
+Axis: 0
+  Value: -0.915924
+Axis: 1
+  Value: -0.677917
+Axis: 0
+  Value: -0.855408
+Axis: 1
+  Value: -0.716583
+Axis: 0
+  Value: -0.610046
+Axis: 1
+  Value: -0.723022
+Axis: 0
+  Value: -0.455444
+Axis: 1
+  Value: -0.719788
+Axis: 3
+  Value: -0.468445
+Axis: 0
+  Value: -0.300812
+Axis: 3
+  Value: -0.471771
+Axis: 0
+  Value: -0.031921
+Axis: 1
+  Value: -0.723022
+Axis: 2
+  Value: 0.925169
+Axis: 3
+  Value: -0.392029
+Axis: 0
+  Value: 0.126072
+Axis: 1
+  Value: -0.719788
+Axis: 2
+  Value: 0.826533
+Axis: 3
+  Value: -0.328918
+Axis: 0
+  Value: 0.280679
+Axis: 1
+  Value: -0.716583
+Axis: 2
+  Value: 0.710868
+Axis: 3
+  Value: -0.262451
+Axis: 0
+  Value: 0.495804
+Axis: 2
+  Value: 0.445570
+Axis: 3
+  Value: -0.142853
+Axis: 0
+  Value: 0.586566
+Axis: 2
+  Value: 0.302713
+Axis: 3
+  Value: -0.093048
+Axis: 0
+  Value: 0.791620
+Axis: 1
+  Value: -0.687592
+Axis: 2
+  Value: 0.166662
+Axis: 3
+  Value: -0.083069
+Axis: 0
+  Value: 0.902524
+Axis: 1
+  Value: -0.639282
+Axis: 2
+  Value: 0.163274
+Axis: 1
+  Value: -0.632843
+Axis: 2
+  Value: 0.057802
+Axis: 3
+  Value: -0.079742
+Axis: 0
+  Value: 0.905881
+Axis: 1
+  Value: -0.629608
+Axis: 2
+  Value: -0.013611
+Axis: 3
+  Value: -0.073090
+Axis: 0
+  Value: 0.912625
+Axis: 1
+  Value: -0.590973
+Axis: 2
+  Value: -0.034027
+Axis: 3
+  Value: -0.076416
+Axis: 0
+  Value: 0.922697
+Axis: 1
+  Value: -0.571655
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: 0.932768
+Axis: 1
+  Value: -0.539429
+Axis: 2
+  Value: -0.051025
+Axis: 3
+  Value: -0.073090
+Axis: 0
+  Value: 0.929411
+Axis: 1
+  Value: -0.526550
+Axis: 2
+  Value: -0.068024
+Axis: 3
+  Value: -0.076416
+Axis: 0
+  Value: 0.942869
+Axis: 1
+  Value: -0.520111
+Axis: 2
+  Value: -0.095245
+Axis: 1
+  Value: -0.510468
+Axis: 2
+  Value: -0.098633
+Axis: 3
+  Value: -0.073090
+Axis: 0
+  Value: 0.946226
+Axis: 1
+  Value: -0.500793
+Axis: 2
+  Value: -0.102051
+Axis: 3
+  Value: -0.076416
+Axis: 0
+  Value: 0.956298
+Axis: 1
+  Value: -0.497559
+Axis: 2
+  Value: -0.105438
+Axis: 1
+  Value: -0.510468
+Axis: 2
+  Value: -0.102051
+Axis: 0
+  Value: 0.589923
+Axis: 1
+  Value: -0.449249
+Axis: 2
+  Value: -0.105438
+Axis: 0
+  Value: -0.035278
+Axis: 1
+  Value: -0.008057
+Axis: 3
+  Value: -0.073090
+Axis: 0
+  Value: 0.018494
+Axis: 1
+  Value: -0.046692
+Axis: 3
+  Value: -0.076416
+Axis: 1
+  Value: -0.043488
+Axis: 2
+  Value: -0.095245
+Axis: 2
+  Value: -0.085052
+Axis: 0
+  Value: 0.021851
+Axis: 2
+  Value: -0.071442
+Axis: 0
+  Value: 0.018494
+Axis: 2
+  Value: -0.054413
+Axis: 0
+  Value: 0.021851
+Axis: 2
+  Value: -0.044220
+Axis: 2
+  Value: -0.040833
+Axis: 3
+  Value: -0.056488
+Axis: 3
+  Value: -0.046539
+Axis: 0
+  Value: 0.018494
+Axis: 3
+  Value: -0.036560
+Axis: 0
+  Value: 0.005066
+Axis: 1
+  Value: 0.017731
+Axis: 3
+  Value: -0.029907
+Axis: 0
+  Value: -0.015106
+Axis: 0
+  Value: -0.025208
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.038635
+Axis: 2
+  Value: -0.040833
+Axis: 0
+  Value: -0.065521
+Axis: 0
+  Value: -0.075623
+Axis: 1
+  Value: 0.014496
+Axis: 0
+  Value: -0.085693
+Axis: 2
+  Value: -0.037415
+Axis: 0
+  Value: -0.082336
+Axis: 1
+  Value: 0.017731
+Axis: 2
+  Value: -0.023804
+Axis: 3
+  Value: -0.033234
+Axis: 1
+  Value: 0.014496
+Axis: 2
+  Value: -0.013611
+Axis: 0
+  Value: -0.048737
+Axis: 1
+  Value: 0.017731
+Axis: 2
+  Value: -0.016998
+Axis: 0
+  Value: -0.011749
+Axis: 1
+  Value: 0.014496
+Axis: 0
+  Value: 0.001679
+Axis: 1
+  Value: 0.017731
+Axis: 2
+  Value: -0.013611
+Axis: 0
+  Value: 0.011780
+Axis: 0
+  Value: 0.025208
+Axis: 2
+  Value: -0.016998
+Axis: 3
+  Value: -0.029907
+Axis: 0
+  Value: 0.021851
+Axis: 1
+  Value: 0.014496
+Axis: 3
+  Value: -0.019958
+Axis: 2
+  Value: -0.044220
+Axis: 2
+  Value: -0.057831
+Axis: 2
+  Value: -0.102051
+Axis: 2
+  Value: -0.125854
+Axis: 1
+  Value: 0.017731
+Axis: 2
+  Value: -0.149658
+Axis: 2
+  Value: -0.163269
+Axis: 3
+  Value: -0.033234
+Axis: 1
+  Value: 0.014496
+Axis: 3
+  Value: -0.046539
+Axis: 1
+  Value: 0.017731
+Axis: 3
+  Value: -0.056488
+Axis: 2
+  Value: -0.159882
+Axis: 3
+  Value: -0.066467
+Axis: 2
+  Value: -0.163269
+Axis: 3
+  Value: -0.076416
+Axis: 0
+  Value: 0.025208
+Axis: 2
+  Value: -0.139465
+Axis: 3
+  Value: -0.056488
+Axis: 0
+  Value: 0.028596
+Axis: 1
+  Value: 0.014496
+Axis: 2
+  Value: -0.125854
+Axis: 3
+  Value: -0.049835
+Axis: 2
+  Value: -0.102051
+Axis: 3
+  Value: -0.036560
+Axis: 0
+  Value: 0.031953
+Axis: 2
+  Value: -0.098633
+Axis: 3
+  Value: -0.023285
+Axis: 0
+  Value: 0.025208
+Axis: 2
+  Value: -0.091827
+Axis: 3
+  Value: -0.039886
+Axis: 1
+  Value: 0.017731
+Axis: 3
+  Value: -0.043213
+Axis: 5
+  Value: -0.215698
+Axis: 1
+  Value: 0.014496
+Axis: 2
+  Value: -0.095245
+Axis: 5
+  Value: 0.576464
+Axis: 1
+  Value: 0.008057
+Axis: 5
+  Value: 1.000000
+Axis: 1
+  Value: -0.001617
+Axis: 0
+  Value: 0.028596
+Axis: 1
+  Value: -0.011261
+Axis: 2
+  Value: -0.091827
+Axis: 3
+  Value: -0.039886
+Axis: 1
+  Value: -0.020935
+Axis: 3
+  Value: -0.043213
+Axis: 5
+  Value: 0.098025
+Axis: 0
+  Value: 0.025208
+Axis: 5
+  Value: -0.701965
+Axis: 0
+  Value: 0.028596
+Axis: 2
+  Value: -0.095245
+Axis: 5
+  Value: -1.000000
+Axis: 0
+  Value: 0.025208
+Axis: 0
+  Value: 0.038667
+Axis: 2
+  Value: -0.091827
+Axis: 0
+  Value: 0.052126
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.062197
+Axis: 2
+  Value: -0.091827
+Axis: 0
+  Value: 0.072268
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.085726
+Axis: 0
+  Value: 0.136143
+Axis: 3
+  Value: -0.039886
+Axis: 0
+  Value: 0.169744
+Axis: 2
+  Value: -0.091827
+Axis: 3
+  Value: -0.043213
+Axis: 0
+  Value: 0.287393
+Axis: 1
+  Value: 0.037049
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.421857
+Axis: 1
+  Value: 0.091800
+Axis: 0
+  Value: 0.559679
+Axis: 1
+  Value: 0.143315
+Axis: 0
+  Value: 0.899167
+Axis: 1
+  Value: 0.307566
+Axis: 0
+  Value: 1.000000
+Axis: 1
+  Value: 0.368755
+Axis: 0
+  Value: 0.956298
+Axis: 1
+  Value: 0.355876
+Axis: 0
+  Value: 0.821863
+Axis: 1
+  Value: 0.291482
+Axis: 0
+  Value: 0.717643
+Axis: 1
+  Value: 0.233497
+Axis: 2
+  Value: -0.091827
+Axis: 0
+  Value: 0.515976
+Axis: 1
+  Value: 0.143315
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.415143
+Axis: 1
+  Value: 0.107883
+Axis: 2
+  Value: -0.091827
+Axis: 0
+  Value: 0.176489
+Axis: 1
+  Value: 0.030610
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.122715
+Axis: 1
+  Value: 0.004822
+Axis: 2
+  Value: -0.091827
+Axis: 0
+  Value: 0.112613
+Axis: 1
+  Value: 0.008057
+Axis: 0
+  Value: 0.109256
+Axis: 3
+  Value: -0.056488
+Axis: 3
+  Value: -0.066467
+Axis: 0
+  Value: 0.112613
+Axis: 1
+  Value: -0.004822
+Axis: 3
+  Value: -0.069794
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.109256
+Axis: 1
+  Value: -0.027374
+Axis: 2
+  Value: -0.091827
+Axis: 3
+  Value: -0.073090
+Axis: 0
+  Value: 0.139500
+Axis: 1
+  Value: -0.033813
+Axis: 0
+  Value: 0.300851
+Axis: 1
+  Value: -0.030579
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.589923
+Axis: 1
+  Value: -0.027374
+Axis: 2
+  Value: -0.091827
+Axis: 0
+  Value: 0.744560
+Axis: 1
+  Value: 0.020936
+Axis: 0
+  Value: 0.905881
+Axis: 1
+  Value: 0.072481
+Axis: 2
+  Value: -0.095245
+Axis: 3
+  Value: -0.076416
+Axis: 0
+  Value: 1.000000
+Axis: 1
+  Value: 0.120792
+Axis: 3
+  Value: -0.073090
+Axis: 1
+  Value: 0.107883
+Axis: 1
+  Value: 0.098239
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: 0.066042
+Axis: 1
+  Value: 0.053133
+Axis: 1
+  Value: -0.004822
+Axis: 3
+  Value: -0.076416
+Axis: 1
+  Value: -0.024139
+Axis: 3
+  Value: -0.073090
+Axis: 1
+  Value: -0.059570
+Axis: 2
+  Value: -0.095245
+Axis: 1
+  Value: -0.088562
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: -0.104675
+Axis: 2
+  Value: -0.095245
+Axis: 1
+  Value: -0.114319
+Axis: 1
+  Value: -0.140076
+Axis: 1
+  Value: -0.162628
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: -0.198059
+Axis: 1
+  Value: -0.210938
+Axis: 1
+  Value: -0.252808
+Axis: 3
+  Value: -0.076416
+Axis: 1
+  Value: -0.272125
+Axis: 3
+  Value: -0.073090
+Axis: 0
+  Value: 0.989929
+Axis: 1
+  Value: -0.301117
+Axis: 0
+  Value: 0.979827
+Axis: 1
+  Value: -0.307556
+Axis: 0
+  Value: 0.969756
+Axis: 1
+  Value: -0.317230
+Axis: 0
+  Value: 1.000000
+Axis: 1
+  Value: -0.281799
+Axis: 1
+  Value: -0.272125
+Axis: 1
+  Value: -0.262482
+Axis: 1
+  Value: -0.249603
+Axis: 2
+  Value: -0.095245
+Axis: 1
+  Value: -0.239929
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: -0.230255
+Axis: 1
+  Value: -0.220612
+Axis: 1
+  Value: -0.210938
+Axis: 1
+  Value: -0.207733
+Axis: 0
+  Value: 0.939512
+Axis: 0
+  Value: 0.821863
+Axis: 1
+  Value: -0.204498
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.647053
+Axis: 1
+  Value: -0.207733
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.566393
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.415143
+Axis: 1
+  Value: -0.204498
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.263863
+Axis: 1
+  Value: -0.172302
+Axis: 0
+  Value: 0.136143
+Axis: 1
+  Value: -0.127197
+Axis: 0
+  Value: 0.115970
+Axis: 1
+  Value: -0.114319
+Axis: 1
+  Value: -0.095001
+Axis: 0
+  Value: 0.112613
+Axis: 1
+  Value: -0.085327
+Axis: 0
+  Value: 0.109256
+Axis: 1
+  Value: -0.066010
+Axis: 0
+  Value: 0.105899
+Axis: 1
+  Value: -0.049927
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.095798
+Axis: 1
+  Value: -0.030579
+Axis: 0
+  Value: 0.082369
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.079012
+Axis: 1
+  Value: -0.008057
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.068911
+Axis: 1
+  Value: 0.001617
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.072268
+Axis: 1
+  Value: 0.011261
+Axis: 0
+  Value: 0.102542
+Axis: 0
+  Value: 0.136143
+Axis: 2
+  Value: -0.095245
+Axis: 0
+  Value: 0.391614
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.431928
+Axis: 0
+  Value: 0.532792
+Axis: 0
+  Value: 0.586566
+Axis: 0
+  Value: 0.643696
+Axis: 0
+  Value: 0.687399
+Axis: 0
+  Value: 0.700858
+Axis: 0
+  Value: 0.714286
+Axis: 0
+  Value: 0.724387
+Axis: 0
+  Value: 0.737815
+Axis: 1
+  Value: -0.004822
+Axis: 0
+  Value: 0.761345
+Axis: 1
+  Value: -0.030579
+Axis: 0
+  Value: 0.764702
+Axis: 1
+  Value: -0.043488
+Axis: 0
+  Value: 0.798334
+Axis: 1
+  Value: -0.066010
+Axis: 0
+  Value: 0.842036
+Axis: 1
+  Value: -0.088562
+Axis: 0
+  Value: 0.852107
+Axis: 1
+  Value: -0.095001
+Axis: 0
+  Value: 0.875637
+Axis: 1
+  Value: -0.114319
+Axis: 0
+  Value: 0.885708
+Axis: 1
+  Value: -0.117554
+Axis: 0
+  Value: 0.892453
+Axis: 1
+  Value: -0.143311
+Axis: 0
+  Value: 0.899167
+Axis: 1
+  Value: -0.156189
+Axis: 0
+  Value: 0.902524
+Axis: 1
+  Value: -0.194855
+Axis: 1
+  Value: -0.210938
+Axis: 0
+  Value: 0.905881
+Axis: 1
+  Value: -0.236694
+Axis: 2
+  Value: -0.102051
+Axis: 1
+  Value: -0.259247
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: -0.285004
+Axis: 0
+  Value: 0.909238
+Axis: 1
+  Value: -0.317230
+Axis: 1
+  Value: -0.336548
+Axis: 1
+  Value: -0.349426
+Axis: 2
+  Value: -0.102051
+Axis: 1
+  Value: -0.362305
+Axis: 1
+  Value: -0.371979
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: -0.397736
+Axis: 2
+  Value: -0.102051
+Axis: 1
+  Value: -0.410614
+Axis: 0
+  Value: 0.899167
+Axis: 0
+  Value: 0.784875
+Axis: 0
+  Value: 0.710929
+Axis: 0
+  Value: 0.626911
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.472274
+Axis: 1
+  Value: -0.407410
+Axis: 2
+  Value: -0.102051
+Axis: 0
+  Value: 0.415143
+Axis: 1
+  Value: -0.365540
+Axis: 0
+  Value: 0.287393
+Axis: 1
+  Value: -0.297913
+Axis: 0
+  Value: 0.173132
+Axis: 1
+  Value: -0.210938
+Axis: 0
+  Value: 0.122715
+Axis: 1
+  Value: -0.159424
+Axis: 0
+  Value: 0.099185
+Axis: 1
+  Value: -0.127197
+Axis: 0
+  Value: 0.095798
+Axis: 1
+  Value: -0.117554
+Axis: 0
+  Value: 0.099185
+Axis: 1
+  Value: -0.098236
+Axis: 1
+  Value: -0.078888
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.095798
+Axis: 1
+  Value: -0.053131
+Axis: 2
+  Value: -0.102051
+Axis: 1
+  Value: -0.037018
+Axis: 2
+  Value: -0.098633
+Axis: 0
+  Value: 0.089084
+Axis: 1
+  Value: -0.027374
+Axis: 2
+  Value: -0.102051
+Axis: 0
+  Value: 0.082369
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: -0.098633
+Axis: 3
+  Value: -0.083069
+Axis: 2
+  Value: -0.071442
+Axis: 3
+  Value: -0.086395
+Axis: 2
+  Value: -0.047638
+Axis: 2
+  Value: 0.037416
+Axis: 3
+  Value: -0.089722
+Axis: 2
+  Value: 0.051027
+Axis: 0
+  Value: 0.089084
+Axis: 2
+  Value: 0.068026
+Axis: 0
+  Value: 0.085726
+Axis: 1
+  Value: -0.020935
+Axis: 2
+  Value: 0.108829
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: 0.227882
+Axis: 0
+  Value: 0.089084
+Axis: 1
+  Value: -0.020935
+Axis: 2
+  Value: 0.251686
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: 0.302713
+Axis: 2
+  Value: 0.411573
+Axis: 3
+  Value: -0.132904
+Axis: 0
+  Value: 0.085726
+Axis: 2
+  Value: 0.591845
+Axis: 3
+  Value: -0.192688
+Axis: 1
+  Value: -0.020935
+Axis: 2
+  Value: 0.867336
+Axis: 3
+  Value: -0.285706
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: 0.925169
+Axis: 3
+  Value: -0.328918
+Axis: 0
+  Value: 0.089084
+Axis: 1
+  Value: -0.020935
+Axis: 2
+  Value: 1.000000
+Axis: 3
+  Value: -0.348846
+Axis: 3
+  Value: -0.362122
+Axis: 1
+  Value: -0.017700
+Axis: 3
+  Value: -0.348846
+Axis: 3
+  Value: -0.338867
+Axis: 1
+  Value: -0.020935
+Axis: 3
+  Value: -0.328918
+Axis: 1
+  Value: -0.017700
+Axis: 3
+  Value: -0.312286
+Axis: 1
+  Value: -0.020935
+Axis: 3
+  Value: -0.285706
+Axis: 1
+  Value: -0.017700
+Axis: 3
+  Value: -0.272430
+Axis: 1
+  Value: -0.020935
+Axis: 3
+  Value: -0.262451
+Axis: 0
+  Value: 0.085726
+Axis: 2
+  Value: 0.996612
+Axis: 3
+  Value: -0.202667
+Axis: 0
+  Value: 0.089084
+Axis: 2
+  Value: 0.891171
+Axis: 3
+  Value: -0.149506
+Axis: 0
+  Value: 0.085726
+Axis: 1
+  Value: -0.017700
+Axis: 2
+  Value: 0.663259
+Axis: 3
+  Value: -0.083069
+Axis: 0
+  Value: 0.089084
+Axis: 2
+  Value: 0.445570
+Axis: 3
+  Value: -0.053162
+Axis: 0
+  Value: 0.085726
+Axis: 2
+  Value: 0.350322
+Axis: 3
+  Value: -0.049835
+Axis: 2
+  Value: 0.210883
+Axis: 2
+  Value: 0.176855
+Axis: 3
+  Value: -0.046539
+Axis: 0
+  Value: 0.089084
+Axis: 1
+  Value: -0.020935
+Axis: 2
+  Value: 0.166662
+Axis: 3
+  Value: -0.049835
+Axis: 0
+  Value: 0.085726
+Axis: 1
+  Value: -0.027374
+Axis: 2
+  Value: 0.132633
+Axis: 0
+  Value: 0.089084
+Axis: 1
+  Value: -0.030579
+Axis: 2
+  Value: 0.098636
+Axis: 0
+  Value: 0.099185
+Axis: 1
+  Value: -0.037018
+Axis: 2
+  Value: 0.074831
+Axis: 0
+  Value: 0.112613
+Axis: 1
+  Value: -0.040253
+Axis: 2
+  Value: 0.051027
+Axis: 0
+  Value: 0.129429
+Axis: 1
+  Value: -0.049927
+Axis: 2
+  Value: 0.033998
+Axis: 0
+  Value: 0.166387
+Axis: 2
+  Value: 0.030610
+Axis: 0
+  Value: 0.210089
+Axis: 2
+  Value: 0.027192
+Axis: 0
+  Value: 0.361370
+Axis: 1
+  Value: -0.046692
+Axis: 2
+  Value: 0.010193
+Axis: 0
+  Value: 0.546220
+Axis: 1
+  Value: -0.043488
+Axis: 2
+  Value: 0.003388
+Axis: 0
+  Value: 0.677328
+Axis: 1
+  Value: -0.037018
+Axis: 2
+  Value: 0.000000
+Axis: 0
+  Value: 1.000000
+Axis: 1
+  Value: 0.066042
+Axis: 2
+  Value: -0.006805
+Axis: 1
+  Value: 0.098239
+Axis: 2
+  Value: -0.010223
+Axis: 2
+  Value: -0.020416
+Axis: 2
+  Value: -0.030609
+Axis: 1
+  Value: 0.101444
+Axis: 2
+  Value: -0.040833
+Axis: 2
+  Value: -0.054413
+Axis: 2
+  Value: -0.078247
+Axis: 2
+  Value: -0.098633
+Axis: 1
+  Value: 0.098239
+Axis: 2
+  Value: -0.159882
+Axis: 1
+  Value: 0.101444
+Axis: 2
+  Value: -0.170074
+Axis: 2
+  Value: -0.183685
+Axis: 3
+  Value: -0.046539
+Axis: 1
+  Value: 0.098239
+Axis: 2
+  Value: -0.190491
+Axis: 3
+  Value: -0.056488
+Axis: 2
+  Value: -0.193878
+Axis: 3
+  Value: -0.066467
+Axis: 2
+  Value: -0.207489
+Axis: 3
+  Value: -0.069794
+Axis: 1
+  Value: 0.095004
+Axis: 2
+  Value: -0.217682
+Axis: 3
+  Value: -0.073090
+Axis: 1
+  Value: 0.069247
+Axis: 2
+  Value: -0.258514
+Axis: 3
+  Value: -0.076416
+Axis: 1
+  Value: 0.037049
+Axis: 2
+  Value: -0.340149
+Axis: 3
+  Value: -0.079742
+Axis: 1
+  Value: 0.027375
+Axis: 2
+  Value: -0.370758
+Axis: 1
+  Value: -0.001617
+Axis: 2
+  Value: -0.428558
+Axis: 1
+  Value: -0.014496
+Axis: 2
+  Value: -0.448975
+Axis: 1
+  Value: -0.049927
+Axis: 2
+  Value: -0.479584
+Axis: 1
+  Value: -0.075684
+Axis: 2
+  Value: -0.489777
+Axis: 1
+  Value: -0.111115
+Axis: 2
+  Value: -0.510193
+Axis: 1
+  Value: -0.117554
+Axis: 2
+  Value: -0.520416
+Axis: 2
+  Value: -0.533997
+Axis: 3
+  Value: -0.076416
+Axis: 1
+  Value: -0.136871
+Axis: 2
+  Value: -0.544220
+Axis: 1
+  Value: -0.149750
+Axis: 3
+  Value: -0.079742
+Axis: 1
+  Value: -0.159424
+Axis: 3
+  Value: -0.076416
+Axis: 1
+  Value: -0.201294
+Axis: 3
+  Value: -0.079742
+Axis: 1
+  Value: -0.214172
+Axis: 1
+  Value: -0.249603
+Axis: 3
+  Value: -0.086395
+Axis: 1
+  Value: -0.275360
+Axis: 3
+  Value: -0.089722
+Axis: 1
+  Value: -0.352661
+Axis: 3
+  Value: -0.119598
+Axis: 1
+  Value: -0.446045
+Axis: 3
+  Value: -0.152832
+Axis: 0
+  Value: 0.989929
+Axis: 1
+  Value: -0.500793
+Axis: 3
+  Value: -0.162811
+Axis: 0
+  Value: 0.885708
+Axis: 1
+  Value: -0.587738
+Axis: 3
+  Value: -0.196014
+Axis: 0
+  Value: 0.794977
+Axis: 1
+  Value: -0.639282
+Axis: 3
+  Value: -0.209320
+Axis: 0
+  Value: 0.700858
+Axis: 1
+  Value: -0.719788
+Axis: 2
+  Value: -0.537415
+Axis: 3
+  Value: -0.232574
+Axis: 0
+  Value: 0.519333
+Axis: 1
+  Value: -0.819641
+Axis: 2
+  Value: -0.513611
+Axis: 3
+  Value: -0.259155
+Axis: 0
+  Value: 0.371441
+Axis: 1
+  Value: -0.900146
+Axis: 2
+  Value: -0.476196
+Axis: 3
+  Value: -0.305664
+Axis: 0
+  Value: 0.203375
+Axis: 1
+  Value: -0.980652
+Axis: 2
+  Value: -0.442169
+Axis: 3
+  Value: -0.362122
+Axis: 0
+  Value: 0.062197
+Axis: 1
+  Value: -0.999969
+Axis: 2
+  Value: -0.397949
+Axis: 3
+  Value: -0.418610
+Axis: 0
+  Value: -0.015106
+Axis: 2
+  Value: -0.357147
+Axis: 3
+  Value: -0.478394
+Axis: 0
+  Value: -0.065521
+Axis: 2
+  Value: -0.336731
+Axis: 3
+  Value: -0.498322
+Axis: 0
+  Value: -0.115936
+Axis: 2
+  Value: -0.289124
+Axis: 3
+  Value: -0.571411
+Axis: 0
+  Value: -0.132751
+Axis: 2
+  Value: -0.255096
+Axis: 3
+  Value: -0.581390
+Axis: 0
+  Value: -0.193268
+Axis: 2
+  Value: -0.238098
+Axis: 3
+  Value: -0.591339
+Axis: 0
+  Value: -0.300812
+Axis: 2
+  Value: -0.183685
+Axis: 3
+  Value: -0.621246
+Axis: 0
+  Value: -0.492401
+Axis: 1
+  Value: -0.974213
+Axis: 2
+  Value: -0.153076
+Axis: 3
+  Value: -0.641174
+Axis: 0
+  Value: -0.596619
+Axis: 1
+  Value: -0.916260
+Axis: 2
+  Value: -0.125854
+Axis: 0
+  Value: -0.771393
+Axis: 1
+  Value: -0.793854
+Axis: 2
+  Value: -0.061218
+Axis: 3
+  Value: -0.647827
+Axis: 0
+  Value: -0.852051
+Axis: 1
+  Value: -0.716583
+Axis: 2
+  Value: -0.040833
+Axis: 0
+  Value: -0.983154
+Axis: 1
+  Value: -0.526550
+Axis: 2
+  Value: -0.003418
+Axis: 0
+  Value: -1.000000
+Axis: 1
+  Value: -0.442810
+Axis: 2
+  Value: 0.027192
+Axis: 1
+  Value: -0.246368
+Axis: 2
+  Value: 0.047609
+Axis: 1
+  Value: -0.111115
+Axis: 2
+  Value: 0.051027
+Axis: 3
+  Value: -0.644501
+Axis: 1
+  Value: -0.020935
+Axis: 2
+  Value: 0.047609
+Axis: 1
+  Value: 0.114322
+Axis: 3
+  Value: -0.647827
+Axis: 1
+  Value: 0.146550
+Axis: 3
+  Value: -0.644501
+Axis: 1
+  Value: 0.214179
+Axis: 3
+  Value: -0.641174
+Axis: 1
+  Value: 0.288247
+Axis: 1
+  Value: 0.323679
+Axis: 1
+  Value: 0.359111
+Axis: 1
+  Value: 0.423505
+Axis: 3
+  Value: -0.617920
+Axis: 1
+  Value: 0.484725
+Axis: 3
+  Value: -0.588043
+Axis: 1
+  Value: 0.491165
+Axis: 3
+  Value: -0.554810
+Axis: 3
+  Value: -0.511627
+Axis: 0
+  Value: -0.996582
+Axis: 3
+  Value: -0.478394
+Axis: 0
+  Value: -0.942810
+Axis: 1
+  Value: 0.487930
+Axis: 3
+  Value: -0.475067
+Axis: 0
+  Value: -0.855408
+Axis: 1
+  Value: 0.391308
+Axis: 2
+  Value: 0.020417
+Axis: 3
+  Value: -0.408630
+Axis: 0
+  Value: -0.720978
+Axis: 1
+  Value: 0.252815
+Axis: 2
+  Value: -0.040833
+Axis: 3
+  Value: -0.096344
+Axis: 0
+  Value: -0.616760
+Axis: 1
+  Value: 0.185186
+Axis: 2
+  Value: -0.044220
+Axis: 3
+  Value: -0.106323
+Axis: 0
+  Value: -0.384857
+Axis: 1
+  Value: 0.111118
+Axis: 0
+  Value: -0.267212
+Axis: 1
+  Value: 0.091800
+Axis: 3
+  Value: -0.102997
+Axis: 0
+  Value: -0.132751
+Axis: 1
+  Value: 0.043489
+Axis: 3
+  Value: -0.106323
+Axis: 0
+  Value: -0.129395
+Axis: 1
+  Value: 0.033815
+Axis: 1
+  Value: 0.014496
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.008057
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.062164
+Axis: 1
+  Value: -0.043488
+Axis: 0
+  Value: -0.045380
+Axis: 1
+  Value: -0.049927
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.038635
+Axis: 1
+  Value: -0.059570
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.031921
+Axis: 1
+  Value: -0.069244
+Axis: 1
+  Value: -0.078888
+Axis: 2
+  Value: -0.047638
+Axis: 1
+  Value: -0.069244
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.052094
+Axis: 1
+  Value: -0.059570
+Axis: 0
+  Value: -0.065521
+Axis: 1
+  Value: -0.056366
+Axis: 1
+  Value: -0.069244
+Axis: 1
+  Value: -0.078888
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Axis: 0
+  Value: -0.119324
+Axis: 1
+  Value: -0.011261
+Axis: 1
+  Value: -0.046692
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.099152
+Axis: 1
+  Value: -0.062805
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.085693
+Axis: 1
+  Value: -0.072449
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.075623
+Axis: 1
+  Value: -0.078888
+Axis: 2
+  Value: -0.047638
+Axis: 1
+  Value: -0.046692
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.037018
+Axis: 1
+  Value: -0.024139
+Axis: 1
+  Value: -0.001617
+Axis: 1
+  Value: 0.008057
+Axis: 0
+  Value: -0.065521
+Axis: 1
+  Value: 0.014496
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.055450
+Axis: 0
+  Value: -0.045380
+Axis: 0
+  Value: -0.035278
+Axis: 0
+  Value: -0.025208
+Axis: 0
+  Value: -0.018463
+Axis: 1
+  Value: 0.004822
+Axis: 1
+  Value: -0.004822
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.005035
+Axis: 1
+  Value: -0.008057
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.018494
+Axis: 1
+  Value: -0.011261
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: 0.109256
+Axis: 1
+  Value: -0.014496
+Axis: 0
+  Value: 0.193274
+Axis: 0
+  Value: 0.260506
+Axis: 1
+  Value: -0.011261
+Axis: 0
+  Value: 0.495804
+Axis: 1
+  Value: -0.004822
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.899167
+Axis: 1
+  Value: 0.095004
+Axis: 0
+  Value: 1.000000
+Axis: 1
+  Value: 0.127232
+Axis: 1
+  Value: 0.117557
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: 0.091800
+Axis: 1
+  Value: 0.049928
+Axis: 3
+  Value: -0.102997
+Axis: 1
+  Value: 0.037049
+Axis: 3
+  Value: -0.106323
+Axis: 1
+  Value: 0.024171
+Axis: 1
+  Value: -0.004822
+Axis: 0
+  Value: 0.603381
+Axis: 1
+  Value: -0.107880
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.126072
+Axis: 1
+  Value: -0.133636
+Axis: 0
+  Value: 0.072268
+Axis: 1
+  Value: -0.127197
+Axis: 1
+  Value: -0.117554
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.085327
+Axis: 0
+  Value: 0.068911
+Axis: 1
+  Value: -0.069244
+Axis: 1
+  Value: -0.053131
+Axis: 1
+  Value: -0.040253
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.072268
+Axis: 1
+  Value: -0.030579
+Axis: 1
+  Value: -0.040253
+Axis: 1
+  Value: -0.049927
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: 0.082369
+Axis: 1
+  Value: -0.056366
+Axis: 0
+  Value: 0.119327
+Axis: 1
+  Value: -0.066010
+Axis: 0
+  Value: 0.146245
+Axis: 1
+  Value: -0.072449
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.509262
+Axis: 1
+  Value: -0.088562
+Axis: 0
+  Value: 0.952940
+Axis: 1
+  Value: -0.085327
+Axis: 0
+  Value: 1.000000
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: 0.949583
+Axis: 1
+  Value: -0.101440
+Axis: 0
+  Value: 0.781518
+Axis: 1
+  Value: -0.123993
+Axis: 0
+  Value: 0.388256
+Axis: 1
+  Value: -0.181946
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.099185
+Axis: 1
+  Value: -0.152985
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: 0.082369
+Axis: 1
+  Value: -0.133636
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.085726
+Axis: 1
+  Value: -0.123993
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.114319
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.089084
+Axis: 1
+  Value: -0.104675
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.095001
+Axis: 1
+  Value: -0.085327
+Axis: 2
+  Value: -0.047638
+Axis: 1
+  Value: -0.075684
+Axis: 1
+  Value: -0.066010
+Axis: 1
+  Value: -0.053131
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.043488
+Axis: 2
+  Value: -0.047638
+Axis: 1
+  Value: -0.024139
+Axis: 1
+  Value: -0.011261
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.001617
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: 0.079012
+Axis: 1
+  Value: 0.008057
+Axis: 0
+  Value: 0.025208
+Axis: 1
+  Value: 0.011261
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.035278
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.045380
+Axis: 1
+  Value: 0.014496
+Axis: 0
+  Value: -0.112579
+Axis: 0
+  Value: -0.267212
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.337799
+Axis: 1
+  Value: 0.011261
+Axis: 0
+  Value: -0.620148
+Axis: 1
+  Value: -0.001617
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.932739
+Axis: 1
+  Value: -0.082123
+Axis: 0
+  Value: -1.000000
+Axis: 1
+  Value: -0.123993
+Axis: 2
+  Value: -0.044220
+Axis: 1
+  Value: -0.117554
+Axis: 1
+  Value: -0.111115
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.804993
+Axis: 1
+  Value: -0.098236
+Axis: 0
+  Value: -0.687347
+Axis: 1
+  Value: -0.085327
+Axis: 0
+  Value: -0.448700
+Axis: 1
+  Value: -0.062805
+Axis: 0
+  Value: -0.253754
+Axis: 1
+  Value: -0.053131
+Axis: 0
+  Value: -0.199982
+Axis: 0
+  Value: -0.189911
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.179810
+Axis: 0
+  Value: -0.206696
+Axis: 0
+  Value: -0.307526
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.620148
+Axis: 0
+  Value: -0.946167
+Axis: 1
+  Value: -0.101440
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -1.000000
+Axis: 1
+  Value: -0.120758
+Axis: 2
+  Value: -0.047638
+Axis: 1
+  Value: -0.127197
+Axis: 0
+  Value: -0.939453
+Axis: 1
+  Value: -0.123993
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.616760
+Axis: 1
+  Value: -0.111115
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.294098
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.159637
+Axis: 1
+  Value: -0.095001
+Axis: 0
+  Value: -0.139465
+Axis: 1
+  Value: -0.098236
+Axis: 0
+  Value: -0.129395
+Axis: 2
+  Value: -0.047638
+Axis: 3
+  Value: -0.102997
+Axis: 0
+  Value: -0.119324
+Axis: 2
+  Value: -0.044220
+Axis: 3
+  Value: -0.106323
+Axis: 0
+  Value: -0.109222
+Axis: 0
+  Value: -0.099152
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.089050
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.078979
+Axis: 2
+  Value: -0.047638
+Axis: 0
+  Value: -0.068878
+Axis: 2
+  Value: -0.044220
+Axis: 0
+  Value: -0.058807
+Axis: 0
+  Value: -0.048737
+Axis: 0
+  Value: -0.038635
+Axis: 2
+  Value: -0.047638
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Fatal error!
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Fatal error!
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 9
+Button: 8
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 8
+Button: 8
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 8
+Button: 8
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 10
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0

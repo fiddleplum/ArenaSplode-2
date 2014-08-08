@@ -7,7 +7,7 @@ class Rocket : public Object
 public:
 	enum { STRAIGHT, SHRINKER, DRUNK };
 
-	Rocket(Ptr<Level> level, int type);
+	Rocket(int owned, Ptr<Level> level, int type);
 
 	int getRocketType() { return type; }
 
@@ -22,6 +22,7 @@ public:
 private:
 	void explode();
 
+	int owned;
 	int type;
 	bool willExplode;
 	float explodeCountdown;

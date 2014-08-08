@@ -2,6 +2,7 @@
 #include "Level.h"
 #include "Rocket.h"
 #include "Character.h"
+#include "Player.h"
 
 RocketLauncher::RocketLauncher(Ptr<Level> level, int _type)
 : Object(ROCKET_LAUNCHER, level, "art/items.png", Recti::minSize(64, 64 * _type, 64, 64))
@@ -24,7 +25,7 @@ void RocketLauncher::fire()
 	case DRUNK:
 		rocketType = Rocket::DRUNK; break;
 	}
-	rocket.setNew(level, rocketType);
+	rocket.setNew(getHeldCharacter()->getPlayer()->getNumber(), level, rocketType);
 	Vector2f r = (getPosition() - getHeldCharacter()->getPosition()).unit();
 	rocket->setPosition(getPosition() + r * (getHeldCharacter()->getRadius() + rocket->getRadius() * 1.2f));
 	rocket->setVelocity(r * 400.f);

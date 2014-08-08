@@ -5,6 +5,7 @@
 #include <kit/gui/viewport.h>
 #include <kit/math_util.h>
 #include <kit/audio.h>
+#include <kit/log.h>
 
 Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _scene, Ptr<Level> _level)
 {
@@ -18,9 +19,11 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	viewport->setScene(scene);
 	viewport->setCamera(camera->getSceneCamera());
 	speed = 5000.0f;
+	score = 0;
 	looking = false;
+	isAxis5Centered = false;
 
-	characterMenu.setNew(window);
+	characterMenu.setNew(number, window);
 	characterMenu->setCharacterChosenFunction(std::bind(&Player::characterChosen, this, std::placeholders::_1));
 }
 
@@ -30,10 +33,22 @@ Player::~Player()
 	{
 		characterMenu.setNull();
 	}
-	level->removeObject(character.raw());
+	if(level.isValid())
+	{
+		level->removeObject(character.raw());
+	}
 	if(window.isValid())
 	{
 		window->removeWidget(viewport);
+	}
+}
+
+void Player::addScore(int amount)
+{
+	score += amount;
+	if(score >= 10)
+	{
+		game->playerWins(number);
 	}
 }
 
@@ -42,13 +57,25 @@ bool Player::hasCharacter() const
 	return character.isValid();
 }
 
-void Player::characterChosen(std::string const & characterFilename)
+void Player::spawnNewCharacter()
 {
 	if(character.isValid())
 	{
 		level->removeObject(character.raw());
 	}
-	character.setNew(level, characterFilename);
+	character.setNew(this, level, characterFilename);
+	character->setPosition(Vector2f(kit::math::random((float)(level->getTileSize()[0] * 2), (float)(level->getTileSize()[0] * (level->getSize()[0] - 2))), kit::math::random((float)(level->getTileSize()[1] * 2), (float)(level->getTileSize()[1] * (level->getSize()[1] - 2)))));
+	level->addObject(character);
+}
+
+void Player::characterChosen(std::string const & _characterFilename)
+{
+	characterFilename = _characterFilename;
+	if(character.isValid())
+	{
+		level->removeObject(character.raw());
+	}
+	character.setNew(this, level, characterFilename);
 	character->setPosition(Vector2f(kit::math::random((float)(level->getTileSize()[0] * 2), (float)(level->getTileSize()[0] * (level->getSize()[0] - 2))), kit::math::random((float)(level->getTileSize()[1] * 2), (float)(level->getTileSize()[1] * (level->getSize()[1] - 2)))));
 	level->addObject(character);
 	kit::audio::play("sounds/smw_coin.wav");
@@ -98,28 +125,77 @@ void Player::handleSceneEvent(kit::Event const & event)
 
 		if(ke.pressed && ((ke.key == kit::KeyboardEvent::E && number == 0) || (ke.key == kit::KeyboardEvent::U && number == 1)))
 		{
-			if(character->getObjectHeld().isValid())
-			{
-				character->getObjectHeld()->setHeld(Ptr<Character>());
-				character->setObjectHeld(Ptr<Object>());
-			}
-			else
-			{
-				std::pair<Ptr<Object>, float> pair = level->getNearestObject(character->getPosition(), character.raw());
-				if(pair.second < pair.first->getRadius() + character->getRadius())
-				{
-					character->setObjectHeld(pair.first);
-					pair.first->setHeld(character);
-				}
-			}
+			pickupItem();
 		}
-
 		if(ke.pressed && ((ke.key == kit::KeyboardEvent::C && number == 0) || (ke.key == kit::KeyboardEvent::N && number == 1)))
 		{
 			character->useHeld();
 		}
 	}
-	if(event.type == kit::Event::Update)
+	else if(event.type == kit::Event::ControllerAxis)
+	{
+		auto cae = event.as<kit::ControllerAxisEvent>();
+		if(cae.controller == number)
+		{
+			if(cae.axis == 0 || cae.axis == 1)
+			{
+				if(std::abs(cae.value) > .2f)
+				{
+					moving[cae.axis] = cae.value * (cae.axis == 1 ? -1 : +1);
+				}
+				else
+				{
+					moving[cae.axis] = 0;
+				}
+			}
+			else if(cae.axis == 2 || cae.axis == 3)
+			{
+				if(std::abs(cae.value) > .2f)
+				{
+					lookDirection[cae.axis - 2] = cae.value * (cae.axis == 3 ? -1 : +1);
+				}
+				else
+				{
+					lookDirection[cae.axis - 2] = 0;
+				}
+				looking = !lookDirection.isZero();
+			}
+			else if(cae.axis == 5)
+			{
+				if(cae.value > 0.f)
+				{
+					if(isAxis5Centered)
+					{
+						pickupItem();
+					}
+					isAxis5Centered = false;
+				}
+				else
+				{
+					isAxis5Centered = true;
+				}
+			}
+		}
+	}
+	else if(event.type == kit::Event::ControllerButton)
+	{
+		auto cbe = event.as<kit::ControllerButtonEvent>();
+		if(cbe.controller == number)
+		{
+			if(cbe.pressed)
+			{
+				if(cbe.button == 9)
+				{
+					character->useHeld();
+				}
+				else if(cbe.button == 8)
+				{
+					pickupItem();
+				}
+			}
+		}
+	}
+	else if(event.type == kit::Event::Update)
 	{
 		Vector2f velocity = character->getVelocity();
 		velocity += Vector2f(moving) * speed * event.as<kit::UpdateEvent>().dt;
@@ -178,3 +254,20 @@ void Player::setCharacterChosenFunction(std::function<void(int number)> function
 	characterChosenFunction = function;
 }
 
+void Player::pickupItem()
+{
+	if(character->getObjectHeld().isValid())
+	{
+		character->getObjectHeld()->setHeld(Ptr<Character>());
+		character->setObjectHeld(Ptr<Object>());
+	}
+	else
+	{
+		std::pair<Ptr<Object>, float> pair = level->getNearestObject(character->getPosition(), character.raw());
+		if(pair.first.isValid() && pair.second < pair.first->getRadius() + character->getRadius())
+		{
+			character->setObjectHeld(pair.first);
+			pair.first->setHeld(character);
+		}
+	}
+}

@@ -2,6 +2,7 @@
 #include "Sword.h"
 #include "Shrinker.h"
 #include "RocketLauncher.h"
+#include <kit/audio.h>
 #include <kit/math_util.h>
 #include "Game.h"
 
@@ -91,6 +92,10 @@ void Level::update(float dt)
 	if(paused)
 	{
 		return;
+	}
+	if(kit::math::random(0.f, 1.f) < dt * .05f)
+	{
+		kit::audio::play("sounds/announcer" + std::to_string(kit::math::random(0, 4)) + ".ogg");
 	}
 	if((signed)objects.size() < size[0] * size[1] / 20)
 	{
@@ -226,7 +231,7 @@ std::vector<std::pair<Ptr<Object>, float>> Level::getObjectsWithinCircle(Vector2
 std::pair<Ptr<Object>, float> Level::getNearestObject(Vector2f position, Object const * exclude) const
 {
 	Ptr<Object> nearestObject;
-	float nearestDistanceSq;
+	float nearestDistanceSq = 0;
 	for(auto object : objects)
 	{
 		if(exclude == object.raw())

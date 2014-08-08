@@ -2,13 +2,16 @@
 #include <kit/file_system.h>
 #include <kit/math_util.h>
 
-CharacterMenu::CharacterMenu(Ptr<kit::Window> _window)
+CharacterMenu::CharacterMenu(int _controller, Ptr<kit::Window> _window)
 {
+	controller = _controller;
 	window = _window;
 
 	currentCharacter = 0;
 	targetAngle = 0;
 	currentAngle = 0;
+
+	controllerCentered = true;
 
 	// Get character images;
 	filenames = kit::fs::getFilesInFolder("art/characters");
@@ -50,28 +53,56 @@ void CharacterMenu::handleEvent(kit::Event const & event)
 		{
 			if(ke.key == kit::KeyboardEvent::Left)
 			{
-				currentCharacter--;
-				if(currentCharacter < 0)
-				{
-					currentCharacter += characterSprites.size();
-				}
-				targetAngle = currentCharacter * stepAngle;
+				moveSelection(-1);
 			}
 			else if(ke.key == kit::KeyboardEvent::Right)
 			{
-				currentCharacter++;
-				if(currentCharacter >= (int)characterSprites.size())
-				{
-					currentCharacter -= characterSprites.size();
-				}
-				targetAngle = currentCharacter * stepAngle;
+				moveSelection(+1);
 			}
 			else if(ke.key == kit::KeyboardEvent::Enter)
 			{
-				if(characterChosenFunction)
+				chooseSelection();
+			}
+		}
+	}
+	else if(event.type == kit::Event::ControllerAxis)
+	{
+		auto cae = event.as<kit::ControllerAxisEvent>();
+		if(cae.controller == controller)
+		{
+			if(cae.axis == 0)
+			{
+				if(cae.value > .5f)
 				{
-					characterChosenFunction(filenames[currentCharacter]);
+					if(controllerCentered)
+					{
+						moveSelection(+1);
+						controllerCentered = false;
+					}
 				}
+				else if(cae.value < -.5f)
+				{
+					if(controllerCentered)
+					{
+						moveSelection(-1);
+						controllerCentered = false;
+					}
+				}
+				else
+				{
+					controllerCentered = true;
+				}
+			}
+		}
+	}
+	else if(event.type == kit::Event::ControllerButton)
+	{
+		auto cbe = event.as<kit::ControllerButtonEvent>();
+		if(cbe.controller == controller)
+		{
+			if(cbe.pressed)
+			{
+				chooseSelection();
 			}
 		}
 	}
@@ -117,3 +148,16 @@ void CharacterMenu::setCharacterChosenFunction(std::function<void(std::string co
 	characterChosenFunction = function;
 }
 
+void CharacterMenu::moveSelection(int offset)
+{
+	currentCharacter = (currentCharacter + offset + characterSprites.size()) % characterSprites.size();
+	targetAngle = currentCharacter * stepAngle;
+}
+
+void CharacterMenu::chooseSelection()
+{
+	if(characterChosenFunction)
+	{
+		characterChosenFunction(filenames[currentCharacter]);
+	}
+}

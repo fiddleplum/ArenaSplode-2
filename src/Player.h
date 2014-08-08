@@ -16,11 +16,21 @@ public:
 
 	~Player();
 
-	int getNumber() { return number; }
+	int getNumber()
+	{
+		return number;
+	}
+
+	std::string getCharacterFilename()
+	{
+		return characterFilename;
+	}
+
+	void addScore(int amount);
 
 	bool hasCharacter() const;
 
-	void setCharacter(std::string const & character);
+	void spawnNewCharacter();
 
 	void handleEvent(kit::Event const & event);
 
@@ -33,6 +43,8 @@ public:
 private:
 	void characterChosen(std::string const & characterFilename);
 
+	void pickupItem();
+
 	Ptr<kit::Window> window;
 	Ptr<kit::scene::Scene> scene;
 	Recti bounds;
@@ -41,12 +53,15 @@ private:
 	OwnPtr<kit::flat::Camera> camera;
 	OwnPtr<Character> character;
 	OwnPtr<CharacterMenu> characterMenu;
+	std::string characterFilename;
 	std::function<void(int number)> characterChosenFunction;
+	int score;
 
 	int number;
-	Vector2i moving;
+	Vector2f moving;
 	bool looking;
 	Vector2f lookDirection;
+	bool isAxis5Centered;
 	float speed;
 };
 

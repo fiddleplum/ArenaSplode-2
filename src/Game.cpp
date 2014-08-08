@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "Level.h"
 #include "NumPlayersMenu.h"
+#include "WinScreen.h"
 #include <kit/start_finish.h>
 #include <kit/log.h>
 #include <kit/audio.h>
@@ -40,6 +41,8 @@ Game::Game()
 
 	numPlayersMenu.setNew(window);
 	numPlayersMenu->setPlayersButtonPressedFunction(std::bind(&Game::numPlayersChosen, this, std::placeholders::_1));
+	state = NumPlayersSelection;
+	willRestart = false;
 }
 
 Game::~Game()
@@ -51,13 +54,34 @@ Game::~Game()
 
 void Game::handleEvent(kit::Event const & event)
 {
+	if(willRestart)
+	{
+		winScreen.setNull();
+		level.setNull();
+		kit::app::removeScene(scene);
+		players.clear();
+		numPlayersMenu.setNew(window);
+		numPlayersMenu->setPlayersButtonPressedFunction(std::bind(&Game::numPlayersChosen, this, std::placeholders::_1));
+		numPlayersMenu->updateWidgets();
+		state = NumPlayersSelection;
+		willRestart = false;
+		return;
+	}
 	if(numPlayersMenu.isValid())
 	{
 		numPlayersMenu->handleEvent(event);
 	}
+	if(winScreen.isValid())
+	{
+		winScreen->handleEvent(event);
+	}
 	for(auto player : players)
 	{
 		player->handleEvent(event);
+		if(players.empty())
+		{
+			break;
+		}
 	}
 }
 
@@ -66,12 +90,16 @@ void Game::handleSceneEvent(kit::Event const & event)
 	for(auto player : players)
 	{
 		player->handleSceneEvent(event);
+		if(players.empty())
+		{
+			break;
+		}
 	}
 	if(event.type == kit::Event::Update)
 	{
 		static float lastTime = 0;
 		float thisTime = kit::app::getTime();
-		kit::log::write(std::to_string(1.0f / (thisTime - lastTime)));
+		//kit::log::write(std::to_string(1.0f / (thisTime - lastTime)));
 		lastTime = thisTime;
 		if(level.isValid())
 		{
@@ -128,6 +156,16 @@ void Game::numPlayersChosen(int numPlayers)
 	updateWidgets();
 
 	state = CharacterSelection;
+}
+
+void Game::playerWins(int player)
+{
+	winScreen.setNew(window, players[player]->getCharacterFilename());
+}
+
+void Game::restart()
+{
+	willRestart = true;
 }
 
 void kit::start(std::vector<std::string> const &)

@@ -2,33 +2,56 @@
 
 #include "Object.h"
 
+class Player;
+
 class Character : public Object
 {
 public:
-	Character(Ptr<Level> level, std::string const & characterFilename);
+	Character(Player * player, Ptr<Level> level, std::string const & characterFilename);
 
-	float getMaxSpeed() const { return maxSpeed; }
-	void setMaxSpeed(float _maxSpeed) { maxSpeed = _maxSpeed; }
+	Player * getPlayer() const
+	{
+		return player;
+	}
 
-	Ptr<Object> getObjectHeld() const { return objectHeld; }
+	float getMaxSpeed() const
+	{
+		return maxSpeed;
+	}
+	void setMaxSpeed(float _maxSpeed)
+	{
+		maxSpeed = _maxSpeed;
+	}
+
+	Ptr<Object> getObjectHeld() const
+	{
+		return objectHeld;
+	}
 	void setObjectHeld(Ptr<Object> object);
 
-	bool isSwinging() { return swinging; }
+	bool isSwinging()
+	{
+		return swinging;
+	}
 
 	void useHeld();
 
-	void harm(float amount);
+	void harm(int owned, float amount);
 
 	void die();
+
+	void incNumKills();
 
 	void update(float dt) override;
 	void preRenderUpdate() override;
 
 private:
+	Player * player;
 	Ptr<Object> objectHeld;
 
 	float maxSpeed;
 
+	int numKills;
 	bool swinging;
 	float heldOrientationOffset;
 	float heldRadiusOffset;

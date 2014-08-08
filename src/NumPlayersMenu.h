@@ -17,9 +17,12 @@ public:
 	void setPlayersButtonPressedFunction(std::function<void(int numPlayers)> function);
 
 private:
+	void moveSelection(int offset);
 
 	Ptr<kit::Window> window;
 	std::function<void(int)> playersButtonPressedFunction;
 	std::vector<Ptr<kit::gui::Button>> playerButtons;
+	std::vector<bool> controllerCentered;
+	int selectedButton;
 };
 

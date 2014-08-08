@@ -5,9 +5,10 @@
 #include <kit/math_util.h>
 #include <kit/audio.h>
 
-Rocket::Rocket(Ptr<Level> level, int _type)
+Rocket::Rocket(int _owned, Ptr<Level> level, int _type)
 : Object(ROCKET, level, "art/items.png", Recti::minSize(128 + 16 * _type, 0, 16, 16))
 {
+	owned = _owned;
 	type = _type;
 	setSolid(true);
 	setRadius(8.f);
@@ -93,7 +94,7 @@ void Rocket::setExplode(float delay)
 void Rocket::explode()
 {
 	OwnPtr<Explosion> explosion;
-	explosion.setNew(level);
+	explosion.setNew(owned, level);
 	explosion->setPosition(getPosition());
 	level->addObject(explosion);
 	level->removeObject(this);
