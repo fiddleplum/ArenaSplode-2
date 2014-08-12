@@ -18,9 +18,9 @@ the last frame. There would be mouseMovedOffset(), mouseButtonWasPressed(int), m
 
 Also, it really should be:
 OwnPtr<Button> button;
-button.setNew(window); // adds to window
+button.create(window); // adds to window
 ...
-button.setNull(); // removes from window
+button.destroy(); // removes from window
 This way, RAII, the button appears the moment it is created. No more add/remove calls from the user. It just works.
 
 Namespaces:
@@ -149,7 +149,9 @@ void Game::numPlayersChosen(int numPlayers)
 	level.setNew(scene, Vector2i(25, 25));
 	for(int i = 0; i < numPlayers; i++)
 	{
-		players.push_back(OwnPtr<Player>::createNew(i, window, scene, level));
+		OwnPtr<Player> player;
+		player.setNew(i, window, scene, level);
+		players.push_back(player);
 		players.back()->setCharacterChosenFunction(std::bind(&Game::characterChosen, this, std::placeholders::_1));
 	}
 

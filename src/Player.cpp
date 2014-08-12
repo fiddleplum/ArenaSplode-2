@@ -21,6 +21,7 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	speed = 5000.0f;
 	score = 0;
 	looking = false;
+	cameraUsesCharacterOrientation = false;
 	isAxis5Centered = false;
 
 	characterMenu.setNew(number, window);
@@ -92,6 +93,18 @@ void Player::handleEvent(kit::Event const & event)
 	{
 		characterMenu->handleEvent(event);
 		return;
+	}
+	if(event.type == kit::Event::Keyboard)
+	{
+		auto ke = event.as<kit::KeyboardEvent>();
+		if(ke.key == ke.V && ke.pressed)
+		{
+			cameraUsesCharacterOrientation = !cameraUsesCharacterOrientation;
+			if(!cameraUsesCharacterOrientation)
+			{
+				camera->setOrientation(0.f);
+			}
+		}
 	}
 }
 
@@ -213,6 +226,10 @@ void Player::handleSceneEvent(kit::Event const & event)
 	else if(event.type == kit::Event::PreRenderUpdate)
 	{
 		camera->setPosition(character->getPosition());
+		if(cameraUsesCharacterOrientation)
+		{
+			camera->setOrientation(camera->getOrientation() + kit::math::random(-.01f, +.01f));
+		}
 	}
 }
 

@@ -57,6 +57,7 @@ private:
 	std::function<void(int number)> characterChosenFunction;
 	int score;
 
+	bool cameraUsesCharacterOrientation;
 	int number;
 	Vector2f moving;
 	bool looking;

@@ -93,6 +93,8 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Chain.cpp" />
+    <ClCompile Include="src\ChainWand.cpp" />
     <ClCompile Include="src\Character.cpp" />
     <ClCompile Include="src\CharacterMenu.cpp" />
     <ClCompile Include="src\Explosion.cpp" />
@@ -108,6 +110,8 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClCompile Include="src\WinScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Chain.h" />
+    <ClInclude Include="src\ChainWand.h" />
     <ClInclude Include="src\Character.h" />
     <ClInclude Include="src\CharacterMenu.h" />
     <ClInclude Include="src\Explosion.h" />

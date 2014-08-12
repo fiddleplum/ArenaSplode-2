@@ -8530,3 +8530,656 @@ Controller 0
   Num Buttons: 15
   Num Balls: 0
   Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 10
+Button: 10
+Button: 11
+Button: 11
+Button: 12
+Button: 12
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Log started.
+Controller 0
+  Num Axes: 6
+  Num Buttons: 15
+  Num Balls: 0
+  Num Hats: 0
+Button: 12
+Button: 12
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Button: 9
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.
+Log started.

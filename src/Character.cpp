@@ -7,7 +7,7 @@
 #include <kit/audio.h>
 
 Character::Character(Player * _player, Ptr<Level> level, std::string const & characterFilename)
-: Object(CHARACTER, level, "art/characters/" + characterFilename, Recti::minSize(0, 0, 64, 64))
+	: Object(CHARACTER, level, "art/characters/" + characterFilename, Recti::minSize(0, 0, 64, 64))
 {
 	player = _player;
 
@@ -27,7 +27,7 @@ Character::Character(Player * _player, Ptr<Level> level, std::string const & cha
 
 void Character::setObjectHeld(Ptr<Object> object)
 {
-	if(object.isNull() && objectHeld.isValid())
+	if(!object.isValid() && objectHeld.isValid())
 	{
 		objectHeld->setVelocity(getVelocity());
 		objectHeld->setZ(1);
@@ -47,14 +47,15 @@ void Character::useHeld()
 	}
 	switch(objectHeld->getType())
 	{
-	case SWORD:
-		swinging = true;
-		heldOrientationOffset = (float)kit::math::PI_OVER_4;
-		heldRadiusOffset = getRadius() * .5f;
-		break;
-	case ROCKET_LAUNCHER:
-		objectHeld.as<RocketLauncher>()->fire();
-		break;
+		case CHAIN_WAND:
+		case SWORD:
+			swinging = true;
+			heldOrientationOffset = (float)kit::math::PI_OVER_4;
+			heldRadiusOffset = getRadius() * .5f;
+			break;
+		case ROCKET_LAUNCHER:
+			objectHeld.as<RocketLauncher>()->fire();
+			break;
 	}
 }
 

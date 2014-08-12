@@ -1,6 +1,7 @@
 #include "Level.h"
 #include "Sword.h"
 #include "Shrinker.h"
+#include "ChainWand.h"
 #include "RocketLauncher.h"
 #include <kit/audio.h>
 #include <kit/math_util.h>
@@ -58,7 +59,7 @@ Ptr<kit::scene::Scene> Level::getScene() const
 	return scene;
 }
 
-void Level::addObject(OwnPtr<Object> object)
+void Level::addObject(OwnPtr<Object> const & object)
 {
 	objects.insert(object);
 }
@@ -103,22 +104,25 @@ void Level::update(float dt)
 		OwnPtr<Object> item;
 		switch(itemType)
 		{
-		case Object::SWORD:
-			item.setRaw(new Sword(game->level));
-			break;
-		case Object::ROCKET_LAUNCHER:
+			case Object::SWORD:
+				item.setNew<Sword>(game->level);
+				break;
+			case Object::ROCKET_LAUNCHER:
 			{
 				int type = kit::math::random(0, RocketLauncher::NUM_ROCKET_LAUNCHER_TYPES);
-				item.setRaw(new RocketLauncher(game->level, type));
+				item.setNew<RocketLauncher>(game->level, type);
 				break;
 			}
-		case Object::SHRINKER:
-			item.setRaw(new Shrinker(game->level));
-			break;
+			case Object::CHAIN_WAND:
+				item.setNew<ChainWand>(game->level);
+				break;
+			case Object::SHRINKER:
+				item.setNew<Shrinker>(game->level);
+				break;
 		}
 		if(item.isValid())
 		{
-			Vector2i position = { kit::math::random(0, size[0]), kit::math::random(1, size[1]) };
+			Vector2i position = {kit::math::random(0, size[0]), kit::math::random(1, size[1])};
 			item->setPosition(Vector2f(position[0] + .5f, position[1] + .5f).scale(tileSize));
 			objects.insert(item);
 		}
@@ -137,7 +141,7 @@ void Level::update(float dt)
 	{
 		for(auto object1 : objects)
 		{
-			if(object0 == object1 || (!object0->isSolid() && object0->getHeldCharacter().isNull()) || (!object1->isSolid() && object1->getHeldCharacter().isNull()))
+			if(object0 == object1 || (!object0->isSolid() && !object0->getHeldCharacter().isValid()) || (!object1->isSolid() && !object1->getHeldCharacter().isValid()))
 			{
 				continue;
 			}
@@ -239,7 +243,7 @@ std::pair<Ptr<Object>, float> Level::getNearestObject(Vector2f position, Object 
 			continue;
 		}
 		float distanceSq = (object->getPosition() - position).normSq();
-		if(nearestObject.isNull() || distanceSq < nearestDistanceSq)
+		if(!nearestObject.isValid() || distanceSq < nearestDistanceSq)
 		{
 			nearestObject = object;
 			nearestDistanceSq = distanceSq;

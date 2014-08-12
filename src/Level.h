@@ -20,7 +20,7 @@ public:
 
 	Ptr<kit::scene::Scene> getScene() const;
 
-	void addObject(OwnPtr<Object> object);
+	void addObject(OwnPtr<Object> const & object);
 
 	void removeObject(Object const * object);
 
