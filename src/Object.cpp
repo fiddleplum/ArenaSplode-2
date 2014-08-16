@@ -5,7 +5,7 @@ Object::Object(Type _type, Ptr<Level> _level, std::string const & textureFilenam
 {
 	type = _type;
 	level = _level;
-	object.setNew(level->getScene());
+	object.create(level->getScene());
 	object->setTexture(textureFilename);
 	object->setAsSprite(-textureCoords.getSize() / 2, textureCoords);
 	object->setZ(1);

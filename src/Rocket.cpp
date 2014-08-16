@@ -94,7 +94,7 @@ void Rocket::setExplode(float delay)
 void Rocket::explode()
 {
 	OwnPtr<Explosion> explosion;
-	explosion.setNew(owned, level);
+	explosion.create(owned, level);
 	explosion->setPosition(getPosition());
 	level->addObject(explosion);
 	level->removeObject(this);

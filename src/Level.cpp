@@ -43,7 +43,7 @@ Level::Level(Ptr<kit::scene::Scene> _scene, Vector2i _size)
 		for(int x = 0; x < size[0]; x += patchSize)
 		{
 			OwnPtr<kit::flat::Object> patch;
-			patch.setNew(scene);
+			patch.create(scene);
 			patch->setTexture("art/tiles.png");
 			patch->setPosition(Vector2i(x * tileSize[0], y * tileSize[1]));
 			patchSprites.push_back(patch);
@@ -105,19 +105,19 @@ void Level::update(float dt)
 		switch(itemType)
 		{
 			case Object::SWORD:
-				item.setNew<Sword>(game->level);
+				item.create<Sword>(game->level);
 				break;
 			case Object::ROCKET_LAUNCHER:
 			{
 				int type = kit::math::random(0, RocketLauncher::NUM_ROCKET_LAUNCHER_TYPES);
-				item.setNew<RocketLauncher>(game->level, type);
+				item.create<RocketLauncher>(game->level, type);
 				break;
 			}
 			case Object::CHAIN_WAND:
-				item.setNew<ChainWand>(game->level);
+				item.create<ChainWand>(game->level);
 				break;
 			case Object::SHRINKER:
-				item.setNew<Shrinker>(game->level);
+				item.create<Shrinker>(game->level);
 				break;
 		}
 		if(item.isValid())

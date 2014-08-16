@@ -25,7 +25,7 @@ void RocketLauncher::fire()
 	case DRUNK:
 		rocketType = Rocket::DRUNK; break;
 	}
-	rocket.setNew(getHeldCharacter()->getPlayer()->getNumber(), level, rocketType);
+	rocket.create(getHeldCharacter()->getPlayer()->getNumber(), level, rocketType);
 	Vector2f r = (getPosition() - getHeldCharacter()->getPosition()).unit();
 	rocket->setPosition(getPosition() + r * (getHeldCharacter()->getRadius() + rocket->getRadius() * 1.2f));
 	rocket->setVelocity(r * 400.f);

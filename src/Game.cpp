@@ -39,7 +39,7 @@ Game::Game()
 	window->setHandleContainerEventFunction(std::bind(&Game::handleEvent, this, std::placeholders::_1));
 	window->setUpdateWidgetBoundsFunction(std::bind(&Game::updateWidgets, this));
 
-	numPlayersMenu.setNew(window);
+	numPlayersMenu.create(window);
 	numPlayersMenu->setPlayersButtonPressedFunction(std::bind(&Game::numPlayersChosen, this, std::placeholders::_1));
 	state = NumPlayersSelection;
 	willRestart = false;
@@ -47,20 +47,20 @@ Game::Game()
 
 Game::~Game()
 {
-	numPlayersMenu.setNull();
+	numPlayersMenu.destroy();
 	players.clear();
-	level.setNull();
+	level.destroy();
 }
 
 void Game::handleEvent(kit::Event const & event)
 {
 	if(willRestart)
 	{
-		winScreen.setNull();
-		level.setNull();
+		winScreen.destroy();
+		level.destroy();
 		kit::app::removeScene(scene);
 		players.clear();
-		numPlayersMenu.setNew(window);
+		numPlayersMenu.create(window);
 		numPlayersMenu->setPlayersButtonPressedFunction(std::bind(&Game::numPlayersChosen, this, std::placeholders::_1));
 		numPlayersMenu->updateWidgets();
 		state = NumPlayersSelection;
@@ -143,14 +143,14 @@ void Game::characterChosen(int)
 
 void Game::numPlayersChosen(int numPlayers)
 {
-	numPlayersMenu.setNull();
+	numPlayersMenu.destroy();
 	scene = kit::app::addScene();
 	scene->setEventHandler(std::bind(&Game::handleSceneEvent, this, std::placeholders::_1));
-	level.setNew(scene, Vector2i(25, 25));
+	level.create(scene, Vector2i(25, 25));
 	for(int i = 0; i < numPlayers; i++)
 	{
 		OwnPtr<Player> player;
-		player.setNew(i, window, scene, level);
+		player.create(i, window, scene, level);
 		players.push_back(player);
 		players.back()->setCharacterChosenFunction(std::bind(&Game::characterChosen, this, std::placeholders::_1));
 	}
@@ -162,7 +162,7 @@ void Game::numPlayersChosen(int numPlayers)
 
 void Game::playerWins(int player)
 {
-	winScreen.setNew(window, players[player]->getCharacterFilename());
+	winScreen.create(window, players[player]->getCharacterFilename());
 }
 
 void Game::restart()
@@ -172,11 +172,11 @@ void Game::restart()
 
 void kit::start(std::vector<std::string> const &)
 {
-	game.setNew();
+	game.create();
 }
 
 void kit::finish()
 {
-	game.setNull();
+	game.destroy();
 }
 

@@ -22,7 +22,7 @@ void ChainWand::onTouch(Ptr<Object> object)
 		else if(character1 != object)
 		{
 			OwnPtr<Chain> chain;
-			chain.setNew(character1, object.as<Character>(), level);
+			chain.create(character1, object.as<Character>(), level);
 			level->addObject(chain);
 		}
 	}

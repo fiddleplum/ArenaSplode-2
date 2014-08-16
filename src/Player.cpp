@@ -13,7 +13,7 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	window = _window;
 	scene = _scene;
 	level = _level;
-	camera.setNew(scene);
+	camera.create(scene);
 	camera->setMaxViewSize(600.0f);
 	viewport = window->addViewport();
 	viewport->setScene(scene);
@@ -24,7 +24,7 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	cameraUsesCharacterOrientation = false;
 	isAxis5Centered = false;
 
-	characterMenu.setNew(number, window);
+	characterMenu.create(number, window);
 	characterMenu->setCharacterChosenFunction(std::bind(&Player::characterChosen, this, std::placeholders::_1));
 }
 
@@ -32,7 +32,7 @@ Player::~Player()
 {
 	if(characterMenu.isValid())
 	{
-		characterMenu.setNull();
+		characterMenu.destroy();
 	}
 	if(level.isValid())
 	{
@@ -64,7 +64,7 @@ void Player::spawnNewCharacter()
 	{
 		level->removeObject(character.raw());
 	}
-	character.setNew(this, level, characterFilename);
+	character.create(this, level, characterFilename);
 	character->setPosition(Vector2f(kit::math::random((float)(level->getTileSize()[0] * 2), (float)(level->getTileSize()[0] * (level->getSize()[0] - 2))), kit::math::random((float)(level->getTileSize()[1] * 2), (float)(level->getTileSize()[1] * (level->getSize()[1] - 2)))));
 	level->addObject(character);
 }
@@ -76,11 +76,11 @@ void Player::characterChosen(std::string const & _characterFilename)
 	{
 		level->removeObject(character.raw());
 	}
-	character.setNew(this, level, characterFilename);
+	character.create(this, level, characterFilename);
 	character->setPosition(Vector2f(kit::math::random((float)(level->getTileSize()[0] * 2), (float)(level->getTileSize()[0] * (level->getSize()[0] - 2))), kit::math::random((float)(level->getTileSize()[1] * 2), (float)(level->getTileSize()[1] * (level->getSize()[1] - 2)))));
 	level->addObject(character);
 	kit::audio::play("sounds/smw_coin.wav");
-	characterMenu.setNull();
+	characterMenu.destroy();
 	if(characterChosenFunction)
 	{
 		characterChosenFunction(number);
