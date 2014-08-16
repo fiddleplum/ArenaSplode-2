@@ -15,7 +15,16 @@ Chain::Chain(Ptr<Character> _character1, Ptr<Character> _character2, Ptr<Level> 
 
 void Chain::update(float dt)
 {
-
+	float k = .0001f;
+	float s = 256.f;
+	Vector2f r = character1->getPosition() - character2->getPosition();
+	float d = r.norm();
+	if(d > 0)
+	{
+		r.normalize();
+		character1->applyImpulse(r * -(d - s) * k);
+		character2->applyImpulse(r * (d - s) * k);
+	}
 }
 
 void Chain::preRenderUpdate()
