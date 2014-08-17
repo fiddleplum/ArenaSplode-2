@@ -64,5 +64,8 @@ private:
 	Vector2f lookDirection;
 	bool isAxis5Centered;
 	float speed;
+
+	enum { XBOX, WINGMAN };
+	int controllerType;
 };
 

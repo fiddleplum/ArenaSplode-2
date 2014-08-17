@@ -6,6 +6,8 @@
 #include <kit/math_util.h>
 #include <kit/audio.h>
 #include <kit/log.h>
+#include <kit/app.h>
+#include <kit/controllers.h>
 
 Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _scene, Ptr<Level> _level)
 {
@@ -26,6 +28,16 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 
 	characterMenu.create(number, window);
 	characterMenu->setCharacterChosenFunction(std::bind(&Player::characterChosen, this, std::placeholders::_1));
+
+	std::string controllerName = kit::controllers::getName(number);
+	if(controllerName.find("xdirect") != std::string::npos)
+	{
+		controllerType = XBOX;
+	}
+	else
+	{
+		controllerType = WINGMAN;
+	}
 }
 
 Player::~Player()
@@ -161,7 +173,7 @@ void Player::handleSceneEvent(kit::Event const & event)
 					moving[cae.axis] = 0;
 				}
 			}
-			else if(cae.axis == 2 || cae.axis == 3)
+			if((cae.axis == 2 || cae.axis == 3) && controllerType == XBOX)
 			{
 				if(std::abs(cae.value) > .2f)
 				{
@@ -173,7 +185,19 @@ void Player::handleSceneEvent(kit::Event const & event)
 				}
 				looking = !lookDirection.isZero();
 			}
-			else if(cae.axis == 5)
+			if((cae.axis == 3 || cae.axis == 4) && controllerType == WINGMAN)
+			{
+				if(std::abs(cae.value) > .2f)
+				{
+					lookDirection[cae.axis - 3] = cae.value * (cae.axis == 4 ? -1 : +1);
+				}
+				else
+				{
+					lookDirection[cae.axis - 3] = 0;
+				}
+				looking = !lookDirection.isZero();
+			}
+			if(cae.axis == 5 && controllerType == XBOX)
 			{
 				if(cae.value > 0.f)
 				{
@@ -197,13 +221,27 @@ void Player::handleSceneEvent(kit::Event const & event)
 		{
 			if(cbe.pressed)
 			{
-				if(cbe.button == 9)
+				if(controllerType == XBOX)
 				{
-					character->useHeld();
+					if(cbe.button == 9)
+					{
+						character->useHeld();
+					}
+					else if(cbe.button == 8)
+					{
+						pickupItem();
+					}
 				}
-				else if(cbe.button == 8)
+				else if(controllerType == WINGMAN)
 				{
-					pickupItem();
+					if(cbe.button == 6)
+					{
+						pickupItem();
+					}
+					else if(cbe.button == 7)
+					{
+						character->useHeld();
+					}
 				}
 			}
 		}
