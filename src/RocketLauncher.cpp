@@ -20,15 +20,23 @@ void RocketLauncher::fire()
 	{
 	case STRAIGHT:
 		rocketType = Rocket::STRAIGHT; break;
-	case SHRINKER:
-		rocketType = Rocket::SHRINKER; break;
+	case CAKE:
+		rocketType = Rocket::CAKE; break;
 	case DRUNK:
 		rocketType = Rocket::DRUNK; break;
 	}
 	rocket.create(getHeldCharacter()->getPlayer()->getNumber(), level, rocketType);
 	Vector2f r = (getPosition() - getHeldCharacter()->getPosition()).unit();
 	rocket->setPosition(getPosition() + r * (getHeldCharacter()->getRadius() + rocket->getRadius() * 1.2f));
-	rocket->setVelocity(r * 400.f);
+	if(type == STRAIGHT || DRUNK)
+	{
+		rocket->setVelocity(r * 1000.f);
+	}
+	else if(type == CAKE)
+	{
+		rocket->setVelocity(r * 600.f);
+	}
+	rocket->setScale(getScale());
 	level->addObject(rocket);
 }
 

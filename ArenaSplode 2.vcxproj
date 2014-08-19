@@ -105,6 +105,7 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Rocket.cpp" />
     <ClCompile Include="src\RocketLauncher.cpp" />
+    <ClCompile Include="src\Shell.cpp" />
     <ClCompile Include="src\Shrinker.cpp" />
     <ClCompile Include="src\Sword.cpp" />
     <ClCompile Include="src\WinScreen.cpp" />
@@ -122,6 +123,7 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClInclude Include="src\Player.h" />
     <ClInclude Include="src\Rocket.h" />
     <ClInclude Include="src\RocketLauncher.h" />
+    <ClInclude Include="src\Shell.h" />
     <ClInclude Include="src\Shrinker.h" />
     <ClInclude Include="src\Sword.h" />
     <ClInclude Include="src\WinScreen.h" />

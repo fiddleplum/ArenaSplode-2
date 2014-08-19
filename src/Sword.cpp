@@ -30,7 +30,7 @@ void Sword::onTouch(Ptr<Object> object)
 	}
 }
 
-void Sword::onOverTile(Vector2i tilePosition)
+void Sword::onOverTile(Vector2i tilePosition, Vector2f closest)
 {
 	Tile & tile = level->getTile(tilePosition);
 	if(getHeldCharacter().isValid() && getHeldCharacter()->isSwinging())

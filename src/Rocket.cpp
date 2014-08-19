@@ -6,7 +6,7 @@
 #include <kit/audio.h>
 
 Rocket::Rocket(int _owned, Ptr<Level> level, int _type)
-: Object(ROCKET, level, "art/items.png", Recti::minSize(128 + 16 * _type, 0, 16, 16))
+: Object(ROCKET, level, "art/items.png", Recti::minSize(128 + 32 * _type, 0, 32, 32))
 {
 	owned = _owned;
 	type = _type;
@@ -57,18 +57,17 @@ void Rocket::onTouch(Ptr<Object> object)
 			explodeCountdown = 0;
 		}
 	}
-	if(type == SHRINKER)
+	if(type == CAKE)
 	{
 		if(object->getType() == CHARACTER)
 		{
-			object->setScale(object->getScale() * .9f);
-			object->setFriction(.999f * getScale() + .7f * (1.f - getScale()));
+			object->setScale(object->getScale() * 1.2f);
 			level->removeObject(this);
 		}
 	}
 }
 
-void Rocket::onOverTile(Vector2i position)
+void Rocket::onOverTile(Vector2i position, Vector2f closest)
 {
 	Tile const & tile = level->getTile(position);
 	if(tile.type == Tile::Wall)
@@ -96,6 +95,7 @@ void Rocket::explode()
 	OwnPtr<Explosion> explosion;
 	explosion.create(owned, level);
 	explosion->setPosition(getPosition());
+	explosion->setScale(getScale());
 	level->addObject(explosion);
 	level->removeObject(this);
 }

@@ -8,7 +8,7 @@ class Character;
 class Object
 {
 public:
-	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, EXPLOSION, SHRINKER, CHAIN_WAND, CHAIN, NUM_TYPES };
+	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, EXPLOSION, SHRINKER, CHAIN_WAND, CHAIN, SHELL, NUM_TYPES };
 
 	Object(Type type, Ptr<Level> level, std::string const & textureFilename, Recti textureCoords);
 
@@ -60,7 +60,7 @@ public:
 
 	virtual void onTouch(Ptr<Object> object);
 
-	virtual void onOverTile(Vector2i tilePosition);
+	virtual void onOverTile(Vector2i tilePosition, Vector2f closest);
 
 protected:
 	Ptr<Level> level;

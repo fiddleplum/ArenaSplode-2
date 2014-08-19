@@ -1,6 +1,7 @@
 #include "Character.h"
 #include "RocketLauncher.h"
 #include "Level.h"
+#include "Shell.h"
 #include "Player.h"
 #include "Game.h"
 #include <kit/math_util.h>
@@ -35,6 +36,7 @@ void Character::setObjectHeld(Ptr<Object> object)
 	objectHeld = object;
 	if(objectHeld.isValid())
 	{
+		objectHeld->setScale(getScale());
 		objectHeld->setZ(2);
 	}
 }
@@ -55,6 +57,15 @@ void Character::useHeld()
 			break;
 		case ROCKET_LAUNCHER:
 			objectHeld.as<RocketLauncher>()->fire();
+			break;
+		case SHELL:
+			Ptr<Object> o = objectHeld;
+			Vector2f d = Vector2f(std::cos(getOrientation()), std::sin(getOrientation()));
+			setObjectHeld(Ptr<Object>());
+			o->setHeld(Ptr<Character>());
+			o->setPosition(getPosition() + 32.f * d);
+			o->setVelocity(400.f * d);
+			o.as<Shell>()->setOwned(getPlayer()->getNumber());
 			break;
 	}
 }
@@ -98,18 +109,24 @@ void Character::incNumKills()
 
 void Character::update(float dt)
 {
+	if(getPosition()[0] < 0 || getPosition()[1] < 0 || getPosition()[0] > level->getSize()[0] * level->getTileSize()[0] || getPosition()[1] > level->getSize()[1] * level->getTileSize()[1])
+	{
+		harm(getPlayer()->getNumber(), .1f);
+	}
 	if(getVelocity().norm() > maxSpeed)
 	{
 		setVelocity(getVelocity().unit() * maxSpeed);
 	}
-	if(getScale() < 1.f)
+	if(getScale() != 1.f)
 	{
 		setScale(.001f + .999f * getScale());
-		setFriction(.999f * getScale() + .7f * (1.f - getScale()));
-		if(getScale() > 1.f)
+		if(std::abs(getScale() - 1.f) < .01)
 		{
 			setScale(1.f);
-
+		}
+		if(objectHeld.isValid())
+		{
+			objectHeld->setScale(getScale());
 		}
 	}
 	if(swinging)
@@ -128,7 +145,7 @@ void Character::preRenderUpdate()
 {
 	if(objectHeld.isValid())
 	{
-		objectHeld->setPosition(getPosition() + (getRadius() + heldRadiusOffset) * Vector2f(std::cosf(getOrientation() + heldOrientationOffset), std::sinf(getOrientation() + heldOrientationOffset)));
+		objectHeld->setPosition(getPosition() + (getRadius() * getScale() + heldRadiusOffset) * Vector2f(std::cosf(getOrientation() + heldOrientationOffset), std::sinf(getOrientation() + heldOrientationOffset)));
 		objectHeld->setOrientation(getOrientation() + heldOrientationOffset);
 	}
 }

@@ -38,6 +38,7 @@ Game::Game()
 	window = kit::app::addWindow("ArenaSplode 2");
 	window->setHandleContainerEventFunction(std::bind(&Game::handleEvent, this, std::placeholders::_1));
 	window->setUpdateWidgetBoundsFunction(std::bind(&Game::updateWidgets, this));
+	//window->setFullscreen();
 
 	numPlayersMenu.create(window);
 	numPlayersMenu->setPlayersButtonPressedFunction(std::bind(&Game::numPlayersChosen, this, std::placeholders::_1));
@@ -48,6 +49,7 @@ Game::Game()
 Game::~Game()
 {
 	numPlayersMenu.destroy();
+	winScreen.destroy();
 	players.clear();
 	level.destroy();
 }
@@ -87,6 +89,15 @@ void Game::handleEvent(kit::Event const & event)
 
 void Game::handleSceneEvent(kit::Event const & event)
 {
+	if(event.type == kit::Event::ControllerButton)
+	{
+		auto cbe = event.as<kit::ControllerButtonEvent>();
+		if(cbe.pressed && cbe.button == 5)
+		{
+			willRestart = true;
+			return;
+		}
+	}
 	for(auto player : players)
 	{
 		player->handleSceneEvent(event);
@@ -108,7 +119,10 @@ void Game::handleSceneEvent(kit::Event const & event)
 	}
 	else if(event.type == kit::Event::PreRenderUpdate)
 	{
-		level->preRenderUpdate();
+		if(level.isValid())
+		{
+			level->preRenderUpdate();
+		}
 	}
 }
 
@@ -124,7 +138,7 @@ void Game::updateWidgets()
 	}
 }
 
-void Game::characterChosen(int)
+void Game::characterChosen(int playerNumber)
 {
 	bool allDoneChoosing = true;
 	for(auto player : players)

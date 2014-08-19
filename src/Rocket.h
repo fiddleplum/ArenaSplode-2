@@ -5,7 +5,7 @@
 class Rocket : public Object
 {
 public:
-	enum { STRAIGHT, SHRINKER, DRUNK };
+	enum { STRAIGHT, CAKE, DRUNK };
 
 	Rocket(int owned, Ptr<Level> level, int type);
 
@@ -15,7 +15,7 @@ public:
 
 	void onTouch(Ptr<Object> object) override;
 
-	void onOverTile(Vector2i position) override;
+	void onOverTile(Vector2i position, Vector2f closest) override;
 
 	void setExplode(float delay);
 

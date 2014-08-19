@@ -30,7 +30,7 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	characterMenu->setCharacterChosenFunction(std::bind(&Player::characterChosen, this, std::placeholders::_1));
 
 	std::string controllerName = kit::controllers::getName(number);
-	if(controllerName.find("xdirect") != std::string::npos)
+	if(controllerName.find("XInput") != std::string::npos)
 	{
 		controllerType = XBOX;
 	}
@@ -46,7 +46,7 @@ Player::~Player()
 	{
 		characterMenu.destroy();
 	}
-	if(level.isValid())
+	if(level.isValid() && character.isValid())
 	{
 		level->removeObject(character.raw());
 	}
@@ -59,7 +59,7 @@ Player::~Player()
 void Player::addScore(int amount)
 {
 	score += amount;
-	if(score >= 10)
+	if(score >= 100)
 	{
 		game->playerWins(number);
 	}
@@ -249,7 +249,7 @@ void Player::handleSceneEvent(kit::Event const & event)
 	else if(event.type == kit::Event::Update)
 	{
 		Vector2f velocity = character->getVelocity();
-		velocity += Vector2f(moving) * speed * event.as<kit::UpdateEvent>().dt;
+		velocity += Vector2f(moving) * speed / character->getScale() * event.as<kit::UpdateEvent>().dt;
 		character->setVelocity(velocity);
 
 		if(looking)

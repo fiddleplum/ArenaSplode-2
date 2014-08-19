@@ -11,7 +11,7 @@ Shrinker::Shrinker(Ptr<Level> level)
 
 void Shrinker::onTouch(Ptr<Object> object)
 {
-	if(object->getType() == Object::CHARACTER && getHeldCharacter() != object)
+	if(object->getType() == Object::CHARACTER && getHeldCharacter().isValid() && getHeldCharacter() != object)
 	{
 		Vector2f impulse = (this->getPosition() - object->getPosition()).unit() * 400.f;
 		object->applyImpulse(-impulse);

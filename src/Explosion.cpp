@@ -16,7 +16,7 @@ void Explosion::update(float dt)
 	if(time == 0)
 	{
 		kit::audio::play("sounds/explosion.wav");
-		auto objectsWithin = level->getObjectsWithinCircle(getPosition(), 128.0f, this);
+		auto objectsWithin = level->getObjectsWithinCircle(getPosition(), 128.0f * getScale(), this);
 		for(auto pair : objectsWithin)
 		{
 			Ptr<Object> object = pair.first;
@@ -32,7 +32,7 @@ void Explosion::update(float dt)
 					break;
 				case CHARACTER:
 				{
-					object.as<Character>()->harm(owned, 10.f);
+					object.as<Character>()->harm(owned, 10.f * getScale());
 					break;
 				}
 			}

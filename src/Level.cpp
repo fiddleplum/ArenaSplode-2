@@ -2,7 +2,9 @@
 #include "Sword.h"
 #include "Shrinker.h"
 #include "ChainWand.h"
+#include "Chain.h"
 #include "RocketLauncher.h"
+#include "Shell.h"
 #include <kit/audio.h>
 #include <kit/math_util.h>
 #include "Game.h"
@@ -66,6 +68,20 @@ void Level::addObject(OwnPtr<Object> const & object)
 
 void Level::removeObject(Object const * object)
 {
+	// Clear linked objects
+	if(object->getType() == Object::CHARACTER)
+	{
+		for(auto other : objects)
+		{
+			if(other->getType() == Object::CHAIN)
+			{
+				if(other.as<Chain>()->holdsCharacter((Character const *)object))
+				{
+					removeObject(other.raw());
+				}
+			}
+		}
+	}
 	auto it = objects.find(object);
 	if(it != objects.end())
 	{
@@ -119,6 +135,9 @@ void Level::update(float dt)
 			case Object::SHRINKER:
 				item.create<Shrinker>(game->level);
 				break;
+			case Object::SHELL:
+				item.create<Shell>(-1, game->level, Shell::GREEN);
+				break;
 		}
 		if(item.isValid())
 		{
@@ -141,19 +160,24 @@ void Level::update(float dt)
 	{
 		for(auto object1 : objects)
 		{
-			if(object0 == object1 || (!object0->isSolid() && !object0->getHeldCharacter().isValid()) || (!object1->isSolid() && !object1->getHeldCharacter().isValid()))
+			if(object0 == object1)
 			{
 				continue;
 			}
 			Vector2f r = object0->getPosition() - object1->getPosition();
-			float radiusSum = object0->getRadius() + object1->getRadius();
+			float radiusSum = object0->getRadius() * object0->getScale() + object1->getRadius() * object1->getScale();
 			float d = (radiusSum * radiusSum) - r.normSq();
 			if(d > 0 && !r.isZero())
 			{
-				d = radiusSum - r.norm();
-				r.normalize();
-				object0->setPosition(object0->getPosition() + r * d * 0.0f);
-				object1->setPosition(object1->getPosition() - r * d * 0.0f);
+				if(object0->isSolid() && object1->isSolid())
+				{
+					d = radiusSum - r.norm();
+					r.normalize();
+					object0->setPosition(object0->getPosition() + r * d * 0.0f);
+					object1->setPosition(object1->getPosition() - r * d * 0.0f);
+					object0->applyImpulse(r);
+					object1->applyImpulse(-r);
+				}
 				object0->onTouch(object1);
 				object1->onTouch(object0);
 			}
@@ -177,9 +201,9 @@ void Level::update(float dt)
 				Rectf bounds = Rectf::minSize((float)(tilePosition[0] * tileSize[0]), (float)(tilePosition[1] * tileSize[1]), (float)tileSize[0], (float)tileSize[1]);
 				// Get closest point to circle within tile
 				Vector2f closest = bounds.closest(object->getPosition());
-				if((closest - object->getPosition()).normSq() < object->getRadius() * object->getRadius())
+				if((closest - object->getPosition()).normSq() < object->getRadius() * object->getScale() * object->getRadius() * object->getScale())
 				{
-					object->onOverTile(tilePosition);
+					object->onOverTile(tilePosition, closest);
 					if(tile.type == Tile::Floor)
 					{
 						continue;
@@ -188,15 +212,8 @@ void Level::update(float dt)
 					if(!r.isZero())
 					{
 						Vector2f rUnit = r.unit();
-						object->setPosition(object->getPosition() + rUnit * (object->getRadius() - r.norm()));
-						if(r.normSq() > .1f)
-						{
-							object->setVelocity(object->getVelocity() - 1.0f * rUnit * object->getVelocity().dot(rUnit));
-						}
-						else
-						{
-							object->setVelocity(object->getVelocity() - rUnit * object->getVelocity().dot(rUnit));
-						}
+						object->setPosition(object->getPosition() + rUnit * (object->getRadius() * object->getScale() - r.norm()));
+						object->setVelocity(object->getVelocity() - object->getBounciness() * rUnit * object->getVelocity().dot(rUnit));
 					}
 				}
 			}

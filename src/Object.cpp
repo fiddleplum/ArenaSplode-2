@@ -12,7 +12,7 @@ Object::Object(Type _type, Ptr<Level> _level, std::string const & textureFilenam
 	friction = .999f;
 	radius = 32.0f;
 	solid = false;
-	bounciness = 10;
+	bounciness = 1;
 	scale = 1.0f;
 }
 
@@ -24,6 +24,14 @@ void Object::setBounciness(float _bounciness)
 void Object::setScale(float _scale)
 {
 	scale = _scale;
+	if(scale > 4.f)
+	{
+		scale = 4.f;
+	}
+	if(scale < .25f)
+	{
+		scale = .25f;
+	}
 	object->setScale(scale);
 }
 
@@ -42,6 +50,10 @@ void Object::doPhysics(float dt)
 	if(getHeldCharacter().isValid())
 	{
 		return;
+	}
+	if(velocity.norm() > 100000.f)
+	{
+		velocity = velocity.unit() * 10000.f;
 	}
 	if(velocity.normSq() > 1.f)
 	{
@@ -81,7 +93,7 @@ void Object::onTouch(Ptr<Object> object)
 {
 }
 
-void Object::onOverTile(Vector2i tilePosition)
+void Object::onOverTile(Vector2i tilePosition, Vector2f closest)
 {
 }
 
