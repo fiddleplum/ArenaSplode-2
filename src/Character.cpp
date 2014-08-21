@@ -4,6 +4,7 @@
 #include "Shell.h"
 #include "Player.h"
 #include "Game.h"
+#include <kit/app.h>
 #include <kit/math_util.h>
 #include <kit/audio.h>
 
@@ -70,6 +71,12 @@ void Character::useHeld()
 	}
 }
 
+void Character::setCrazy()
+{
+	crazy = true;
+	crazyStart = kit::app::getTime();
+}
+
 void Character::harm(int owned, float amount)
 {
 	if(owned != -1 && player->getNumber() != owned)
@@ -116,6 +123,20 @@ void Character::update(float dt)
 	if(getVelocity().norm() > maxSpeed)
 	{
 		setVelocity(getVelocity().unit() * maxSpeed);
+	}
+	if(crazy)
+	{
+		if(kit::app::getTime() < crazyStart + 10.f)
+		{
+			if(kit::math::random(0.f, .5f) < dt)
+			{
+				applyImpulse(Vector2f(kit::math::random(-5000.f, +5000.f), kit::math::random(-5000.f, +5000.f)));
+			}
+		}
+		else
+		{
+			crazy = false;
+		}
 	}
 	if(getScale() != 1.f)
 	{

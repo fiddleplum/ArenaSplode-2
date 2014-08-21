@@ -3,6 +3,7 @@
 #include "Shrinker.h"
 #include "ChainWand.h"
 #include "Chain.h"
+#include "Crazy.h"
 #include "RocketLauncher.h"
 #include "Shell.h"
 #include <kit/audio.h>
@@ -131,6 +132,9 @@ void Level::update(float dt)
 			}
 			case Object::CHAIN_WAND:
 				item.create<ChainWand>(game->level);
+				break;
+			case Object::CRAZY:
+				item.create<Crazy>(game->level);
 				break;
 			case Object::SHRINKER:
 				item.create<Shrinker>(game->level);

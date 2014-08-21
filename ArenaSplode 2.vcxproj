@@ -97,6 +97,7 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClCompile Include="src\ChainWand.cpp" />
     <ClCompile Include="src\Character.cpp" />
     <ClCompile Include="src\CharacterMenu.cpp" />
+    <ClCompile Include="src\Crazy.cpp" />
     <ClCompile Include="src\Explosion.cpp" />
     <ClCompile Include="src\NumPlayersMenu.cpp" />
     <ClCompile Include="src\Object.cpp" />
@@ -115,6 +116,7 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClInclude Include="src\ChainWand.h" />
     <ClInclude Include="src\Character.h" />
     <ClInclude Include="src\CharacterMenu.h" />
+    <ClInclude Include="src\Crazy.h" />
     <ClInclude Include="src\Explosion.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\NumPlayersMenu.h" />

@@ -8,7 +8,7 @@ class Character;
 class Object
 {
 public:
-	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, EXPLOSION, SHRINKER, CHAIN_WAND, CHAIN, SHELL, NUM_TYPES };
+	enum Type { CHARACTER, SWORD, ROCKET_LAUNCHER, ROCKET, EXPLOSION, SHRINKER, CRAZY, CHAIN_WAND, CHAIN, SHELL, NUM_TYPES };
 
 	Object(Type type, Ptr<Level> level, std::string const & textureFilename, Recti textureCoords);
 

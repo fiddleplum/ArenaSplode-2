@@ -34,6 +34,8 @@ public:
 		return swinging;
 	}
 
+	void setCrazy();
+
 	void useHeld();
 
 	void harm(int owned, float amount);
@@ -57,5 +59,8 @@ private:
 	float heldRadiusOffset;
 
 	float health;
+
+	bool crazy;
+	float crazyStart;
 };
 
