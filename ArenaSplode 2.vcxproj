@@ -99,11 +99,13 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClCompile Include="src\CharacterMenu.cpp" />
     <ClCompile Include="src\Crazy.cpp" />
     <ClCompile Include="src\Explosion.cpp" />
+    <ClCompile Include="src\Nuke.cpp" />
     <ClCompile Include="src\NumPlayersMenu.cpp" />
     <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Level.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\RobotBody.cpp" />
     <ClCompile Include="src\Rocket.cpp" />
     <ClCompile Include="src\RocketLauncher.cpp" />
     <ClCompile Include="src\Shell.cpp" />
@@ -119,10 +121,12 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
     <ClInclude Include="src\Crazy.h" />
     <ClInclude Include="src\Explosion.h" />
     <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Nuke.h" />
     <ClInclude Include="src\NumPlayersMenu.h" />
     <ClInclude Include="src\Object.h" />
     <ClInclude Include="src\Level.h" />
     <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\RobotBody.h" />
     <ClInclude Include="src\Rocket.h" />
     <ClInclude Include="src\RocketLauncher.h" />
     <ClInclude Include="src\Shell.h" />

@@ -2,8 +2,10 @@
 #include "RocketLauncher.h"
 #include "Level.h"
 #include "Shell.h"
+#include "Nuke.h"
 #include "Player.h"
 #include "Game.h"
+#include "RobotBody.h"
 #include <kit/app.h>
 #include <kit/math_util.h>
 #include <kit/audio.h>
@@ -11,6 +13,7 @@
 Character::Character(Player * _player, Ptr<Level> level, std::string const & characterFilename)
 	: Object(CHARACTER, level, "art/characters/" + characterFilename, Recti::minSize(0, 0, 64, 64))
 {
+	filename = characterFilename;
 	player = _player;
 
 	setSolid(true);
@@ -60,6 +63,7 @@ void Character::useHeld()
 			objectHeld.as<RocketLauncher>()->fire();
 			break;
 		case SHELL:
+		{
 			Ptr<Object> o = objectHeld;
 			Vector2f d = Vector2f(std::cos(getOrientation()), std::sin(getOrientation()));
 			setObjectHeld(Ptr<Object>());
@@ -67,6 +71,10 @@ void Character::useHeld()
 			o->setPosition(getPosition() + 32.f * d);
 			o->setVelocity(400.f * d);
 			o.as<Shell>()->setOwned(getPlayer()->getNumber());
+			break;
+		}
+		case NUKE:
+			objectHeld.as<Nuke>()->explode(getPlayer()->getNumber());
 			break;
 	}
 }
@@ -79,14 +87,22 @@ void Character::setCrazy()
 
 void Character::harm(int owned, float amount)
 {
+	if(health == 0)
+	{
+		return;
+	}
+	if(amount > health)
+	{
+		amount = health;
+	}
 	if(owned != -1 && player->getNumber() != owned)
 	{
-		game->players[owned]->addScore(1);
+		game->players[owned]->addScore((int)amount);
 	}
 	int r = kit::math::random(0, 3);
 	kit::audio::play("sounds/hurt" + std::to_string(r) + ".ogg");
 	health -= amount;
-	if(health < 0)
+	if(health <= 0)
 	{
 		if(owned != -1 && player->getNumber() != owned)
 		{
@@ -102,6 +118,16 @@ void Character::die()
 	kit::audio::play("sounds/death" + std::to_string(r) + ".ogg");
 	setObjectHeld(Ptr<Object>());
 	level->removeObject(this);
+	for(int i = 0; i < 4; i++)
+	{
+		OwnPtr<RobotBody> body;
+		body.create(level, filename, i);
+		body->setPosition(getPosition() + Vector2f(kit::math::random(-32.f, +32.f), kit::math::random(-32.f, +32.f)));
+		body->setVelocity(getVelocity() + Vector2f(kit::math::random(-32.f, +32.f), kit::math::random(-32.f, +32.f)));
+		body->setOrientation(kit::math::random(0, kit::math::TWO_PI));
+		body->setScale(getScale());
+		level->addObject(body);
+	}
 	player->spawnNewCharacter();
 }
 
@@ -116,6 +142,10 @@ void Character::incNumKills()
 
 void Character::update(float dt)
 {
+	if(health == 0)
+	{
+		return;
+	}
 	if(getPosition()[0] < 0 || getPosition()[1] < 0 || getPosition()[0] > level->getSize()[0] * level->getTileSize()[0] || getPosition()[1] > level->getSize()[1] * level->getTileSize()[1])
 	{
 		harm(getPlayer()->getNumber(), .1f);
@@ -128,9 +158,9 @@ void Character::update(float dt)
 	{
 		if(kit::app::getTime() < crazyStart + 10.f)
 		{
-			if(kit::math::random(0.f, .5f) < dt)
+			if(kit::math::random(0.f, .25f) < dt)
 			{
-				applyImpulse(Vector2f(kit::math::random(-5000.f, +5000.f), kit::math::random(-5000.f, +5000.f)));
+				applyImpulse(Vector2f(kit::math::random(-1000.f, +1000.f), kit::math::random(-1000.f, +1000.f)));
 			}
 		}
 		else

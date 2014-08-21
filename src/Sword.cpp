@@ -19,7 +19,7 @@ void Sword::onTouch(Ptr<Object> object)
 		Vector2f impulse = (this->getPosition() - object->getPosition()).unit() * 400.f;
 		object->applyImpulse(-impulse);
 		this->applyImpulse(impulse);
-		object.as<Character>()->harm(getHeldCharacter()->getPlayer()->getNumber(), 10.f);
+		object.as<Character>()->harm(getHeldCharacter()->getPlayer()->getNumber(), 3.f);
 	}
 	else if(object->getType() == Object::SWORD && object->getHeldCharacter().isValid())
 	{

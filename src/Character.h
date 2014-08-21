@@ -60,6 +60,8 @@ private:
 
 	float health;
 
+	std::string filename;
+
 	bool crazy;
 	float crazyStart;
 };

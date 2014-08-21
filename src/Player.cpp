@@ -59,7 +59,7 @@ Player::~Player()
 void Player::addScore(int amount)
 {
 	score += amount;
-	if(score >= 100)
+	if(score >= 400)
 	{
 		game->playerWins(number);
 	}

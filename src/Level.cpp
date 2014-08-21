@@ -3,6 +3,7 @@
 #include "Shrinker.h"
 #include "ChainWand.h"
 #include "Chain.h"
+#include "Nuke.h"
 #include "Crazy.h"
 #include "RocketLauncher.h"
 #include "Shell.h"
@@ -142,6 +143,12 @@ void Level::update(float dt)
 			case Object::SHELL:
 				item.create<Shell>(-1, game->level, Shell::GREEN);
 				break;
+			case Object::NUKE:
+				if(kit::math::random(0, 1) < .05f)
+				{
+					item.create<Nuke>(game->level);
+				}
+				break;
 		}
 		if(item.isValid())
 		{
@@ -179,8 +186,8 @@ void Level::update(float dt)
 					r.normalize();
 					object0->setPosition(object0->getPosition() + r * d * 0.0f);
 					object1->setPosition(object1->getPosition() - r * d * 0.0f);
-					object0->applyImpulse(r);
-					object1->applyImpulse(-r);
+					object0->applyImpulse(r * 10.f);
+					object1->applyImpulse(-r * 10.f);
 				}
 				object0->onTouch(object1);
 				object1->onTouch(object0);

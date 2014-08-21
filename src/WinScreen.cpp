@@ -7,13 +7,12 @@ WinScreen::WinScreen(Ptr<kit::Window> _window, std::string const & characterFile
 {
 	window = _window;
 
-	for(int i = 0; i < numSprites; i++)
-	{
-		sprite[i] = window->addSprite();
-		sprite[i]->setTexture("art/characters/" + characterFilename);
-		sprite[i]->setTextureBounds(Recti::minSize(0, 0, 64, 64));
-		sprite[i]->setPosition(Vector2i(kit::math::random(0, window->getSize()[0]), kit::math::random(0, window->getSize()[1])));
-	}
+	sprite = window->addSprite();
+	sprite->setTexture("art/characters/" + characterFilename);
+	sprite->setTextureBounds(Recti::minSize(0, 0, 64, 64));
+	sprite->setScale(8.f);
+	sprite->setPosition(Vector2i((window->getSize()[0] - sprite->getBounds().getSize()[0]) / 2, (window->getSize()[1] - sprite->getBounds().getSize()[1])  /2));
+
 	timeShownSoFar = 0;
 	kit::audio::play("sounds/win.ogg");
 }
@@ -22,10 +21,7 @@ WinScreen::~WinScreen()
 {
 	if(window.isValid())
 	{
-		for(int i = 0; i < numSprites; i++)
-		{
-			window->removeWidget(sprite[i]);
-		}
+		window->removeWidget(sprite);
 	}
 }
 
@@ -56,3 +52,4 @@ void WinScreen::handleEvent(kit::Event const & event)
 		timeShownSoFar += ue.dt;
 	}
 }
+

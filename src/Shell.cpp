@@ -24,6 +24,11 @@ void Shell::setOwned(int _owned)
 
 void Shell::update(float dt)
 {
+	Vector2f velocity = getVelocity();
+	if(velocity.norm() > 400.f)
+	{
+		setVelocity(velocity.unit() * 400.f);
+	}
 	if(!getHeldCharacter().isValid())
 	{
 		//ttl -= dt;
@@ -46,7 +51,7 @@ void Shell::onTouch(Ptr<Object> object)
 		{
 			if(object->getType() == CHARACTER && object.as<Character>()->getPlayer()->getNumber() != owned && getVelocity().normSq() > 100.f)
 			{
-				object.as<Character>()->harm(owned, 1.f);
+				object.as<Character>()->harm(owned, 5.f);
 			}
 			if(object->getType() == CHARACTER || (object->getType() == SWORD && object->getHeldCharacter().isValid() && object->getHeldCharacter()->isSwinging()))
 			{

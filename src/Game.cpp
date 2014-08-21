@@ -176,6 +176,7 @@ void Game::numPlayersChosen(int numPlayers)
 
 void Game::playerWins(int player)
 {
+	level->setPaused(true);
 	winScreen.create(window, players[player]->getCharacterFilename());
 }
 

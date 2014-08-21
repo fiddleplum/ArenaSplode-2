@@ -12,9 +12,7 @@ public:
 	void handleEvent(kit::Event const & event);
 
 private:
-	static int const numSprites = 100;
-
 	Ptr<kit::Window> window;
-	Ptr<kit::gui::Sprite> sprite[numSprites];
+	Ptr<kit::gui::Sprite> sprite;
 	float timeShownSoFar;
 };
