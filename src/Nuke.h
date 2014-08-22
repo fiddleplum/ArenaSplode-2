@@ -8,5 +8,8 @@ public:
 	Nuke(Ptr<Level> level);
 
 	void explode(int owned);
+
+private:
+	bool exploding;
 };
 

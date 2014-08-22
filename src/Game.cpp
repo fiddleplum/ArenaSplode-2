@@ -16,12 +16,25 @@ and then put them in an kit::input namespace. In the game loop, the app would ca
 Each widget then would call something like kit:input::getMouseMovement(), which would get the mouse movement since
 the last frame. There would be mouseMovedOffset(), mouseButtonWasPressed(int), mouseButtonWasUnpressed(int),etc.
 
-Also, it really should be:
-OwnPtr<Button> button;
-button.create(window); // adds to window
-...
-button.destroy(); // removes from window
-This way, RAII, the button appears the moment it is created. No more add/remove calls from the user. It just works.
+kit owns all pointers.
+window is a widgetcontainer
+this means you must subclass window (gamewindow) and implement updateWidgetBounds and handleContainerEvent.
+individual widgets are not subclassed, only widgetcontainers
+each widgetcontainer should have a "WidgetContainer * parent" member (for Window it would be nullptr)
+
+App * app = App::initialize();
+GameWindow * window = app->addWindow<GameWindow>();
+Viewports * viewports = window->add<Viewports>(); // viewports is a subclass of widgetcontainer
+Menu * menu = window->add<Menu>(); // menu is a subclass of widgetcontainer
+
+app->remove(window);
+App::finalize();
+
+Button should use functors not virtual functions, because the parent container wants to be able to be called when
+  the button is pressed (and not just the button itself). also, we'd need a separate button class for each button.
+WidgetContainer should use... updateWidgetBounds should be virtual protected, since it just calls its children.
+  handleContainerEvent should be virtual protected (i can't think of a reason to make it a functor)
+
 
 Namespaces:
 Make kit have no namespace. Make all app things be in the app namespace. ??? Maybe
@@ -35,6 +48,7 @@ OwnPtr<Game> game;
 
 Game::Game()
 {
+	logFile.create("log.txt");
 	window = kit::app::addWindow("ArenaSplode 2");
 	window->setHandleContainerEventFunction(std::bind(&Game::handleEvent, this, std::placeholders::_1));
 	window->setUpdateWidgetBoundsFunction(std::bind(&Game::updateWidgets, this));
@@ -110,7 +124,7 @@ void Game::handleSceneEvent(kit::Event const & event)
 	{
 		static float lastTime = 0;
 		float thisTime = kit::app::getTime();
-		//kit::log::write(std::to_string(1.0f / (thisTime - lastTime)));
+		logFile->write(std::to_string(1.0f / (thisTime - lastTime)));
 		lastTime = thisTime;
 		if(level.isValid())
 		{

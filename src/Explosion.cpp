@@ -1,6 +1,7 @@
 #include "Explosion.h"
 #include "Level.h"
 #include "Character.h"
+#include "Nuke.h"
 #include "Rocket.h"
 #include <kit/audio.h>
 
@@ -34,6 +35,10 @@ void Explosion::update(float dt)
 				{
 					object.as<Character>()->harm(owned, 10.f * getScale());
 					break;
+				}
+				case NUKE:
+				{
+					object.as<Nuke>()->explode(owned);
 				}
 			}
 		}

@@ -40,6 +40,8 @@ public:
 
 	void setCharacterChosenFunction(std::function<void(int number)> function);
 
+	void setText(int i);
+
 private:
 	void characterChosen(std::string const & characterFilename);
 
@@ -56,6 +58,12 @@ private:
 	std::string characterFilename;
 	std::function<void(int number)> characterChosenFunction;
 	int score;
+	int winScore = 500;
+
+	Ptr<kit::gui::Sprite> text;
+	float textSetTime;
+
+	std::vector<Ptr<kit::gui::Sprite>> scoreTicks;
 
 	bool cameraUsesCharacterOrientation;
 	int number;

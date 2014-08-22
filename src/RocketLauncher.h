@@ -11,6 +11,11 @@ public:
 	};
 	RocketLauncher(Ptr<Level> level, int type);
 
+	int getRocketType() const
+	{
+		return type;
+	}
+
 	void fire();
 
 private:

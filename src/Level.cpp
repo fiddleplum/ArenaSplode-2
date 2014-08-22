@@ -135,16 +135,19 @@ void Level::update(float dt)
 				item.create<ChainWand>(game->level);
 				break;
 			case Object::CRAZY:
-				item.create<Crazy>(game->level);
+				if(kit::math::random(0.f, 1.f) < .05f)
+				{
+					item.create<Crazy>(game->level);
+				}
 				break;
-			case Object::SHRINKER:
-				item.create<Shrinker>(game->level);
-				break;
+			//case Object::SHRINKER:
+			//	item.create<Shrinker>(game->level);
+			//	break;
 			case Object::SHELL:
 				item.create<Shell>(-1, game->level, Shell::GREEN);
 				break;
 			case Object::NUKE:
-				if(kit::math::random(0, 1) < .05f)
+				if(kit::math::random(0.f, 1.f) < .05f)
 				{
 					item.create<Nuke>(game->level);
 				}
@@ -171,11 +174,15 @@ void Level::update(float dt)
 	{
 		for(auto object1 : objects)
 		{
-			if(object0 == object1)
+			if(object0 == object1 || object0->getHeldCharacter() == object1 || object1->getHeldCharacter() == object0)
 			{
 				continue;
 			}
 			Vector2f r = object0->getPosition() - object1->getPosition();
+			if(r.normSq() > 65536)
+			{
+				continue;
+			}
 			float radiusSum = object0->getRadius() * object0->getScale() + object1->getRadius() * object1->getScale();
 			float d = (radiusSum * radiusSum) - r.normSq();
 			if(d > 0 && !r.isZero())

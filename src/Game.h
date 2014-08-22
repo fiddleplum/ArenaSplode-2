@@ -3,6 +3,7 @@
 #include <kit/ptr.h>
 #include <kit/window.h>
 #include <kit/scene/scene.h>
+#include <kit/log.h>
 #include <vector>
 
 class WinScreen;
@@ -41,6 +42,8 @@ public:
 	OwnPtr<NumPlayersMenu> numPlayersMenu;
 	std::vector<OwnPtr<Player>> players;
 	OwnPtr<Level> level;
+
+	OwnPtr<Log> logFile;
 };
 
 extern OwnPtr<Game> game;

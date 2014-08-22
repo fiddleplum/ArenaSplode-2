@@ -20,6 +20,9 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	viewport = window->addViewport();
 	viewport->setScene(scene);
 	viewport->setCamera(camera->getSceneCamera());
+	text = window->addSprite();
+	text->setTexture("art/text.png");
+	text->setTextureBounds(Recti::minSize(0, 0, 0, 0));
 	speed = 5000.0f;
 	score = 0;
 	looking = false;
@@ -59,7 +62,7 @@ Player::~Player()
 void Player::addScore(int amount)
 {
 	score += amount;
-	if(score >= 400)
+	if(score >= winScore)
 	{
 		game->playerWins(number);
 	}
@@ -116,6 +119,19 @@ void Player::handleEvent(kit::Event const & event)
 			{
 				camera->setOrientation(0.f);
 			}
+		}
+	}
+	if(event.type == kit::Event::Update)
+	{
+		int maxTicks = bounds.getSize()[0] / 4;
+		float scorePerTick = (float)winScore / (float)maxTicks;
+		if(score > (int)(scoreTicks.size() * scorePerTick))
+		{
+			Ptr<kit::gui::Sprite> tick = window->addSprite();
+			tick->setPosition(bounds.min + Vector2i(scoreTicks.size() * 4, 0));
+			tick->setTexture("art/items.png");
+			tick->setTextureBounds(Recti::minSize(176, 128, 4, 16));
+			scoreTicks.push_back(tick);
 		}
 	}
 }
@@ -268,6 +284,12 @@ void Player::handleSceneEvent(kit::Event const & event)
 		{
 			camera->setOrientation(camera->getOrientation() + kit::math::random(-.01f, +.01f));
 		}
+		float timeSinceLastTextSet = kit::app::getTime() - textSetTime;
+		if(timeSinceLastTextSet > 3.f)
+		{
+			float u = 1.0f - kit::math::clamp((timeSinceLastTextSet - 5.f) / 2.f, 0.f, 1.f);
+			text->setTextureBounds(Recti::minSize(text->getTextureBounds().min, Vector2i(512, (int)(u * 32.f))));
+		}
 	}
 }
 
@@ -298,6 +320,15 @@ void Player::updateWidgets()
 		viewport->setPosition(bounds.min);
 		viewport->setMaxSize(bounds.getSize());
 	}
+	if(text.isValid())
+	{
+		text->setPosition(Vector2i(bounds.min[0] + (bounds.getSize()[0] - 512) / 2, bounds.min[1]));
+	}
+	for(auto tick : scoreTicks)
+	{
+		window->removeWidget(tick);
+	}
+	scoreTicks.clear();
 	if(characterMenu.isValid())
 	{
 		characterMenu->updateWidgets(bounds);
@@ -307,6 +338,22 @@ void Player::updateWidgets()
 void Player::setCharacterChosenFunction(std::function<void(int number)> function)
 {
 	characterChosenFunction = function;
+}
+
+void Player::setText(int i)
+{
+	if(text.isValid())
+	{
+		if(i == -1)
+		{
+			text->setTextureBounds(Recti::minSize(0, 0, 0, 0));
+		}
+		else
+		{
+			text->setTextureBounds(Recti::minSize(0, i * 32, 512, 32));
+		}
+	}
+	textSetTime = kit::app::getTime();
 }
 
 void Player::pickupItem()

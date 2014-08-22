@@ -23,7 +23,7 @@ void Rocket::update(float dt)
 	setOrientation(getOrientation() + .05f);
 	if(type == DRUNK)
 	{
-		setVelocity(getVelocity().rotate2d(kit::math::random(-.1f, +.1f)));
+		setVelocity(getVelocity().rotate2d(kit::math::random(-.2f, +.2f)));
 	}
 	if(willExplode)
 	{
@@ -59,7 +59,7 @@ void Rocket::onTouch(Ptr<Object> object)
 	}
 	if(type == CAKE)
 	{
-		if(object->getType() == CHARACTER)
+		if(object->getType() == CHARACTER || object->getType() == SHELL)
 		{
 			object->setScale(object->getScale() * 1.2f);
 			level->removeObject(this);

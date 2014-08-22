@@ -51,7 +51,7 @@ void Shell::onTouch(Ptr<Object> object)
 		{
 			if(object->getType() == CHARACTER && object.as<Character>()->getPlayer()->getNumber() != owned && getVelocity().normSq() > 100.f)
 			{
-				object.as<Character>()->harm(owned, 5.f);
+				object.as<Character>()->harm(owned, 2.f * getScale());
 			}
 			if(object->getType() == CHARACTER || (object->getType() == SWORD && object->getHeldCharacter().isValid() && object->getHeldCharacter()->isSwinging()))
 			{

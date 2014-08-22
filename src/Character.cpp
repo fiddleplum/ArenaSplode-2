@@ -42,6 +42,28 @@ void Character::setObjectHeld(Ptr<Object> object)
 	{
 		objectHeld->setScale(getScale());
 		objectHeld->setZ(2);
+		switch(objectHeld->getType())
+		{
+			case Object::SWORD:
+				getPlayer()->setText(0); break;
+			case Object::NUKE:
+				getPlayer()->setText(1); break;
+			case Object::ROCKET_LAUNCHER:
+				switch(objectHeld.as<RocketLauncher>()->getRocketType())
+				{
+					case RocketLauncher::STRAIGHT:
+						getPlayer()->setText(2); break;
+					case RocketLauncher::CAKE:
+						getPlayer()->setText(3); break;
+					case RocketLauncher::DRUNK:
+						getPlayer()->setText(4); break;
+				}
+				break;
+			case Object::CHAIN_WAND:
+				getPlayer()->setText(5); break;
+			case Object::SHELL:
+				getPlayer()->setText(6); break;
+		}
 	}
 }
 
@@ -124,7 +146,7 @@ void Character::die()
 		body.create(level, filename, i);
 		body->setPosition(getPosition() + Vector2f(kit::math::random(-32.f, +32.f), kit::math::random(-32.f, +32.f)));
 		body->setVelocity(getVelocity() + Vector2f(kit::math::random(-32.f, +32.f), kit::math::random(-32.f, +32.f)));
-		body->setOrientation(kit::math::random(0, kit::math::TWO_PI));
+		body->setOrientation(kit::math::random(0.f, (float)kit::math::TWO_PI));
 		body->setScale(getScale());
 		level->addObject(body);
 	}

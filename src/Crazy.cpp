@@ -1,6 +1,7 @@
 #include "Crazy.h"
 #include "Character.h"
 #include "Level.h"
+#include "Player.h"
 #include <kit/app.h>
 #include <kit/audio.h>
 #include <kit/math_util.h>
@@ -16,6 +17,7 @@ void Crazy::onTouch(Ptr<Object> object)
 {
 	if(object->getType() == CHARACTER)
 	{
+		object.as<Character>()->getPlayer()->setText(7);
 		object.as<Character>()->setCrazy();
 		level->removeObject(this);
 	}
