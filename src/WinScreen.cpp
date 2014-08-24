@@ -9,8 +9,9 @@ WinScreen::WinScreen(Ptr<kit::Window> _window, std::string const & characterFile
 
 	sprite = window->addSprite();
 	sprite->setTexture("art/characters/" + characterFilename);
-	sprite->setTextureBounds(Recti::minSize(0, 0, 64, 64));
-	sprite->setScale(8.f);
+	int textureSize = sprite->getTexture()->getSize()[0];
+	sprite->setTextureBounds(Recti::minSize(0, 0, textureSize, textureSize));
+	sprite->setScale(4.f * (64.f / textureSize));
 	sprite->setPosition(Vector2i((window->getSize()[0] - sprite->getBounds().getSize()[0]) / 2, (window->getSize()[1] - sprite->getBounds().getSize()[1])  /2));
 
 	timeShownSoFar = 0;

@@ -135,7 +135,7 @@ void Level::update(float dt)
 				item.create<ChainWand>(game->level);
 				break;
 			case Object::CRAZY:
-				if(kit::math::random(0.f, 1.f) < .05f)
+				if(kit::math::random(0.f, 1.f) < .2f)
 				{
 					item.create<Crazy>(game->level);
 				}

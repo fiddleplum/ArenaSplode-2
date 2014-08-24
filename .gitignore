@@ -6,3 +6,4 @@ tmp/
 *.vcxproj.user
 log.txt
 bin/log.txt
+bin/log.txt

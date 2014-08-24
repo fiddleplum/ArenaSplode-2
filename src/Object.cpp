@@ -5,15 +5,25 @@ Object::Object(Type _type, Ptr<Level> _level, std::string const & textureFilenam
 {
 	type = _type;
 	level = _level;
-	object.create(level->getScene());
-	object->setTexture(textureFilename);
-	object->setAsSprite(-textureCoords.getSize() / 2, textureCoords);
-	object->setZ(1);
 	friction = .999f;
 	radius = 32.0f;
 	solid = false;
 	bounciness = 1;
 	scale = 1.0f;
+	object.create(level->getScene());
+	object->setTexture(textureFilename);
+	if(type == CHARACTER)
+	{
+		textureCoords.setSize(object->getTexture()->getSize());
+		imageScale = 64.0f / object->getTexture()->getSize()[0];
+	}
+	else
+	{
+		imageScale = 1;
+	}
+	object->setAsSprite(-textureCoords.getSize() / 2, textureCoords);
+	object->setZ(1);
+	object->setScale(scale * imageScale);
 }
 
 void Object::setBounciness(float _bounciness)
@@ -32,7 +42,12 @@ void Object::setScale(float _scale)
 	{
 		scale = .25f;
 	}
-	object->setScale(scale);
+	object->setScale(scale * imageScale);
+}
+
+void Object::setImageScale(float _imageScale)
+{
+	imageScale = _imageScale;
 }
 
 void Object::setVelocity(Vector2f _velocity)
