@@ -49,7 +49,7 @@ void Shell::onTouch(Ptr<Object> object)
 	{
 		if(!getHeldCharacter().isValid())
 		{
-			if(object->getType() == CHARACTER && object.as<Character>()->getPlayer()->getNumber() != owned && getVelocity().normSq() > 100.f)
+			if(object->getType() == CHARACTER && object.as<Character>()->getPlayer()->getNumber() != owned && getVelocity().normSq() > 1000.f)
 			{
 				object.as<Character>()->harm(owned, 2.f * getScale());
 			}
