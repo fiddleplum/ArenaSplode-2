@@ -56,6 +56,11 @@ Player::~Player()
 	if(window.isValid())
 	{
 		window->removeWidget(viewport);
+		window->removeWidget(text);
+		for(auto scoreTick : scoreTicks)
+		{
+			window->removeWidget(scoreTick);
+		}
 	}
 }
 
