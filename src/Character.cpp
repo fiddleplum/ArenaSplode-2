@@ -129,6 +129,10 @@ void Character::harm(int owned, float amount)
 		if(owned != -1 && player->getNumber() != owned)
 		{
 			game->players[owned]->addScore(10);
+			if(game->players[owned]->getCharacter().isValid())
+			{
+				game->players[owned]->getCharacter()->incNumKills();
+			}
 		}
 		die();
 	}
@@ -156,7 +160,7 @@ void Character::die()
 void Character::incNumKills()
 {
 	numKills++;
-	if(numKills > 5)
+	if(numKills % 3 == 0)
 	{
 		kit::audio::play("sounds/multikill.ogg");
 	}
