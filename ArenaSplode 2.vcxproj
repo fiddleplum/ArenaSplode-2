@@ -50,8 +50,8 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>bin\</OutDir>
     <IntDir>tmp\</IntDir>
-    <IncludePath>C:\hurley\kit\src;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\hurley\kit\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\kit\src;$(IncludePath)</IncludePath>
+    <LibraryPath>..\kit\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -81,9 +81,9 @@ copy ..\external\SDL2_mixer\lib\x86\*.dll bin
       </PrecompiledHeader>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <TreatWarningAsError>true</TreatWarningAsError>
-      <DisableSpecificWarnings>4127</DisableSpecificWarnings>
-      <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <Optimization>MaxSpeed</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
