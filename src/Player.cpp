@@ -33,7 +33,7 @@ Player::Player(int _number, Ptr<kit::Window> _window, Ptr<kit::scene::Scene> _sc
 	characterMenu->setCharacterChosenFunction(std::bind(&Player::characterChosen, this, std::placeholders::_1));
 
 	std::string controllerName = kit::controllers::getName(number);
-	if(controllerName.find("XInput") != std::string::npos)
+	if ((controllerName.find("XInput") != std::string::npos) || (controllerName.find("XBOX") != std::string::npos))
 	{
 		controllerType = XBOX;
 	}

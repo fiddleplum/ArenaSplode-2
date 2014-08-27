@@ -15,7 +15,7 @@ RocketLauncher::RocketLauncher(Ptr<Level> level, int _type)
 void RocketLauncher::fire()
 {
 	OwnPtr<Rocket> rocket;
-	int rocketType;
+	int rocketType = 0;
 	switch(type)
 	{
 	case STRAIGHT:
