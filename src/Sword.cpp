@@ -2,6 +2,7 @@
 #include "Character.h"
 #include "Level.h"
 #include "Player.h"
+#include <kit/app.h>
 #include <kit/audio.h>
 #include <kit/math_util.h>
 
@@ -10,6 +11,7 @@ Sword::Sword(Ptr<Level> level)
 {
 	setSolid(false);
 	setFriction(.99f);
+	lastPlayedSwordSound = 0;
 }
 
 void Sword::onTouch(Ptr<Object> object)
@@ -23,7 +25,11 @@ void Sword::onTouch(Ptr<Object> object)
 	}
 	else if(object->getType() == Object::SWORD && object->getHeldCharacter().isValid())
 	{
-		kit::audio::play("sounds/sword" + std::to_string(kit::math::random(0, 3)) + ".ogg");
+		if(kit::app::getTime() - lastPlayedSwordSound > .25f)
+		{
+			kit::audio::play("sounds/sword" + std::to_string(kit::math::random(0, 3)) + ".ogg");
+			lastPlayedSwordSound = kit::app::getTime();
+		}
 		Vector2f impulse = (this->getPosition() - object->getPosition()).unit() * 400.f;
 		object->applyImpulse(-impulse);
 		this->applyImpulse(impulse);
@@ -37,7 +43,11 @@ void Sword::onOverTile(Vector2i tilePosition, Vector2f closest)
 	{
 		if(tile.type == Tile::Wall)
 		{
-			kit::audio::play("sounds/sword" + std::to_string(kit::math::random(0, 3)) + ".ogg");
+			if(kit::app::getTime() - lastPlayedSwordSound > .25f)
+			{
+				kit::audio::play("sounds/sword" + std::to_string(kit::math::random(0, 3)) + ".ogg");
+				lastPlayedSwordSound = kit::app::getTime();
+			}
 		}
 	}
 }

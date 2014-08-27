@@ -132,10 +132,13 @@ void Level::update(float dt)
 				break;
 			}
 			case Object::CHAIN_WAND:
-				item.create<ChainWand>(game->level);
+				if(kit::math::random(0.f, 1.f) < .333f)
+				{
+					item.create<ChainWand>(game->level);
+				}
 				break;
 			case Object::CRAZY:
-				if(kit::math::random(0.f, 1.f) < .05f)
+				if(kit::math::random(0.f, 1.f) < .2f)
 				{
 					item.create<Crazy>(game->level);
 				}
@@ -157,6 +160,7 @@ void Level::update(float dt)
 		{
 			Vector2i position = {kit::math::random(0, size[0]), kit::math::random(1, size[1])};
 			item->setPosition(Vector2f(position[0] + .5f, position[1] + .5f).scale(tileSize));
+			item->setVelocity(Vector2f(kit::math::random(-16.f, +16.f), kit::math::random(-16.f, +16.f)));
 			objects.insert(item);
 		}
 	}

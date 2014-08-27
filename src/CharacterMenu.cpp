@@ -20,7 +20,9 @@ CharacterMenu::CharacterMenu(int _controller, Ptr<kit::Window> _window)
 	{
 		auto sprite = window->addSprite();
 		sprite->setTexture("art/characters/" + filename);
-		sprite->setTextureBounds(Recti::minSize(0, 0, 64, 64));
+		int size = sprite->getTexture()->getSize()[0];
+		sprite->setTextureBounds(Recti::minSize(0, 0, size, size));
+		sprite->setScale(64.f / size);
 		characterSprites.push_back(sprite);
 	}
 

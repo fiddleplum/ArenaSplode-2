@@ -34,6 +34,12 @@ public:
 	void setScale(float _scale);
 	float getScale() const { return scale; }
 
+	void setImageScale(float imageScale);
+	float getImageScale() const
+	{
+		return imageScale;
+	}
+
 	float getRadius() const { return radius; }
 
 	Vector2f getVelocity() const { return velocity; }
@@ -68,6 +74,7 @@ protected:
 
 private:
 	OwnPtr<kit::flat::Object> object;
+	float imageScale;
 	Type type;
 	bool solid;
 	float bounciness;

@@ -21,6 +21,11 @@ public:
 		return number;
 	}
 
+	Ptr<Character> getCharacter()
+	{
+		return character;
+	}
+
 	std::string getCharacterFilename()
 	{
 		return characterFilename;

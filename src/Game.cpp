@@ -30,6 +30,13 @@ Menu * menu = window->add<Menu>(); // menu is a subclass of widgetcontainer
 app->remove(window);
 App::finalize();
 
+No, it really does need to be RAII.
+
+OwnPtr<Button> button;
+button.create(window);
+
+This way, I won't have resource leaks like I've already had. Nothing needs to be explicitly deleted.
+
 Button should use functors not virtual functions, because the parent container wants to be able to be called when
   the button is pressed (and not just the button itself). also, we'd need a separate button class for each button.
 WidgetContainer should use... updateWidgetBounds should be virtual protected, since it just calls its children.
@@ -124,7 +131,7 @@ void Game::handleSceneEvent(kit::Event const & event)
 	{
 		static float lastTime = 0;
 		float thisTime = kit::app::getTime();
-		logFile->write(std::to_string(1.0f / (thisTime - lastTime)));
+		//logFile->write(std::to_string(1.0f / (thisTime - lastTime)));
 		lastTime = thisTime;
 		if(level.isValid())
 		{

@@ -59,6 +59,7 @@ private:
 	float heldRadiusOffset;
 
 	float health;
+	float harmSoundTime;
 
 	std::string filename;
 

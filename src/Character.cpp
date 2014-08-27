@@ -23,7 +23,7 @@ Character::Character(Player * _player, Ptr<Level> level, std::string const & cha
 	heldRadiusOffset = 0;
 
 	health = 100.f;
-
+	harmSoundTime = 0.f;
 	maxSpeed = 5000.f;
 
 	numKills = 0;
@@ -121,14 +121,22 @@ void Character::harm(int owned, float amount)
 	{
 		game->players[owned]->addScore((int)amount);
 	}
-	int r = kit::math::random(0, 3);
-	kit::audio::play("sounds/hurt" + std::to_string(r) + ".ogg");
+	if(kit::app::getTime() - harmSoundTime > .25f)
+	{
+		int r = kit::math::random(0, 6);
+		kit::audio::play("sounds/hurt" + std::to_string(r) + ".ogg");
+		harmSoundTime = kit::app::getTime();
+	}
 	health -= amount;
 	if(health <= 0)
 	{
 		if(owned != -1 && player->getNumber() != owned)
 		{
 			game->players[owned]->addScore(10);
+			if(game->players[owned]->getCharacter().isValid())
+			{
+				game->players[owned]->getCharacter()->incNumKills();
+			}
 		}
 		die();
 	}
@@ -156,7 +164,7 @@ void Character::die()
 void Character::incNumKills()
 {
 	numKills++;
-	if(numKills > 5)
+	if(numKills % 3 == 0)
 	{
 		kit::audio::play("sounds/multikill.ogg");
 	}
