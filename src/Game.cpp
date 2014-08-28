@@ -119,6 +119,16 @@ void Game::handleSceneEvent(kit::Event const & event)
 			return;
 		}
 	}
+	if(event.type == kit::Event::Keyboard)
+	{
+		auto ke = event.as<kit::KeyboardEvent>();
+		if(ke.key == ke.R && ke.pressed)
+		{
+			willRestart = true;
+			return;
+		}
+
+	}
 	for(auto player : players)
 	{
 		player->handleSceneEvent(event);

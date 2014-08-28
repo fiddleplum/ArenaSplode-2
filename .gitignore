@@ -4,6 +4,7 @@ tmp/
 *.opensdf
 *.suo
 *.vcxproj.user
-log.txt
 bin/log.txt
-bin/log.txt
+bin/ArenaSplode 2.exe
+bin/ArenaSplode 2.ilk
+bin/ArenaSplode 2.pdb

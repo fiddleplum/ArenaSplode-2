@@ -6,12 +6,12 @@
 #include <kit/audio.h>
 
 Shell::Shell(int _owned, Ptr<Level> level, int _type)
-: Object(SHELL, level, "art/items.png", Recti::minSize(0 + 32 * _type, 192, 32, 32))
+: Object(SHELL, level, "art/items.png", Recti::minSize(0 + 48 * _type, 192, 48, 48))
 {
 	owned = _owned;
 	type = _type;
 	setSolid(false);
-	setRadius(12.f);
+	setRadius(20.f);
 	setBounciness(2.0f);
 	setFriction(0.f);
 	ttl = 20.f;
@@ -43,6 +43,14 @@ void Shell::update(float dt)
 	}
 }
 
+void Shell::onOverTile(Vector2i tilePosition, Vector2f closest)
+{
+	if(level->getTile(tilePosition).type == Tile::Wall)
+	{
+		setRotationSpeed(kit::math::random(-6.0, +6.f));
+	}
+}
+
 void Shell::onTouch(Ptr<Object> object)
 {
 	if(type == GREEN)
@@ -58,6 +66,7 @@ void Shell::onTouch(Ptr<Object> object)
 				if(getVelocity().dot(object->getPosition() - getPosition()) > 0)
 				{
 					setVelocity(getVelocity().rotate2d(kit::math::random(-.4f, +.4f)) * -1.f);
+					setRotationSpeed(kit::math::random(-6.0, +6.f));
 					object->applyImpulse(-getVelocity());
 				}
 			}

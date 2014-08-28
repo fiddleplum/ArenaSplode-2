@@ -15,6 +15,8 @@ public:
 
 	void update(float dt) override;
 
+	void onOverTile(Vector2i tilePosition, Vector2f closest) override;
+
 	void onTouch(Ptr<Object> object) override;
 
 private:

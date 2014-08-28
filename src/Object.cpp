@@ -9,6 +9,7 @@ Object::Object(Type _type, Ptr<Level> _level, std::string const & textureFilenam
 	radius = 32.0f;
 	solid = false;
 	bounciness = 1;
+	rotationSpeed = 0.f;
 	scale = 1.0f;
 	object.create(level->getScene());
 	object->setTexture(textureFilename);
@@ -79,6 +80,8 @@ void Object::doPhysics(float dt)
 		velocity.set(0, 0);
 	}
 	object->setPosition(object->getPosition() + velocity * dt);
+	object->setOrientation(object->getOrientation() + rotationSpeed * dt);
+
 }
 
 void Object::setPosition(Vector2f position)
@@ -89,6 +92,11 @@ void Object::setPosition(Vector2f position)
 void Object::setOrientation(float orientation)
 {
 	object->setOrientation(orientation);
+}
+
+void Object::setRotationSpeed(float _rotationSpeed)
+{
+	rotationSpeed = _rotationSpeed;
 }
 
 void Object::setZ(int z)

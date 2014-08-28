@@ -54,6 +54,8 @@ public:
 
 	void setOrientation(float orientation);
 
+	void setRotationSpeed(float rotationSpeed);
+
 	void setZ(int z);
 
 	Ptr<Character> getHeldCharacter() const { return holdingCharacter; }
@@ -81,6 +83,7 @@ private:
 	float scale;
 	float radius;
 	Vector2f velocity;
+	float rotationSpeed;
 	float friction;
 	Ptr<Character> holdingCharacter;
 };
