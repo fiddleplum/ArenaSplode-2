@@ -59,7 +59,6 @@ Game::Game()
 	window = kit::app::addWindow("ArenaSplode 2");
 	window->setHandleContainerEventFunction(std::bind(&Game::handleEvent, this, std::placeholders::_1));
 	window->setUpdateWidgetBoundsFunction(std::bind(&Game::updateWidgets, this));
-	//window->setFullscreen();
 
 	numPlayersMenu.create(window);
 	numPlayersMenu->setPlayersButtonPressedFunction(std::bind(&Game::numPlayersChosen, this, std::placeholders::_1));
@@ -89,6 +88,21 @@ void Game::handleEvent(kit::Event const & event)
 		state = NumPlayersSelection;
 		willRestart = false;
 		return;
+	}
+	if(event.type == kit::Event::Keyboard)
+	{
+		auto ke = event.as<kit::KeyboardEvent>();
+		if(ke.key == ke.F && ke.pressed)
+		{
+			if(window->isFullscreen())
+			{
+				window->setWindowed();
+			}
+			else
+			{
+				window->setFullscreen(0, Vector2i(1920, 1080));
+			}
+		}
 	}
 	if(numPlayersMenu.isValid())
 	{
@@ -127,7 +141,6 @@ void Game::handleSceneEvent(kit::Event const & event)
 			willRestart = true;
 			return;
 		}
-
 	}
 	for(auto player : players)
 	{

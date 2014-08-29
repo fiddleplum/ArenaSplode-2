@@ -21,6 +21,7 @@ private:
 
 	Ptr<kit::Window> window;
 	std::function<void(int)> playersButtonPressedFunction;
+	Ptr<kit::gui::Sprite> titleSprite;
 	std::vector<Ptr<kit::gui::Button>> playerButtons;
 	std::vector<bool> controllerCentered;
 	int selectedButton;

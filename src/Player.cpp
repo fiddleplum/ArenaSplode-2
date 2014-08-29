@@ -323,7 +323,7 @@ void Player::updateWidgets()
 	if(viewport.isValid())
 	{
 		viewport->setPosition(bounds.min);
-		viewport->setMaxSize(bounds.getSize());
+		viewport->setMaxCoord(bounds.max);
 	}
 	if(text.isValid())
 	{

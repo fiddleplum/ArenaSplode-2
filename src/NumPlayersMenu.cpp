@@ -1,6 +1,7 @@
 #pragma once
 
 #include "NumPlayersMenu.h"
+#include <kit/app.h>
 #include <kit/controllers.h>
 
 const int maxNumPlayers = 4;
@@ -8,6 +9,9 @@ const int maxNumPlayers = 4;
 NumPlayersMenu::NumPlayersMenu(Ptr<kit::Window> _window)
 {
 	window = _window;
+	titleSprite = window->addSprite();
+	titleSprite->setTexture("art/title.png");
+	titleSprite->setTextureBounds(Recti::minSize(0, 0, 1024, 512));
 	for(int i = 0; i < maxNumPlayers; i++)
 	{
 		Ptr<kit::gui::Button> button = window->addButton();
@@ -33,6 +37,7 @@ NumPlayersMenu::~NumPlayersMenu()
 	{
 		window->removeWidget(playerButtons[i]);
 	}
+	window->removeWidget(titleSprite);
 }
 
 void NumPlayersMenu::handleEvent(kit::Event const & event)
@@ -44,7 +49,7 @@ void NumPlayersMenu::handleEvent(kit::Event const & event)
 	if(event.type == kit::Event::ControllerAxis)
 	{
 		auto cae = event.as<kit::ControllerAxisEvent>();
-		if(cae.axis == 1)
+		if(cae.axis == 0)
 		{
 			if(cae.value < -.5f)
 			{
@@ -73,11 +78,11 @@ void NumPlayersMenu::handleEvent(kit::Event const & event)
 		auto ke = event.as<kit::KeyboardEvent>();
 		if(ke.pressed)
 		{
-			if(ke.key == ke.Up)
+			if(ke.key == ke.Left)
 			{
 				moveSelection(-1);
 			}
-			else if(ke.key == ke.Down)
+			else if(ke.key == ke.Right)
 			{
 				moveSelection(+1);
 			}
@@ -87,13 +92,14 @@ void NumPlayersMenu::handleEvent(kit::Event const & event)
 
 void NumPlayersMenu::updateWidgets()
 {
+	window->setWidgetPlacement(titleSprite, Vector2f(.5f, .5f), Vector2f(.5f, .5f), Vector2i(0, -150));
 	for(int i = 0; i < maxNumPlayers; i++)
 	{
 		if(!playerButtons[i].isValid())
 		{
 			continue;
 		}
-		window->setWidgetPlacement(playerButtons[i], Vector2f(.5f, .5f), Vector2f(.5f, .5f), Vector2i(0, (int)(((float)i + .5f - maxNumPlayers / 2.f) * 128.0f)));
+		window->setWidgetPlacement(playerButtons[i], Vector2f(.5f, .5f), Vector2f(.5f, .5f), Vector2i((int)(((float)i + .5f - maxNumPlayers / 2.f) * 300.f), 150));
 	}
 }
 
