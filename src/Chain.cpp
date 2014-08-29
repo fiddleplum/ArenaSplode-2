@@ -34,7 +34,7 @@ void Chain::onTouch(Ptr<Object> object)
 
 void Chain::update(float dt)
 {
-	float k = .0001f;
+	float k = .04f;
 	float s = 256.f;
 	Vector2f r = character1->getPosition() - character2->getPosition();
 	float d = r.norm();
