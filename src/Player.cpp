@@ -128,14 +128,14 @@ void Player::handleEvent(kit::Event const & event)
 	}
 	if(event.type == kit::Event::Update)
 	{
-		int maxTicks = bounds.getSize()[0] / 4;
+		int maxTicks = bounds.getSize()[0] / 10;
 		float scorePerTick = (float)winScore / (float)maxTicks;
 		if(score > (int)(scoreTicks.size() * scorePerTick))
 		{
 			Ptr<kit::gui::Sprite> tick = window->addSprite();
-			tick->setPosition(bounds.min + Vector2i(scoreTicks.size() * 4, 0));
+			tick->setPosition(bounds.min + Vector2i(scoreTicks.size() * 10, 0));
 			tick->setTexture("art/items.png");
-			tick->setTextureBounds(Recti::minSize(176, 128, 4, 16));
+			tick->setTextureBounds(Recti::minSize(176, 128, 10, 16));
 			scoreTicks.push_back(tick);
 		}
 	}
