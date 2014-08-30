@@ -327,7 +327,7 @@ void Player::updateWidgets()
 	}
 	if(text.isValid())
 	{
-		text->setPosition(Vector2i(bounds.min[0] + (bounds.getSize()[0] - 512) / 2, bounds.min[1]));
+		text->setPosition(Vector2i(bounds.min[0] + (bounds.getSize()[0] - 512) / 2, bounds.min[1] + 18));
 	}
 	for(auto tick : scoreTicks)
 	{

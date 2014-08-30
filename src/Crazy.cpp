@@ -7,7 +7,7 @@
 #include <kit/math_util.h>
 
 Crazy::Crazy(Ptr<Level> level)
-: Object(CRAZY, level, "art/items.png", Recti::minSize(48, 192, 32, 48))
+: Object(CRAZY, level, "art/items.png", Recti::minSize(48, 192, 16, 48))
 {
 	setSolid(false);
 	setFriction(.99f);
